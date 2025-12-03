@@ -71,6 +71,8 @@ def main():
     p.add_argument('--url', default=DEFAULT_URL)
     p.add_argument('-o', '--output', default=DEFAULT_OUTPUT)
     p.add_argument('--timeout', type=float, default=60.0)
+    p.add_argument('-c', '--cookie', action='append', help="Cookie de connexion au format NAME=VALUE; peut être répété", default=None)
+    p.add_argument('--cookie-file', help="Fichier contenant des cookies, un par ligne NAME=VALUE")
     args = p.parse_args()
 
     if not ensure_playwright_installed():
@@ -81,10 +83,48 @@ def main():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
         context = browser.new_context()
+
+        # Collecte des cookies donnés en ligne de commande ou dans un fichier
+        cookie_inputs = []
+        if args.cookie:
+            cookie_inputs.extend(args.cookie)
+        if args.cookie_file:
+            try:
+                with open(args.cookie_file, 'r', encoding='utf-8') as cf:
+                    for line in cf:
+                        line = line.strip()
+                        if line and not line.startswith('#'):
+                            cookie_inputs.append(line)
+            except Exception as e:
+                print(f"Impossible de lire le fichier de cookies: {e}")
+
+        # Si des cookies ont été fournis, les injecter dans le contexte avant d'ouvrir la page
+        if cookie_inputs:
+            parsed_url = urlparse(args.url)
+            domain = parsed_url.netloc.split(':')[0]
+            cookies = []
+            for c in cookie_inputs:
+                # Accepte des chaînes comme "name=value" ou des cookies complets avec ";"
+                c_main = c.split(';', 1)[0].strip()
+                if '=' not in c_main:
+                    continue
+                name, value = c_main.split('=', 1)
+                cookies.append({'name': name, 'value': value, 'domain': domain, 'path': '/', 'httpOnly': False, 'secure': True})
+            if cookies:
+                try:
+                    context.add_cookies(cookies)
+                    print(f"{len(cookies)} cookie(s) injecté(s) pour le domaine {domain}.")
+                except Exception as e:
+                    print("Erreur lors de l'injection des cookies:", e)
+
         page = context.new_page()
-        print("Navigateur ouvert. Connectez-vous si nécessaire.")
+        # Toujours aller sur le site pour initialiser la session et détecter l'état
         page.goto("https://rollercoin.com")
-        input('Après connexion, appuyez sur Entrée pour lancer la récupération de l\'inventaire...')
+        if not cookie_inputs:
+            print("Navigateur ouvert. Connectez-vous si nécessaire.")
+            input('Après connexion, appuyez sur Entrée pour lancer la récupération de l\'inventaire...')
+        else:
+            print("Cookies fournis — tentative d'utilisation de la session fournie sans interaction.")
 
         parsed = urlparse(args.url)
         qs = parse_qs(parsed.query)
