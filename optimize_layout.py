@@ -532,6 +532,31 @@ def compute_max_raw_and_max_bonus(groups, capacity_racks):
                 max_bonus = mb
     return max_raw, max_bonus
 
+def compute_max_miners_count(groups, capacity_racks):
+    """Return the maximum number of miner instances that can be placed using up to
+    capacity_racks * 4 * 2 unit-slots (assume all racks are 4-height to maximize slots).
+    Greedy strategy: place all width=1 miners first, then width=2, then larger widths —
+    this maximizes the count of placed miners (ignores power and bonuses).
+    Returns integer count.
+    """
+    max_units = capacity_racks * 4 * 2
+    # aggregate counts by width
+    counts_by_width = {}
+    for g in groups:
+        w = int(g.get('width', 1))
+        counts_by_width.setdefault(w, 0)
+        counts_by_width[w] += int(g.get('count', 0))
+    total = 0
+    rem = max_units
+    for w in sorted(counts_by_width.keys()):
+        if rem <= 0:
+            break
+        avail = counts_by_width[w]
+        fit = min(avail, rem // w)
+        total += fit
+        rem -= fit * w
+    return total
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--room-level', type=int, choices=[0,1,2,3], help='niveau de room')
@@ -602,6 +627,9 @@ def main():
         print('\n--- Résumé global (indépendant du mix racks) ---')
         print('Raw power max atteignable (placer les miners les plus puissants): {:,.0f}'.format(raw_max))
         print('Max miner unique bonus total atteignable (somme des bonus uniques possibles): {}'.format(int(bonus_max)))
+        # compute and print maximum number of miners placeable (ignoring power/bonus)
+        max_count = compute_max_miners_count(groups, capacity)
+        print('Max miners placables avec l\'inventaire (en maximisant le nombre, sans power/bonus): {}'.format(int(max_count)))
 
         # build and print detailed rack assignments for the best candidate
         selection = best.get('selection', {})
