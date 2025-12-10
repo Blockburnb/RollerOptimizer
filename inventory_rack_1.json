@@ -1,0 +1,142 @@
+{
+    "success": true,
+    "data": {
+        "items": [
+            {
+                "id": "673481872593c7f3e68fcc9a",
+                "name": {
+                    "en": "Retro Arcade Rack 6",
+                    "cn": "Retro Arcade Rack 6"
+                },
+                "is_in_set": true,
+                "set_title": {
+                    "en": "Super Bros Set",
+                    "cn": "Super Bros Set",
+                    "es": "Super Bros Set",
+                    "pt": "Super Bros Set"
+                },
+                "description": {
+                    "en": "Showcase your Miner Bros collection!",
+                    "cn": "Showcase your Miner Bros collection!"
+                },
+                "size": 6,
+                "percent": 0,
+                "quantity": 1,
+                "type": "rack"
+            },
+            {
+                "id": "66ead2f925874d2ef6d0db6a",
+                "name": {
+                    "en": "Beer Rack 6",
+                    "cn": "Beer Rack 6"
+                },
+                "is_in_set": true,
+                "set_title": {
+                    "en": "Beer Pack Set",
+                    "cn": "Beer Pack Set",
+                    "es": "Beer Pack Set",
+                    "pt": "Beer Pack Set"
+                },
+                "description": {
+                    "en": "Just a beer pack",
+                    "cn": "Just a beer pack"
+                },
+                "size": 6,
+                "percent": 0,
+                "quantity": 1,
+                "type": "rack"
+            },
+            {
+                "id": "66d575abd864b944e0a13b78",
+                "name": {
+                    "en": "Power-Up Rack 6",
+                    "cn": "Power-Up Rack 6"
+                },
+                "is_in_set": true,
+                "set_title": {
+                    "en": "Power-Up Set",
+                    "cn": "Power-Up Set",
+                    "es": "Power-Up Set",
+                    "pt": "Power-Up Set"
+                },
+                "description": {
+                    "en": "Collect a full Power-Up set to gain maximum power!",
+                    "cn": "Collect a full Power-Up set to gain maximum power!"
+                },
+                "size": 6,
+                "percent": 0,
+                "quantity": 1,
+                "type": "rack"
+            },
+            {
+                "id": "5a4e4aca032ecc8ffe42ed81",
+                "name": {
+                    "en": "Regular Rack 8",
+                    "cn": "Regular Rack 8"
+                },
+                "is_in_set": false,
+                "set_title": {
+                    "en": "",
+                    "cn": "",
+                    "es": "",
+                    "pt": ""
+                },
+                "description": {
+                    "en": "Slightly larger option to install more advanced miners. It does not consume electricity and does not give bonuses. Suitable for novice miners.",
+                    "cn": "Slightly larger option to install more advanced miners. It does not consume electricity and does not give bonuses. Suitable for novice miners."
+                },
+                "size": 8,
+                "quantity": 8,
+                "type": "rack"
+            },
+            {
+                "id": "68dbc757c05c26894e019db1",
+                "name": {
+                    "en": "Server Rack 6",
+                    "cn": "Server Rack 6"
+                },
+                "is_in_set": false,
+                "set_title": {
+                    "en": "",
+                    "cn": "",
+                    "es": "",
+                    "pt": ""
+                },
+                "description": {
+                    "en": "Six lines, six chances to bend the code. Plug in and let the system hum around you.",
+                    "cn": "Six lines, six chances to bend the code. Plug in and let the system hum around you."
+                },
+                "size": 6,
+                "percent": 3500,
+                "quantity": 3,
+                "type": "rack"
+            },
+            {
+                "id": "687953d5850c0148212ddf81",
+                "name": {
+                    "en": "Saloon Rack 6",
+                    "cn": "Saloon Rack 6"
+                },
+                "is_in_set": false,
+                "set_title": {
+                    "en": "",
+                    "cn": "",
+                    "es": "",
+                    "pt": ""
+                },
+                "description": {
+                    "en": "Wooden display worthy of any frontier saloon.",
+                    "cn": "Wooden display worthy of any frontier saloon."
+                },
+                "size": 6,
+                "percent": 3000,
+                "quantity": 4,
+                "type": "rack"
+            }
+        ],
+        "total": 6,
+        "skip": "0",
+        "limit": "48"
+    },
+    "error": ""
+}
