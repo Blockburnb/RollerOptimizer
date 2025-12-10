@@ -97,10 +97,10 @@ def main():
     print('Miner bonus power (appliqué au raw power): {:,}'.format(int(miner_bonus_power)))
     print('Rack bonus total: {:,}'.format(int(rack_bonus_total)))
     print('Final power: {:,}'.format(int(final_power)))
-    print('')
-    print('Détails par rack (id, raw, percent, bonus, miners_count):')
-    for d in rack_details:
-        print(' -', d[0], '{:,}'.format(int(d[1])), d[2], '{:,}'.format(int(d[3])), d[4])
+    #print('')
+    #print('Détails par rack (id, raw, percent, bonus, miners_count):')
+    #for d in rack_details:
+        #print(' -', d[0], '{:,}'.format(int(d[1])), d[2], '{:,}'.format(int(d[3])), d[4])
 
 
 if __name__ == '__main__':
