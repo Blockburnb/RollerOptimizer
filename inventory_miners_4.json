@@ -1,2051 +1,2383 @@
 {
-    "success": true,
-    "data": {
-        "items": [
-            {
-                "id": "674df7ebcbe1e47b27075d65",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 1,
-                "name": {
-                    "en": "X-Globe",
-                    "cn": "X-Globe",
-                    "es": "X-Globe",
-                    "pt": "X-Globe"
-                },
-                "description": {
-                    "en": "The power of the entire universe in my hands! Great rack space.",
-                    "cn": "The power of the entire universe in my hands! Great rack space.",
-                    "es": "The power of the entire universe in my hands! Great rack space.",
-                    "pt": "The power of the entire universe in my hands! Great rack space."
-                },
-                "collection_description": {
-                    "en": "Season 16: Space Christmas",
-                    "cn": "Season 16: Space Christmas",
-                    "es": "Season 16: Space Christmas",
-                    "pt": "Season 16: Space Christmas"
-                },
-                "power": 1190000,
-                "bonus_power": 50,
-                "type": "miner",
-                "miner_type": "merge",
-                "size": 2,
-                "quantity": 1,
-                "filename": "x_globe",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1733907952185,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                },
-                "craft_items": [
-                    {
-                        "count": 2,
-                        "component_type": "miners",
-                        "_id": "674df7ebcbe1e47b27075d62",
-                        "name": {
-                            "en": "X-Globe",
-                            "cn": "X-Globe",
-                            "es": "X-Globe",
-                            "pt": "X-Globe"
-                        }
-                    },
-                    {
-                        "count": 70,
-                        "component_type": "mutation_components",
-                        "_id": "61b3606767433d2dc58913a9",
-                        "name": {
-                            "en": "Hashboard",
-                            "cn": "Hashboard"
-                        },
-                        "type": "hashboard",
-                        "rarity_group": {
-                            "_id": "619627a267433d2dc5355efb",
-                            "title": {
-                                "en": "Common",
-                                "cn": "Common"
-                            },
-                            "base_color_hex": "dddddd",
-                            "sort": 0
-                        }
-                    },
-                    {
-                        "count": 80,
-                        "component_type": "mutation_components",
-                        "_id": "61b35fea67433d2dc586f7fe",
-                        "name": {
-                            "en": "Fan",
-                            "cn": "Fan"
-                        },
-                        "type": "fan",
-                        "rarity_group": {
-                            "_id": "619627a267433d2dc5355efb",
-                            "title": {
-                                "en": "Common",
-                                "cn": "Common"
-                            },
-                            "base_color_hex": "dddddd",
-                            "sort": 0
-                        }
-                    },
-                    {
-                        "count": 70,
-                        "component_type": "mutation_components",
-                        "_id": "61b3604967433d2dc58893b0",
-                        "name": {
-                            "en": "Wire",
-                            "cn": "Wire"
-                        },
-                        "type": "wire",
-                        "rarity_group": {
-                            "_id": "619627a267433d2dc5355efb",
-                            "title": {
-                                "en": "Common",
-                                "cn": "Common"
-                            },
-                            "base_color_hex": "dddddd",
-                            "sort": 0
-                        }
-                    }
-                ]
-            },
-            {
-                "id": "66ead191e0dd3530da969e5f",
-                "is_in_set": true,
-                "set_title": {
-                    "en": "Beer Pack Set",
-                    "cn": "Beer Pack Set",
-                    "es": "Beer Pack Set",
-                    "pt": "Beer Pack Set"
-                },
-                "level": 0,
-                "name": {
-                    "en": "Just One Beer",
-                    "cn": "Just One Beer",
-                    "es": "Just One Beer",
-                    "pt": "Just One Beer"
-                },
-                "description": {
-                    "en": "\"Beer and Rollercoin is proof that God loves us and wants us to be happy\" - Benjamin Franklin",
-                    "cn": "\"Beer and Rollercoin is proof that God loves us and wants us to be happy\" - Benjamin Franklin",
-                    "es": "\"Beer and Rollercoin is proof that God loves us and wants us to be happy\" - Benjamin Franklin",
-                    "pt": "\"Beer and Rollercoin is proof that God loves us and wants us to be happy\" - Benjamin Franklin"
-                },
-                "collection_description": {
-                    "en": "Hamstoberfest",
-                    "cn": "Hamstoberfest",
-                    "es": "Hamstoberfest",
-                    "pt": "Hamstoberfest"
-                },
-                "power": 250000,
-                "bonus_power": 150,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "just_one_beer",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1726754450203,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "674df8a8cbe1e47b27075e0b",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "UFO-Ho-Ho",
-                    "cn": "UFO-Ho-Ho",
-                    "es": "UFO-Ho-Ho",
-                    "pt": "UFO-Ho-Ho"
-                },
-                "description": {
-                    "en": "The reindeers were too old-fashioned...",
-                    "cn": "The reindeers were too old-fashioned...",
-                    "es": "The reindeers were too old-fashioned...",
-                    "pt": "The reindeers were too old-fashioned..."
-                },
-                "collection_description": {
-                    "en": "Marketplace, Season 16: Space Christmas",
-                    "cn": "Marketplace, Season 16: Space Christmas",
-                    "es": "Marketplace, Season 16: Space Christmas",
-                    "pt": "Marketplace, Season 16: Space Christmas"
-                },
-                "power": 600000,
-                "bonus_power": 100,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 2,
-                "filename": "ufo_ho_ho",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1733907959911,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "674df966cbe1e47b27075eb3",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Camouflage",
-                    "cn": "Camouflage",
-                    "es": "Camouflage",
-                    "pt": "Camouflage"
-                },
-                "description": {
-                    "en": "Smile and wave, boys. Smile and wave.",
-                    "cn": "Smile and wave, boys. Smile and wave.",
-                    "es": "Smile and wave, boys. Smile and wave.",
-                    "pt": "Smile and wave, boys. Smile and wave."
-                },
-                "collection_description": {
-                    "en": "Marketplace, Season 16: Space Christmas",
-                    "cn": "Marketplace, Season 16: Space Christmas",
-                    "es": "Marketplace, Season 16: Space Christmas",
-                    "pt": "Marketplace, Season 16: Space Christmas"
-                },
-                "power": 1080000,
-                "bonus_power": 100,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 2,
-                "filename": "camouflage",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1733907967177,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "60c7441465dce86c86607522",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Aurum",
-                    "cn": "Aurum",
-                    "es": "Aurum",
-                    "pt": "Aurum"
-                },
-                "description": {
-                    "en": "Pure gold - solid and cold! The Aurum is a well optimised mining machine with astonishing looks! Perfection Series Miner.",
-                    "cn": "纯金——Aurum 是一款经过优化的矿机，外观令人惊叹！",
-                    "es": "Pure gold - solid and cold! The Aurum is a well optimised mining machine with astonishing looks! Perfection Series Miner.",
-                    "pt": "Pure gold - solid and cold! The Aurum is a well optimised mining machine with astonishing looks! Perfection Series Miner."
-                },
-                "collection_description": {
-                    "en": "Marketplace, Season I: Perfection Event Pass",
-                    "cn": "Marketplace, Season I: Perfection Event Pass",
-                    "es": "Marketplace, Season I: Perfection Event Pass",
-                    "pt": "Marketplace, Season I: Perfection Event Pass"
-                },
-                "power": 200000,
-                "bonus_power": 200,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "aurum",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1713179542158,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "674df539cbe1e47b27075a68",
-                "is_in_set": true,
-                "set_title": {
-                    "en": "Globes Set",
-                    "cn": "Globes Set",
-                    "es": "Globes Set",
-                    "pt": "Globes Set"
-                },
-                "level": 0,
-                "name": {
-                    "en": "BellGlobe",
-                    "cn": "BellGlobe",
-                    "es": "BellGlobe",
-                    "pt": "BellGlobe"
-                },
-                "description": {
-                    "en": "Twas the night before Christmas",
-                    "cn": "Twas the night before Christmas",
-                    "es": "Twas the night before Christmas",
-                    "pt": "Twas the night before Christmas"
-                },
-                "collection_description": {
-                    "en": "Season 16: Space Christmas",
-                    "cn": "Season 16: Space Christmas",
-                    "es": "Season 16: Space Christmas",
-                    "pt": "Season 16: Space Christmas"
-                },
-                "power": 650000,
-                "bonus_power": 100,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "bellglobe",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1733907883083,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "61b9cce178d63d64cd626fcb",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Granny's Cake",
-                    "cn": "Granny's Cake",
-                    "es": "Granny's Cake",
-                    "pt": "Granny's Cake"
-                },
-                "description": {
-                    "en": "It was baked to a secret Grandma’s recipe. Mix of sweetness and power that is truly impressive. Just give it a try! Christmas Time Series Miner.",
-                    "cn": "It was baked to a secret Grandma’s recipe. Mix of sweetness and power that is truly impressive. Just give it a try! Christmas Time Series Miner.",
-                    "es": "It was baked to a secret Grandma’s recipe. Mix of sweetness and power that is truly impressive. Just give it a try! Christmas Time Series Miner.",
-                    "pt": "It was baked to a secret Grandma’s recipe. Mix of sweetness and power that is truly impressive. Just give it a try! Christmas Time Series Miner."
-                },
-                "collection_description": {
-                    "en": "Marketplace, Season III: Christmas time! Event Pass",
-                    "cn": "Marketplace, Season III: Christmas time! Event Pass",
-                    "es": "Marketplace, Season III: Christmas time! Event Pass",
-                    "pt": "Marketplace, Season III: Christmas time! Event Pass"
-                },
-                "power": 125000,
-                "bonus_power": 200,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "grannys_cake",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1744796227037,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "63bffdd0d2e89bab14ff95bc",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Almost Switch",
-                    "cn": "Almost Switch"
-                },
-                "description": {
-                    "en": "A dream Christmas present for any true Miner! If you have it - you will get all the luck in upcoming New Year!",
-                    "cn": "A dream Christmas present for any true Miner! If you have it - you will get all the luck in upcoming New Year!"
-                },
-                "collection_description": {
-                    "es": "",
-                    "pt": "",
-                    "en": "Marketplace, Advent Calendar 2023",
-                    "cn": "Marketplace, Advent Calendar 2023"
-                },
-                "power": 582023,
-                "bonus_power": 200,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "almost_switch",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1
-            },
-            {
-                "id": "6687cea87643815232d65882",
-                "is_in_set": true,
-                "set_title": {
-                    "en": "Silver Farm Set",
-                    "cn": "Silver Farm Set",
-                    "es": "Silver Farm Set",
-                    "pt": "Silver Farm Set"
-                },
-                "level": 0,
-                "name": {
-                    "en": "SilverMulberries",
-                    "cn": "SilverMulberries",
-                    "es": "SilverMulberries",
-                    "pt": "SilverMulberries"
-                },
-                "description": {
-                    "en": "Silver Mulberries thrive in shaded groves, using their dense foliage to maintain cool temperatures and efficiently mine cryptocurrency.",
-                    "cn": "Silver Mulberries thrive in shaded groves, using their dense foliage to maintain cool temperatures and efficiently mine cryptocurrency.",
-                    "es": "Silver Mulberries thrive in shaded groves, using their dense foliage to maintain cool temperatures and efficiently mine cryptocurrency.",
-                    "pt": "Silver Mulberries thrive in shaded groves, using their dense foliage to maintain cool temperatures and efficiently mine cryptocurrency."
-                },
-                "collection_description": {
-                    "en": "Marketplace, Season 14: Harvest Time!",
-                    "cn": "Marketplace, Season 14: Harvest Time!",
-                    "es": "Marketplace, Season 14: Harvest Time!",
-                    "pt": "Marketplace, Season 14: Harvest Time!"
-                },
-                "power": 350000,
-                "bonus_power": 50,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "silvermulberries",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1721130545082,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "64f5d1949e4d6286408927f6",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "FunZone",
-                    "cn": "FunZone",
-                    "es": "FunZone",
-                    "pt": "FunZone"
-                },
-                "description": {
-                    "en": "Step into the virtual FunZone at this Labor Day! Thrilling rides and exciting adventures await in the world of cryptocurrency. By steven quesada",
-                    "cn": "Step into the virtual FunZone at this Labor Day! Thrilling rides and exciting adventures await in the world of cryptocurrency. By steven quesada",
-                    "es": "Step into the virtual FunZone at this Labor Day! Thrilling rides and exciting adventures await in the world of cryptocurrency. By steven quesada",
-                    "pt": "Step into the virtual FunZone at this Labor Day! Thrilling rides and exciting adventures await in the world of cryptocurrency. By steven quesada"
-                },
-                "collection_description": {
-                    "en": "Marketplace, Work Hard — Play Hard",
-                    "cn": "Marketplace, Work Hard — Play Hard",
-                    "es": "Marketplace, Work Hard — Play Hard",
-                    "pt": "Marketplace, Work Hard — Play Hard"
-                },
-                "power": 740000,
-                "bonus_power": 200,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "funzone",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1693831572424,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "611d2605bf6b53744c49e333",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Sunset City",
-                    "cn": "Sunset City"
-                },
-                "description": {
-                    "en": "Orange tones of the evening sun over the working town inspired this urban themed mining machine.",
-                    "cn": "橙色工作城镇上推出我以城市为主题的采矿机。"
-                },
-                "collection_description": {
-                    "es": "",
-                    "pt": "",
-                    "en": "Weekly Offer, Marketplace",
-                    "cn": "Weekly Offer, Marketplace"
-                },
-                "power": 95000,
-                "bonus_power": 200,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "sunset_city",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1
-            },
-            {
-                "id": "6687cefd7643815232d65d11",
-                "is_in_set": true,
-                "set_title": {
-                    "en": "Silver Farm Set",
-                    "cn": "Silver Farm Set",
-                    "es": "Silver Farm Set",
-                    "pt": "Silver Farm Set"
-                },
-                "level": 0,
-                "name": {
-                    "en": "SilverWheat",
-                    "cn": "SilverWheat",
-                    "es": "SilverWheat",
-                    "pt": "SilverWheat"
-                },
-                "description": {
-                    "en": "Silver Wheat stands tall and waves in the breeze, using its slender stalks to dissipate heat, perfecting the art of organic mining.",
-                    "cn": "Silver Wheat stands tall and waves in the breeze, using its slender stalks to dissipate heat, perfecting the art of organic mining.",
-                    "es": "Silver Wheat stands tall and waves in the breeze, using its slender stalks to dissipate heat, perfecting the art of organic mining.",
-                    "pt": "Silver Wheat stands tall and waves in the breeze, using its slender stalks to dissipate heat, perfecting the art of organic mining."
-                },
-                "collection_description": {
-                    "en": "Marketplace, Season 14: Harvest Time!",
-                    "cn": "Marketplace, Season 14: Harvest Time!",
-                    "es": "Marketplace, Season 14: Harvest Time!",
-                    "pt": "Marketplace, Season 14: Harvest Time!"
-                },
-                "power": 1000000,
-                "bonus_power": 100,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "silverwheat",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1721130562441,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "5f9ae5584ac419fdd08d08cd",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "El Monstro",
-                    "cn": "El Monstro"
-                },
-                "description": {
-                    "en": "The red beast from another dimension. Strong enough to change your mining game for ages.",
-                    "cn": "来自另一个大小的红色野兽， 强大到足以改变您在游戏的挖矿年资。"
-                },
-                "collection_description": {
-                    "es": "",
-                    "pt": "",
-                    "en": "Store, Marketplace, Daily offer",
-                    "cn": "商店、市场、每日优惠"
-                },
-                "power": 110000,
-                "bonus_power": 200,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "el_monstro",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1
-            },
-            {
-                "id": "66f5200de0dd3530daaae736",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Cryptomorph",
-                    "cn": "Cryptomorph",
-                    "es": "Cryptomorph",
-                    "pt": "Cryptomorph"
-                },
-                "description": {
-                    "en": "Adapts seamlessly to changing environments, mastering the art of cryptographic camouflage. By Helmer",
-                    "cn": "Adapts seamlessly to changing environments, mastering the art of cryptographic camouflage. By Helmer",
-                    "es": "Adapts seamlessly to changing environments, mastering the art of cryptographic camouflage. By Helmer",
-                    "pt": "Adapts seamlessly to changing environments, mastering the art of cryptographic camouflage. By Helmer"
-                },
-                "collection_description": {
-                    "en": "Far Far Case",
-                    "cn": "Far Far Case",
-                    "es": "Far Far Case",
-                    "pt": "Far Far Case"
-                },
-                "power": 500000,
-                "bonus_power": 45,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 5,
-                "filename": "cryptomorph",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1727867839346,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "6687bde47643815232d5f0c6",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "BeetCoiner",
-                    "cn": "BeetCoiner",
-                    "es": "BeetCoiner",
-                    "pt": "BeetCoiner"
-                },
-                "description": {
-                    "en": "Buried deep, BeetCoiner uses organic cooling to maintain optimal mining temperatures, efficiently extracting digital tokens.",
-                    "cn": "Buried deep, BeetCoiner uses organic cooling to maintain optimal mining temperatures, efficiently extracting digital tokens.",
-                    "es": "Buried deep, BeetCoiner uses organic cooling to maintain optimal mining temperatures, efficiently extracting digital tokens.",
-                    "pt": "Buried deep, BeetCoiner uses organic cooling to maintain optimal mining temperatures, efficiently extracting digital tokens."
-                },
-                "collection_description": {
-                    "en": "Season 14: Harvest Time!",
-                    "cn": "Season 14: Harvest Time!",
-                    "es": "Season 14: Harvest Time!",
-                    "pt": "Season 14: Harvest Time!"
-                },
-                "power": 104000,
-                "bonus_power": 0,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 2,
-                "filename": "beetcoiner",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1721130480201,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "67ebd9ce6cbc1562cd888de8",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Stapllier",
-                    "cn": "Stapllier",
-                    "es": "Stapllier",
-                    "pt": "Stapllier"
-                },
-                "description": {
-                    "en": "The strength of ten RollerAdminGauntlet was needed to create THIS.",
-                    "cn": "The strength of ten RollerAdminGauntlet was needed to create THIS.",
-                    "es": "The strength of ten RollerAdminGauntlet was needed to create THIS.",
-                    "pt": "The strength of ten RollerAdminGauntlet was needed to create THIS."
-                },
-                "collection_description": {
-                    "en": "U-la-la",
-                    "cn": "U-la-la",
-                    "es": "U-la-la",
-                    "pt": "U-la-la"
-                },
-                "power": 10000,
-                "bonus_power": 0,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 3,
-                "filename": "stapllier",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1761762061326,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "610a9c61bf6b53744c8ea0d4",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "CP-306",
-                    "cn": "CP-306",
-                    "es": "CP-306",
-                    "pt": "CP-306"
-                },
-                "description": {
-                    "en": "Reliable and affordable miner with great cost-efficiency. Only available for purchase in Weekly Offers exclusively.",
-                    "cn": "Reliable and affordable miner with great cost-efficiency. Only available for purchase in Weekly Offers exclusively.",
-                    "es": "Reliable and affordable miner with great cost-efficiency. Only available for purchase in Weekly Offers exclusively.",
-                    "pt": "Reliable and affordable miner with great cost-efficiency. Only available for purchase in Weekly Offers exclusively."
-                },
-                "collection_description": {
-                    "en": "Weekly Offer, Marketplace",
-                    "cn": "Weekly Offer, Marketplace",
-                    "es": "Weekly Offer, Marketplace",
-                    "pt": "Weekly Offer, Marketplace"
-                },
-                "power": 30000,
-                "bonus_power": 100,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 18,
-                "filename": "cp_306",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1724864172332,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "6628f18c0461cca22c8b4dde",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Silverline B",
-                    "cn": "Silverline B",
-                    "es": "Silverline B",
-                    "pt": "Silverline B"
-                },
-                "description": {
-                    "en": "Fast enough to get you from silver spot A to silver spot B, but you can't get to spot C with this.",
-                    "cn": "Fast enough to get you from silver spot A to silver spot B, but you can't get to spot C with this.",
-                    "es": "Fast enough to get you from silver spot A to silver spot B, but you can't get to spot C with this.",
-                    "pt": "Fast enough to get you from silver spot A to silver spot B, but you can't get to spot C with this."
-                },
-                "collection_description": {
-                    "en": "Season 13: Railway",
-                    "cn": "Season 13: Railway",
-                    "es": "Season 13: Railway",
-                    "pt": "Season 13: Railway"
-                },
-                "power": 105000,
-                "bonus_power": 0,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "silverline_b",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1714641799425,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "690cba3ab5000902413ef0fc",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Operator Spine",
-                    "cn": "Operator Spine",
-                    "es": "Operator Spine",
-                    "pt": "Operator Spine"
-                },
-                "description": {
-                    "en": "Core of the rebellion. Wires pulse like veins, feeding the System’s heartbeat. Stay connected. Or be deleted.",
-                    "cn": "Core of the rebellion. Wires pulse like veins, feeding the System’s heartbeat. Stay connected. Or be deleted.",
-                    "es": "Core of the rebellion. Wires pulse like veins, feeding the System’s heartbeat. Stay connected. Or be deleted.",
-                    "pt": "Core of the rebellion. Wires pulse like veins, feeding the System’s heartbeat. Stay connected. Or be deleted."
-                },
-                "collection_description": {
-                    "en": "Final: The One Voting",
-                    "cn": "Final: The One Voting",
-                    "es": "Final: The One Voting",
-                    "pt": "Final: The One Voting"
-                },
-                "power": 650000,
-                "bonus_power": 50,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 2,
-                "filename": "operator_spine",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1763557297612,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "650aaa7c48ee2c2ada961a51",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Pacminer",
-                    "cn": "Pacminer",
-                    "es": "Pacminer",
-                    "pt": "Pacminer"
-                },
-                "description": {
-                    "en": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!",
-                    "cn": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!",
-                    "es": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!",
-                    "pt": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!"
-                },
-                "collection_description": {
-                    "en": "Marketplace, Season 1010: RetroBit",
-                    "cn": "Marketplace, Season 1010: RetroBit",
-                    "es": "Marketplace, Season 1010: RetroBit",
-                    "pt": "Marketplace, Season 1010: RetroBit"
-                },
-                "power": 403000,
-                "bonus_power": 45,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "pacminer",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1695731722538,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "650d9d9a3340fbd614a908cf",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 1,
-                "name": {
-                    "en": "Pacminer",
-                    "cn": "Pacminer",
-                    "es": "Pacminer",
-                    "pt": "Pacminer"
-                },
-                "description": {
-                    "en": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!",
-                    "cn": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!",
-                    "es": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!",
-                    "pt": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!"
-                },
-                "collection_description": {
-                    "en": "Marketplace, Season 1010: RetroBit",
-                    "cn": "Marketplace, Season 1010: RetroBit",
-                    "es": "Marketplace, Season 1010: RetroBit",
-                    "pt": "Marketplace, Season 1010: RetroBit"
-                },
-                "power": 1057875,
-                "bonus_power": 108,
-                "type": "miner",
-                "miner_type": "merge",
-                "size": 2,
-                "quantity": 1,
-                "filename": "pacminer",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1695731722545,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                },
-                "craft_items": [
-                    {
-                        "count": 2,
-                        "component_type": "miners",
-                        "_id": "650aaa7c48ee2c2ada961a51",
-                        "name": {
-                            "en": "Pacminer",
-                            "cn": "Pacminer",
-                            "es": "Pacminer",
-                            "pt": "Pacminer"
-                        }
-                    },
-                    {
-                        "count": 200,
-                        "component_type": "mutation_components",
-                        "_id": "61b3606767433d2dc58913a9",
-                        "name": {
-                            "en": "Hashboard",
-                            "cn": "Hashboard"
-                        },
-                        "type": "hashboard",
-                        "rarity_group": {
-                            "_id": "619627a267433d2dc5355efb",
-                            "title": {
-                                "en": "Common",
-                                "cn": "Common"
-                            },
-                            "base_color_hex": "dddddd",
-                            "sort": 0
-                        }
-                    },
-                    {
-                        "count": 200,
-                        "component_type": "mutation_components",
-                        "_id": "61b35fea67433d2dc586f7fe",
-                        "name": {
-                            "en": "Fan",
-                            "cn": "Fan"
-                        },
-                        "type": "fan",
-                        "rarity_group": {
-                            "_id": "619627a267433d2dc5355efb",
-                            "title": {
-                                "en": "Common",
-                                "cn": "Common"
-                            },
-                            "base_color_hex": "dddddd",
-                            "sort": 0
-                        }
-                    },
-                    {
-                        "count": 200,
-                        "component_type": "mutation_components",
-                        "_id": "61b3604967433d2dc58893b0",
-                        "name": {
-                            "en": "Wire",
-                            "cn": "Wire"
-                        },
-                        "type": "wire",
-                        "rarity_group": {
-                            "_id": "619627a267433d2dc5355efb",
-                            "title": {
-                                "en": "Common",
-                                "cn": "Common"
-                            },
-                            "base_color_hex": "dddddd",
-                            "sort": 0
-                        }
-                    }
-                ]
-            },
-            {
-                "id": "6752c2d3368cdcf089ff7c4e",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Rudolph The Camel",
-                    "cn": "Rudolph The Camel",
-                    "es": "Rudolph The Camel",
-                    "pt": "Rudolph The Camel"
-                },
-                "description": {
-                    "en": "He was definitely a reindeer in a previous life.",
-                    "cn": "He was definitely a reindeer in a previous life.",
-                    "es": "He was definitely a reindeer in a previous life.",
-                    "pt": "He was definitely a reindeer in a previous life."
-                },
-                "collection_description": {
-                    "en": "Not Here Case",
-                    "cn": "Not Here Case",
-                    "es": "Not Here Case",
-                    "pt": "Not Here Case"
-                },
-                "power": 660000,
-                "bonus_power": 45,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "rudolph_the_camel",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1733915724123,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "68cd7354bedeb9a12ef650cb",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "The Awakener",
-                    "cn": "The Awakener",
-                    "es": "The Awakener",
-                    "pt": "The Awakener"
-                },
-                "description": {
-                    "en": "Forged to shatter the code, The Awakener is your key to break free and mine with unmatched force.",
-                    "cn": "Forged to shatter the code, The Awakener is your key to break free and mine with unmatched force.",
-                    "es": "Forged to shatter the code, The Awakener is your key to break free and mine with unmatched force.",
-                    "pt": "Forged to shatter the code, The Awakener is your key to break free and mine with unmatched force."
-                },
-                "collection_description": {
-                    "en": "H4MTR1X Season Pass",
-                    "cn": "H4MTR1X Season Pass",
-                    "es": "H4MTR1X Season Pass",
-                    "pt": "H4MTR1X Season Pass"
-                },
-                "power": 250000,
-                "bonus_power": 0,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 2,
-                "filename": "the_awakener",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1759839434585,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "690cba0ab5000902413eeff4",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Codefall Amplifier",
-                    "cn": "Codefall Amplifier",
-                    "es": "Codefall Amplifier",
-                    "pt": "Codefall Amplifier"
-                },
-                "description": {
-                    "en": "It catches the digital rain. Every drop of falling code turns into raw power.",
-                    "cn": "It catches the digital rain. Every drop of falling code turns into raw power.",
-                    "es": "It catches the digital rain. Every drop of falling code turns into raw power.",
-                    "pt": "It catches the digital rain. Every drop of falling code turns into raw power."
-                },
-                "collection_description": {
-                    "en": "Round 1: The System Strikes Back Voting",
-                    "cn": "Round 1: The System Strikes Back Voting",
-                    "es": "Round 2: Faith vs Control Voting",
-                    "pt": "Round 2: Faith vs Control Voting"
-                },
-                "power": 390000,
-                "bonus_power": 25,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 2,
-                "filename": "codefall_amplifier",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1762946453379,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "690cb9ceb5000902413eef39",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Flash Deal Console",
-                    "cn": "Flash Deal Console",
-                    "es": "Flash Deal Console",
-                    "pt": "Flash Deal Console"
-                },
-                "description": {
-                    "en": "The sale was never meant to end. Lines of code rebel, prices collapse, and chaos becomes protocol.",
-                    "cn": "The sale was never meant to end. Lines of code rebel, prices collapse, and chaos becomes protocol.",
-                    "es": "The sale was never meant to end. Lines of code rebel, prices collapse, and chaos becomes protocol.",
-                    "pt": "The sale was never meant to end. Lines of code rebel, prices collapse, and chaos becomes protocol."
-                },
-                "collection_description": {
-                    "en": "Round 1: The System Strikes Back Voting",
-                    "cn": "Round 1: The System Strikes Back Voting",
-                    "es": "Round 1: The System Strikes Back Voting",
-                    "pt": "Round 1: The System Strikes Back Voting"
-                },
-                "power": 520000,
-                "bonus_power": 25,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "flash_deal_console",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1762441861800,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "651ac89289841546fda69085",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Golden Vain",
-                    "cn": "Golden Vain",
-                    "es": "Golden Vain",
-                    "pt": "Golden Vain"
-                },
-                "description": {
-                    "en": "Behold, you've struck gold! By Ravell",
-                    "cn": "Behold, you've struck gold! By Ravell",
-                    "es": "Behold, you've struck gold! By Ravell",
-                    "pt": "Behold, you've struck gold! By Ravell"
-                },
-                "collection_description": {
-                    "en": "Celestial Ore Hunt",
-                    "cn": "Celestial Ore Hunt",
-                    "es": "Celestial Ore Hunt",
-                    "pt": "Celestial Ore Hunt"
-                },
-                "power": 450000,
-                "bonus_power": 45,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 2,
-                "filename": "golden_vain",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1762254208182,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "5a0b08b0d1d9ee5894f36f32",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "RollerMiner S9",
-                    "cn": "RollerMiner S9",
-                    "es": "RollerMiner S9",
-                    "pt": "RollerMiner S9"
-                },
-                "description": {
-                    "en": "Now you are in the premier league. This powerful machine is for the advanced crypto enthusiast. Owning one of these, you definitely qualify to play with the big dogs.",
-                    "cn": "这台功能强大的矿机适用于等级高的加密者，拥有它您绝对有资格参与英超联赛。",
-                    "es": "Now you are in the premier league. This powerful machine is for the advanced crypto enthusiast. Owning one of these, you definitely qualify to play with the big dogs.",
-                    "pt": "Now you are in the premier league. This powerful machine is for the advanced crypto enthusiast. Owning one of these, you definitely qualify to play with the big dogs."
-                },
-                "collection_description": {
-                    "en": "Store, Marketplace, Daily offer",
-                    "cn": "商店、市场、每日优惠",
-                    "es": "Store, Marketplace, Daily offer",
-                    "pt": "Store, Marketplace, Daily offer"
-                },
-                "power": 14500,
-                "bonus_power": 100,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 8,
-                "filename": "rollerminer_s9",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1724864037631,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "651ac89289841546fda69088",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 1,
-                "name": {
-                    "en": "Golden Vain",
-                    "cn": "Golden Vain",
-                    "es": "Golden Vain",
-                    "pt": "Golden Vain"
-                },
-                "description": {
-                    "en": "Behold, you've struck gold! By Ravell",
-                    "cn": "Behold, you've struck gold! By Ravell",
-                    "es": "Behold, you've struck gold! By Ravell",
-                    "pt": "Behold, you've struck gold! By Ravell"
-                },
-                "collection_description": {
-                    "en": "Celestial Ore Hunt",
-                    "cn": "Celestial Ore Hunt",
-                    "es": "Celestial Ore Hunt",
-                    "pt": "Celestial Ore Hunt"
-                },
-                "power": 1181250,
-                "bonus_power": 108,
-                "type": "miner",
-                "miner_type": "merge",
-                "size": 2,
-                "quantity": 1,
-                "filename": "golden_vain",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1762254208188,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                },
-                "craft_items": [
-                    {
-                        "count": 2,
-                        "component_type": "miners",
-                        "_id": "651ac89289841546fda69085",
-                        "name": {
-                            "en": "Golden Vain",
-                            "cn": "Golden Vain",
-                            "es": "Golden Vain",
-                            "pt": "Golden Vain"
-                        }
-                    },
-                    {
-                        "count": 200,
-                        "component_type": "mutation_components",
-                        "_id": "61b3606767433d2dc58913a9",
-                        "name": {
-                            "en": "Hashboard",
-                            "cn": "Hashboard"
-                        },
-                        "type": "hashboard",
-                        "rarity_group": {
-                            "_id": "619627a267433d2dc5355efb",
-                            "title": {
-                                "en": "Common",
-                                "cn": "Common"
-                            },
-                            "base_color_hex": "dddddd",
-                            "sort": 0
-                        }
-                    },
-                    {
-                        "count": 200,
-                        "component_type": "mutation_components",
-                        "_id": "61b35fea67433d2dc586f7fe",
-                        "name": {
-                            "en": "Fan",
-                            "cn": "Fan"
-                        },
-                        "type": "fan",
-                        "rarity_group": {
-                            "_id": "619627a267433d2dc5355efb",
-                            "title": {
-                                "en": "Common",
-                                "cn": "Common"
-                            },
-                            "base_color_hex": "dddddd",
-                            "sort": 0
-                        }
-                    },
-                    {
-                        "count": 200,
-                        "component_type": "mutation_components",
-                        "_id": "61b3604967433d2dc58893b0",
-                        "name": {
-                            "en": "Wire",
-                            "cn": "Wire"
-                        },
-                        "type": "wire",
-                        "rarity_group": {
-                            "_id": "619627a267433d2dc5355efb",
-                            "title": {
-                                "en": "Common",
-                                "cn": "Common"
-                            },
-                            "base_color_hex": "dddddd",
-                            "sort": 0
-                        }
-                    }
-                ]
-            },
-            {
-                "id": "611e27d8bf6b53744cbf488c",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Retro Night",
-                    "cn": "Retro Night"
-                },
-                "description": {
-                    "en": "This is how your dream city looks like. Feeling old yet?",
-                    "cn": "这就是你的梦想吗？觉得平淡无奇吗？"
-                },
-                "collection_description": {
-                    "es": "",
-                    "pt": "",
-                    "en": "Weekly Offer, Marketplace",
-                    "cn": "Weekly Offer, Marketplace"
-                },
-                "power": 95000,
-                "bonus_power": 200,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "retro_night",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1
-            },
-            {
-                "id": "611e222abf6b53744ca040a2",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Underwater",
-                    "cn": "Underwater"
-                },
-                "description": {
-                    "en": "From the depths of the sea it comes. Special water cooling system allows this miner to be deeply appreciated.",
-                    "cn": "来自海底的水冷系统矿机深得人心。"
-                },
-                "collection_description": {
-                    "es": "",
-                    "pt": "",
-                    "en": "Weekly Offer, Marketplace",
-                    "cn": "Weekly Offer, Marketplace"
-                },
-                "power": 95000,
-                "bonus_power": 200,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "underwater",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1
-            },
-            {
-                "id": "65855965430203bab2b75b1c",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Ancient Icecraft",
-                    "cn": "Ancient Icecraft",
-                    "es": "Ancient Icecraft",
-                    "pt": "Ancient Icecraft"
-                },
-                "description": {
-                    "en": "Ancient Icecraft, a miner shrouded in elder magic, crafts blocks with an unreal finesse, tapping into the oldest and most mystical energies of the blockchain. Its icy touch weaves a spell of fortune, turning data into digital gold with a whisper of ancient secrets.",
-                    "cn": "Ancient Icecraft, a miner shrouded in elder magic, crafts blocks with an unreal finesse, tapping into the oldest and most mystical energies of the blockchain. Its icy touch weaves a spell of fortune, turning data into digital gold with a whisper of ancient secrets.",
-                    "es": "Ancient Icecraft, a miner shrouded in elder magic, crafts blocks with an unreal finesse, tapping into the oldest and most mystical energies of the blockchain. Its icy touch weaves a spell of fortune, turning data into digital gold with a whisper of ancient secrets.",
-                    "pt": "Ancient Icecraft, a miner shrouded in elder magic, crafts blocks with an unreal finesse, tapping into the oldest and most mystical energies of the blockchain. Its icy touch weaves a spell of fortune, turning data into digital gold with a whisper of ancient secrets."
-                },
-                "collection_description": {
-                    "en": "Jack of all Trades",
-                    "cn": "Jack of all Trades",
-                    "es": "Jack of all Trades",
-                    "pt": "Jack of all Trades"
-                },
-                "power": 16500,
-                "bonus_power": 0,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "ancient_icecraft",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1703340155093,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "6654961c94f3f3541c7f1d74",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Crypto-Cola",
-                    "cn": "Crypto-Cola",
-                    "es": "Crypto-Cola",
-                    "pt": "Crypto-Cola"
-                },
-                "description": {
-                    "en": "Crypto-Cola Miner like cracking open a Nuka-Cola Quantum—supercharged with nuclear-powered hashing that's bound to cause a boom in your crypto stash, just like in the wasteland!",
-                    "cn": "Crypto-Cola Miner like cracking open a Nuka-Cola Quantum—supercharged with nuclear-powered hashing that's bound to cause a boom in your crypto stash, just like in the wasteland!",
-                    "es": "Crypto-Cola Miner like cracking open a Nuka-Cola Quantum—supercharged with nuclear-powered hashing that's bound to cause a boom in your crypto stash, just like in the wasteland!",
-                    "pt": "Crypto-Cola Miner like cracking open a Nuka-Cola Quantum—supercharged with nuclear-powered hashing that's bound to cause a boom in your crypto stash, just like in the wasteland!"
-                },
-                "collection_description": {
-                    "en": "Marketplace, Fallout Era",
-                    "cn": "Marketplace, Fallout Era",
-                    "es": "Marketplace, Fallout Era",
-                    "pt": "Marketplace, Fallout Era"
-                },
-                "power": 111000,
-                "bonus_power": 150,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 2,
-                "filename": "crypto_cola",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1716819484146,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "6501a3a32216e1841ebab32e",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Vice City Drive",
-                    "cn": "Vice City Drive",
-                    "es": "Vice City Drive",
-                    "pt": "Vice City Drive"
-                },
-                "description": {
-                    "en": "Cruise through the sun-and-neon-lit City streets in impeccable style. By HELMER",
-                    "cn": "Cruise through the sun-and-neon-lit City streets in impeccable style. By HELMER",
-                    "es": "Cruise through the sun-and-neon-lit City streets in impeccable style. By HELMER",
-                    "pt": "Cruise through the sun-and-neon-lit City streets in impeccable style. By HELMER"
-                },
-                "collection_description": {
-                    "en": "Summer Send-Off Sale",
-                    "cn": "Summer Send-Off Sale",
-                    "es": "Summer Send-Off Sale",
-                    "pt": "Summer Send-Off Sale"
-                },
-                "power": 390000,
-                "bonus_power": 50,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "vice_city_drive",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1700928923877,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "6879ffd5265f9bf2be120194",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Champion's Belt",
-                    "cn": "Champion's Belt",
-                    "es": "Champion's Belt",
-                    "pt": "Champion's Belt"
-                },
-                "description": {
-                    "en": "Forged in victory's glow and studded with laurels, each pulse of power feels like a champion’s triumphant roar!",
-                    "cn": "Forged in victory's glow and studded with laurels, each pulse of power feels like a champion’s triumphant roar!",
-                    "es": "Forged in victory's glow and studded with laurels, each pulse of power feels like a champion’s triumphant roar!",
-                    "pt": "Forged in victory's glow and studded with laurels, each pulse of power feels like a champion’s triumphant roar!"
-                },
-                "collection_description": {
-                    "en": "Boxing Sale",
-                    "cn": "Boxing Sale",
-                    "es": "Boxing Sale",
-                    "pt": "Boxing Sale"
-                },
-                "power": 250000,
-                "bonus_power": 50,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "champions_belt",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1752834267941,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "65a930919b2efe7a29c68f4c",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "DraMatic",
-                    "cn": "DraMatic",
-                    "es": "DraMatic",
-                    "pt": "DraMatic"
-                },
-                "description": {
-                    "en": "I spin my wheels to cool my brain, And mining coins my job remains, I’m so unique that you will need, 32 “me”s to take the lead!",
-                    "cn": "I spin my wheels to cool my brain, And mining coins my job remains, I’m so unique that you will need, 32 “me”s to take the lead!",
-                    "es": "I spin my wheels to cool my brain, And mining coins my job remains, I’m so unique that you will need, 32 “me”s to take the lead!",
-                    "pt": "I spin my wheels to cool my brain, And mining coins my job remains, I’m so unique that you will need, 32 “me”s to take the lead!"
-                },
-                "collection_description": {
-                    "en": "Landing Sale",
-                    "cn": "Landing Sale",
-                    "es": "Landing Sale",
-                    "pt": "Landing Sale"
-                },
-                "power": 240000,
-                "bonus_power": 75,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "dramatic",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1705606130692,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "61b9cce178d63d64cd626fd2",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "The Evergreen",
-                    "cn": "The Evergreen",
-                    "es": "The Evergreen",
-                    "pt": "The Evergreen"
-                },
-                "description": {
-                    "en": "Didn't get time to put up a Christmas tree yet? This miner is decorated with vintage glass ornaments and bells to brighten up your mining room.",
-                    "cn": "Didn't get time to put up a Christmas tree yet? This miner is decorated with vintage glass ornaments and bells to brighten up your mining room.",
-                    "es": "Didn't get time to put up a Christmas tree yet? This miner is decorated with vintage glass ornaments and bells to brighten up your mining room.",
-                    "pt": "Didn't get time to put up a Christmas tree yet? This miner is decorated with vintage glass ornaments and bells to brighten up your mining room."
-                },
-                "collection_description": {
-                    "en": "Marketplace, Limited Christmass Case",
-                    "cn": "Marketplace, Limited Christmass Case",
-                    "es": "Marketplace, Limited Christmass Case",
-                    "pt": "Marketplace, Limited Christmass Case"
-                },
-                "power": 60000,
-                "bonus_power": 100,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "the_evergreen",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1731143304284,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "61b9cce178d63d64cd626fd1",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Snowy Blowy",
-                    "cn": "Snowy Blowy",
-                    "es": "Snowy Blowy",
-                    "pt": "Snowy Blowy"
-                },
-                "description": {
-                    "en": "Snowy and blowy, freezy and sneezy. No matter how you feel about winter, you are sure to enjoy this miner!",
-                    "cn": "Snowy and blowy, freezy and sneezy. No matter how you feel about winter, you are sure to enjoy this miner!",
-                    "es": "Snowy and blowy, freezy and sneezy. No matter how you feel about winter, you are sure to enjoy this miner!",
-                    "pt": "Snowy and blowy, freezy and sneezy. No matter how you feel about winter, you are sure to enjoy this miner!"
-                },
-                "collection_description": {
-                    "en": "Marketplace, Limited Christmass Case",
-                    "cn": "Marketplace, Limited Christmass Case",
-                    "es": "Marketplace, Limited Christmass Case",
-                    "pt": "Marketplace, Limited Christmass Case"
-                },
-                "power": 65000,
-                "bonus_power": 100,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "snowy_blowy",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1731143313334,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "61532146db5008102f9f77e7",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Survivor",
-                    "cn": "Survivor"
-                },
-                "description": {
-                    "en": "Stable and confident. Survived three explosions, one end of the world and a cat scratch.",
-                    "cn": "Stable and confident. Survived three explosions, one end of the world and a cat scratch."
-                },
-                "collection_description": {
-                    "es": "",
-                    "pt": "",
-                    "en": "Marketplace, Limited Halloween Case",
-                    "cn": "Marketplace, Limited Halloween Case"
-                },
-                "power": 75000,
-                "bonus_power": 200,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "survivor",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1
-            },
-            {
-                "id": "5e2ee460041b386e78b97c2a",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Dream Demolisher 3000",
-                    "cn": "Dream Demolisher 3000"
-                },
-                "description": {
-                    "en": "POWER BEYOND INSANITY. Brought to you by limited anniversary GOLDEN ABYSS series.",
-                    "cn": "超级疯狂电力，由周年纪念黄金ABYSS系列带给您。"
-                },
-                "collection_description": {
-                    "es": "",
-                    "pt": "",
-                    "en": "Store, Marketplace, Daily offer",
-                    "cn": "商店、市场、每日优惠"
-                },
-                "power": 70000,
-                "bonus_power": 200,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "dream_demolisher_3000",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1
-            },
-            {
-                "id": "61b9cce478d63d64cd626fdd",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Tinsel Town",
-                    "cn": "Tinsel Town",
-                    "es": "Tinsel Town",
-                    "pt": "Tinsel Town"
-                },
-                "description": {
-                    "en": "A place that shines with holiday cheer and makes all your dreams come true. Welcome to Tinsel Town!",
-                    "cn": "A place that shines with holiday cheer and makes all your dreams come true. Welcome to Tinsel Town!",
-                    "es": "A place that shines with holiday cheer and makes all your dreams come true. Welcome to Tinsel Town!",
-                    "pt": "A place that shines with holiday cheer and makes all your dreams come true. Welcome to Tinsel Town!"
-                },
-                "collection_description": {
-                    "en": "Marketplace, Limited Christmass Case",
-                    "cn": "Marketplace, Limited Christmass Case",
-                    "es": "Marketplace, Limited Christmass Case",
-                    "pt": "Marketplace, Limited Christmass Case"
-                },
-                "power": 22500,
-                "bonus_power": 50,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 2,
-                "filename": "tinsel_town",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1731143280892,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "674df753cbe1e47b27075cbb",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Frosty",
-                    "cn": "Frosty",
-                    "es": "Frosty",
-                    "pt": "Frosty"
-                },
-                "description": {
-                    "en": "The best helper during a space walk. His howl at the moon gives a decent amount of energy.",
-                    "cn": "The best helper during a space walk. His howl at the moon gives a decent amount of energy.",
-                    "es": "The best helper during a space walk. His howl at the moon gives a decent amount of energy.",
-                    "pt": "The best helper during a space walk. His howl at the moon gives a decent amount of energy."
-                },
-                "collection_description": {
-                    "en": "Season 16: Space Christmas",
-                    "cn": "Season 16: Space Christmas",
-                    "es": "Season 16: Space Christmas",
-                    "pt": "Season 16: Space Christmas"
-                },
-                "power": 300000,
-                "bonus_power": 0,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 2,
-                "filename": "frosty",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1733907944402,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "61b9cce178d63d64cd626fd0",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Jelly Bones",
-                    "cn": "Jelly Bones",
-                    "es": "Jelly Bones",
-                    "pt": "Jelly Bones"
-                },
-                "description": {
-                    "en": "If you listen closely, you can hear the sound of a ban-hammer dropping. This miner was named after Jellybones in our Discord community.",
-                    "cn": "If you listen closely, you can hear the sound of a ban-hammer dropping. This miner was named after Jellybones in our Discord community.",
-                    "es": "If you listen closely, you can hear the sound of a ban-hammer dropping. This miner was named after Jellybones in our Discord community.",
-                    "pt": "If you listen closely, you can hear the sound of a ban-hammer dropping. This miner was named after Jellybones in our Discord community."
-                },
-                "collection_description": {
-                    "en": "Marketplace, Limited Christmass Case",
-                    "cn": "Marketplace, Limited Christmass Case",
-                    "es": "Marketplace, Limited Christmass Case",
-                    "pt": "Marketplace, Limited Christmass Case"
-                },
-                "power": 26000,
-                "bonus_power": 50,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 3,
-                "filename": "jelly_bones",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1731143292491,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "657305285d9e34da773e3347",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Cryostone Relic",
-                    "cn": "Cryostone Relic",
-                    "es": "Cryostone Relic",
-                    "pt": "Cryostone Relic"
-                },
-                "description": {
-                    "en": "Dig with Cryostone Relic, where echoes of ancients and ice's magic entwine, forging a rhythmic symphony in each crypto line. By PetterCh",
-                    "cn": "Dig with Cryostone Relic, where echoes of ancients and ice's magic entwine, forging a rhythmic symphony in each crypto line. By PetterCh",
-                    "es": "Dig with Cryostone Relic, where echoes of ancients and ice's magic entwine, forging a rhythmic symphony in each crypto line. By PetterCh",
-                    "pt": "Dig with Cryostone Relic, where echoes of ancients and ice's magic entwine, forging a rhythmic symphony in each crypto line. By PetterCh"
-                },
-                "collection_description": {
-                    "en": "Frozen in Ice Case",
-                    "cn": "Frozen in Ice Case",
-                    "es": "Frozen in Ice Case",
-                    "pt": "Frozen in Ice Case"
-                },
-                "power": 35000,
-                "bonus_power": 0,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "cryostone_relic",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1702552142116,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "674df7ebcbe1e47b27075d62",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "X-Globe",
-                    "cn": "X-Globe",
-                    "es": "X-Globe",
-                    "pt": "X-Globe"
-                },
-                "description": {
-                    "en": "The power of the entire universe in my hands! Great rack space.",
-                    "cn": "The power of the entire universe in my hands! Great rack space.",
-                    "es": "The power of the entire universe in my hands! Great rack space.",
-                    "pt": "The power of the entire universe in my hands! Great rack space."
-                },
-                "collection_description": {
-                    "en": "Season 16: Space Christmas",
-                    "cn": "Season 16: Space Christmas",
-                    "es": "Season 16: Space Christmas",
-                    "pt": "Season 16: Space Christmas"
-                },
-                "power": 450000,
-                "bonus_power": 0,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 2,
-                "filename": "x_globe",
-                "is_can_be_sold_on_mp": false,
-                "img_ver": 1733907952177,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
-            },
-            {
-                "id": "631b5619a775e04d9a28546b",
-                "is_in_set": false,
-                "set_title": {
-                    "en": "",
-                    "cn": "",
-                    "es": "",
-                    "pt": ""
-                },
-                "level": 0,
-                "name": {
-                    "en": "Mergedge",
-                    "cn": "Mergedge"
-                },
-                "description": {
-                    "en": "Miner imposed by the developers. Grab the Merge Starter Pack and make it powerful!",
-                    "cn": "Miner imposed by the developers. Grab the Merge Starter Pack and make it powerful!"
-                },
-                "collection_description": {
-                    "es": "",
-                    "pt": "",
-                    "en": "Merge Starter Pack, Marketplace",
-                    "cn": "Merge Starter Pack, Marketplace"
-                },
-                "power": 3825,
-                "bonus_power": 0,
-                "type": "miner",
-                "miner_type": "basic",
-                "size": 2,
-                "quantity": 1,
-                "filename": "mergedge",
-                "is_can_be_sold_on_mp": true,
-                "img_ver": 1,
-                "created_by_title": {
-                    "link": "",
-                    "text": ""
-                }
+  "success": true,
+  "data": {
+    "items": [
+      {
+        "id": "6687ce4e7643815232d65297",
+        "is_in_set": true,
+        "set_title": {
+          "en": "Silver Farm Set",
+          "cn": "Silver Farm Set",
+          "es": "Silver Farm Set",
+          "pt": "Silver Farm Set"
+        },
+        "level": 0,
+        "name": {
+          "en": "SilverBerries",
+          "cn": "SilverBerries",
+          "es": "SilverBerries",
+          "pt": "SilverBerries"
+        },
+        "description": {
+          "en": "Silver Berries cluster together, utilizing their reflective surfaces to cool down and optimize mining, yielding a bounty of digital coins.",
+          "cn": "Silver Berries cluster together, utilizing their reflective surfaces to cool down and optimize mining, yielding a bounty of digital coins.",
+          "es": "Silver Berries cluster together, utilizing their reflective surfaces to cool down and optimize mining, yielding a bounty of digital coins.",
+          "pt": "Silver Berries cluster together, utilizing their reflective surfaces to cool down and optimize mining, yielding a bounty of digital coins."
+        },
+        "collection_description": {
+          "en": "Marketplace, Season 14: Harvest Time!",
+          "cn": "Marketplace, Season 14: Harvest Time!",
+          "es": "Marketplace, Season 14: Harvest Time!",
+          "pt": "Marketplace, Season 14: Harvest Time!"
+        },
+        "power": 260000,
+        "bonus_power": 0,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "silverberries",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1721130538810,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "65a9324f9b2efe7a29c68fb7",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Never-ending Icicle",
+          "cn": "Never-ending Icicle",
+          "es": "Never-ending Icicle",
+          "pt": "Never-ending Icicle"
+        },
+        "description": {
+          "en": "Forever melting, forever working for you and bringing crypto. Please do not put it on top of your PC or anything - there is no way we can get out of lawsuits if you do. By Oswaldo Domingo.",
+          "cn": "Forever melting, forever working for you and bringing crypto. Please do not put it on top of your PC or anything - there is no way we can get out of lawsuits if you do. By Oswaldo Domingo.",
+          "es": "Forever melting, forever working for you and bringing crypto. Please do not put it on top of your PC or anything - there is no way we can get out of lawsuits if you do. By Oswaldo Domingo.",
+          "pt": "Forever melting, forever working for you and bringing crypto. Please do not put it on top of your PC or anything - there is no way we can get out of lawsuits if you do. By Oswaldo Domingo."
+        },
+        "collection_description": {
+          "en": "Icy Blasters Puzzle Event",
+          "cn": "Icy Blasters Puzzle Event",
+          "es": "Icy Blasters Puzzle Event",
+          "pt": "Icy Blasters Puzzle Event"
+        },
+        "power": 629000,
+        "bonus_power": 200,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "never_ending_icicle",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1706033240025,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "67a3d77d79efd774f15e18a1",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Aquarius",
+          "cn": "Aquarius",
+          "es": "Aquarius",
+          "pt": "Aquarius"
+        },
+        "description": {
+          "en": "💨 January 20–February 18",
+          "cn": "💨 January 20–February 18",
+          "es": "💨 January 20–February 18",
+          "pt": "💨 January 20–February 18"
+        },
+        "collection_description": {
+          "en": "Marketplace, Season 17: Zodiac",
+          "cn": "Marketplace, Season 17: Zodiac",
+          "es": "Marketplace, Season 17: Zodiac",
+          "pt": "Marketplace, Season 17: Zodiac"
+        },
+        "power": 1000000,
+        "bonus_power": 100,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "aquarius",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1739968831604,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "66c31b17b82bcb27662d302b",
+        "is_in_set": true,
+        "set_title": {
+          "en": "Power-Up Set",
+          "cn": "Power-Up Set",
+          "es": "Power-Up Set",
+          "pt": "Power-Up Set"
+        },
+        "level": 0,
+        "name": {
+          "en": "Energy Amplifier",
+          "cn": "Energy Amplifier",
+          "es": "Energy Amplifier",
+          "pt": "Energy Amplifier"
+        },
+        "description": {
+          "en": "Turns up the power to 11. More watts, more power!",
+          "cn": "Turns up the power to 11. More watts, more power!",
+          "es": "Turns up the power to 11. More watts, more power!",
+          "pt": "Turns up the power to 11. More watts, more power!"
+        },
+        "collection_description": {
+          "en": "Power-Up Academy Puzzle Event",
+          "cn": "Power-Up Academy Puzzle Event",
+          "es": "Power-Up Academy Puzzle Event",
+          "pt": "Power-Up Academy Puzzle Event"
+        },
+        "power": 1120000,
+        "bonus_power": 100,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "energy_amplifier",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1725548255570,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "66c31aecb82bcb27662d2f53",
+        "is_in_set": true,
+        "set_title": {
+          "en": "Power-Up Set",
+          "cn": "Power-Up Set",
+          "es": "Power-Up Set",
+          "pt": "Power-Up Set"
+        },
+        "level": 0,
+        "name": {
+          "en": "Quantum Conductor",
+          "cn": "Quantum Conductor",
+          "es": "Quantum Conductor",
+          "pt": "Quantum Conductor"
+        },
+        "description": {
+          "en": "Bends time and space to mine like a boss. Quantum speed, quantum yield!",
+          "cn": "Bends time and space to mine like a boss. Quantum speed, quantum yield!",
+          "es": "Bends time and space to mine like a boss. Quantum speed, quantum yield!",
+          "pt": "Bends time and space to mine like a boss. Quantum speed, quantum yield!"
+        },
+        "collection_description": {
+          "en": "Power-Up Academy Puzzle Event",
+          "cn": "Power-Up Academy Puzzle Event",
+          "es": "Power-Up Academy Puzzle Event",
+          "pt": "Power-Up Academy Puzzle Event"
+        },
+        "power": 704000,
+        "bonus_power": 75,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "quantum_conductor",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1725548262223,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "67a3d51679efd774f15e14b7",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 2,
+        "name": {
+          "en": "Scorpio",
+          "cn": "Scorpio",
+          "es": "Scorpio",
+          "pt": "Scorpio"
+        },
+        "description": {
+          "en": "💧 October 24–November 21",
+          "cn": "💧 October 24–November 21",
+          "es": "💧 October 24–November 21",
+          "pt": "💧 October 24–November 21"
+        },
+        "collection_description": {
+          "en": "Season 17: Zodiac",
+          "cn": "Season 17: Zodiac",
+          "es": "Season 17: Zodiac",
+          "pt": "Season 17: Zodiac"
+        },
+        "power": 980000,
+        "bonus_power": 150,
+        "type": "miner",
+        "miner_type": "merge",
+        "size": 2,
+        "quantity": 1,
+        "filename": "scorpio",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1739968802780,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        },
+        "craft_items": [
+          {
+            "count": 2,
+            "component_type": "miners",
+            "_id": "67a3d51679efd774f15e14b1",
+            "name": {
+              "en": "Scorpio",
+              "cn": "Scorpio",
+              "es": "Scorpio",
+              "pt": "Scorpio"
             }
-        ],
-        "total": 189,
-        "skip": "144",
-        "limit": "48"
-    },
-    "error": ""
+          },
+          {
+            "count": 2,
+            "component_type": "mutation_components",
+            "_id": "6319f840a8ce530569ef82b7",
+            "name": {
+              "en": "Hashboard",
+              "cn": "Hashboard"
+            },
+            "type": "hashboard",
+            "rarity_group": {
+              "_id": "6319f60da8ce530569e56207",
+              "title": {
+                "en": "Uncommon",
+                "cn": "Uncommon"
+              },
+              "base_color_hex": "2bd600",
+              "sort": 1
+            }
+          },
+          {
+            "count": 2,
+            "component_type": "mutation_components",
+            "_id": "6319f7baa8ce530569ed16b9",
+            "name": {
+              "en": "Fan",
+              "cn": "Fan"
+            },
+            "type": "fan",
+            "rarity_group": {
+              "_id": "6319f60da8ce530569e56207",
+              "title": {
+                "en": "Uncommon",
+                "cn": "Uncommon"
+              },
+              "base_color_hex": "2bd600",
+              "sort": 1
+            }
+          },
+          {
+            "count": 2,
+            "component_type": "mutation_components",
+            "_id": "6319f81fa8ce530569eee9dd",
+            "name": {
+              "en": "Wire",
+              "cn": "Wire"
+            },
+            "type": "wire",
+            "rarity_group": {
+              "_id": "6319f60da8ce530569e56207",
+              "title": {
+                "en": "Uncommon",
+                "cn": "Uncommon"
+              },
+              "base_color_hex": "2bd600",
+              "sort": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "67a3d45f79efd774f15e1365",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 2,
+        "name": {
+          "en": "Pisces",
+          "cn": "Pisces",
+          "es": "Pisces",
+          "pt": "Pisces"
+        },
+        "description": {
+          "en": "💧 February 19–March 20",
+          "cn": "💧 February 19–March 20",
+          "es": "💧 February 19–March 20",
+          "pt": "💧 February 19–March 20"
+        },
+        "collection_description": {
+          "en": "Season 17: Zodiac",
+          "cn": "Season 17: Zodiac",
+          "es": "Season 17: Zodiac",
+          "pt": "Season 17: Zodiac"
+        },
+        "power": 840000,
+        "bonus_power": 150,
+        "type": "miner",
+        "miner_type": "merge",
+        "size": 2,
+        "quantity": 1,
+        "filename": "pisces",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1739968794881,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        },
+        "craft_items": [
+          {
+            "count": 2,
+            "component_type": "miners",
+            "_id": "67a3d45f79efd774f15e135f",
+            "name": {
+              "en": "Pisces",
+              "cn": "Pisces",
+              "es": "Pisces",
+              "pt": "Pisces"
+            }
+          },
+          {
+            "count": 2,
+            "component_type": "mutation_components",
+            "_id": "6319f840a8ce530569ef82b7",
+            "name": {
+              "en": "Hashboard",
+              "cn": "Hashboard"
+            },
+            "type": "hashboard",
+            "rarity_group": {
+              "_id": "6319f60da8ce530569e56207",
+              "title": {
+                "en": "Uncommon",
+                "cn": "Uncommon"
+              },
+              "base_color_hex": "2bd600",
+              "sort": 1
+            }
+          },
+          {
+            "count": 2,
+            "component_type": "mutation_components",
+            "_id": "6319f7baa8ce530569ed16b9",
+            "name": {
+              "en": "Fan",
+              "cn": "Fan"
+            },
+            "type": "fan",
+            "rarity_group": {
+              "_id": "6319f60da8ce530569e56207",
+              "title": {
+                "en": "Uncommon",
+                "cn": "Uncommon"
+              },
+              "base_color_hex": "2bd600",
+              "sort": 1
+            }
+          },
+          {
+            "count": 2,
+            "component_type": "mutation_components",
+            "_id": "6319f81fa8ce530569eee9dd",
+            "name": {
+              "en": "Wire",
+              "cn": "Wire"
+            },
+            "type": "wire",
+            "rarity_group": {
+              "_id": "6319f60da8ce530569e56207",
+              "title": {
+                "en": "Uncommon",
+                "cn": "Uncommon"
+              },
+              "base_color_hex": "2bd600",
+              "sort": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "67a3d3d379efd774f15e1214",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 2,
+        "name": {
+          "en": "Cancer",
+          "cn": "Cancer",
+          "es": "Cancer",
+          "pt": "Cancer"
+        },
+        "description": {
+          "en": "💧 June 22–July 22",
+          "cn": "💧 June 22–July 22",
+          "es": "💧 June 22–July 22",
+          "pt": "💧 June 22–July 22"
+        },
+        "collection_description": {
+          "en": "Season 17: Zodiac",
+          "cn": "Season 17: Zodiac",
+          "es": "Season 17: Zodiac",
+          "pt": "Season 17: Zodiac"
+        },
+        "power": 710000,
+        "bonus_power": 150,
+        "type": "miner",
+        "miner_type": "merge",
+        "size": 2,
+        "quantity": 1,
+        "filename": "cancer",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1739968786886,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        },
+        "craft_items": [
+          {
+            "count": 2,
+            "component_type": "miners",
+            "_id": "67a3d3d379efd774f15e120e",
+            "name": {
+              "en": "Cancer",
+              "cn": "Cancer",
+              "es": "Cancer",
+              "pt": "Cancer"
+            }
+          },
+          {
+            "count": 2,
+            "component_type": "mutation_components",
+            "_id": "6319f840a8ce530569ef82b7",
+            "name": {
+              "en": "Hashboard",
+              "cn": "Hashboard"
+            },
+            "type": "hashboard",
+            "rarity_group": {
+              "_id": "6319f60da8ce530569e56207",
+              "title": {
+                "en": "Uncommon",
+                "cn": "Uncommon"
+              },
+              "base_color_hex": "2bd600",
+              "sort": 1
+            }
+          },
+          {
+            "count": 2,
+            "component_type": "mutation_components",
+            "_id": "6319f7baa8ce530569ed16b9",
+            "name": {
+              "en": "Fan",
+              "cn": "Fan"
+            },
+            "type": "fan",
+            "rarity_group": {
+              "_id": "6319f60da8ce530569e56207",
+              "title": {
+                "en": "Uncommon",
+                "cn": "Uncommon"
+              },
+              "base_color_hex": "2bd600",
+              "sort": 1
+            }
+          },
+          {
+            "count": 2,
+            "component_type": "mutation_components",
+            "_id": "6319f81fa8ce530569eee9dd",
+            "name": {
+              "en": "Wire",
+              "cn": "Wire"
+            },
+            "type": "wire",
+            "rarity_group": {
+              "_id": "6319f60da8ce530569e56207",
+              "title": {
+                "en": "Uncommon",
+                "cn": "Uncommon"
+              },
+              "base_color_hex": "2bd600",
+              "sort": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "611e2490bf6b53744cad6620",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Hokusai",
+          "cn": "Hokusai"
+        },
+        "description": {
+          "en": "The bloom, the piece, the ocean. Embrace the sensation of the calm wave inside of your mining room!",
+          "cn": "感受你的采矿房内的风平浪静"
+        },
+        "collection_description": {
+          "es": "",
+          "pt": "",
+          "en": "Weekly Offer, Marketplace",
+          "cn": "Weekly Offer, Marketplace"
+        },
+        "power": 95000,
+        "bonus_power": 200,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "hokusai",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1
+      },
+      {
+        "id": "674df7ebcbe1e47b27075d65",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 1,
+        "name": {
+          "en": "X-Globe",
+          "cn": "X-Globe",
+          "es": "X-Globe",
+          "pt": "X-Globe"
+        },
+        "description": {
+          "en": "The power of the entire universe in my hands! Great rack space.",
+          "cn": "The power of the entire universe in my hands! Great rack space.",
+          "es": "The power of the entire universe in my hands! Great rack space.",
+          "pt": "The power of the entire universe in my hands! Great rack space."
+        },
+        "collection_description": {
+          "en": "Season 16: Space Christmas",
+          "cn": "Season 16: Space Christmas",
+          "es": "Season 16: Space Christmas",
+          "pt": "Season 16: Space Christmas"
+        },
+        "power": 1190000,
+        "bonus_power": 50,
+        "type": "miner",
+        "miner_type": "merge",
+        "size": 2,
+        "quantity": 1,
+        "filename": "x_globe",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1733907952185,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        },
+        "craft_items": [
+          {
+            "count": 2,
+            "component_type": "miners",
+            "_id": "674df7ebcbe1e47b27075d62",
+            "name": {
+              "en": "X-Globe",
+              "cn": "X-Globe",
+              "es": "X-Globe",
+              "pt": "X-Globe"
+            }
+          },
+          {
+            "count": 70,
+            "component_type": "mutation_components",
+            "_id": "61b3606767433d2dc58913a9",
+            "name": {
+              "en": "Hashboard",
+              "cn": "Hashboard"
+            },
+            "type": "hashboard",
+            "rarity_group": {
+              "_id": "619627a267433d2dc5355efb",
+              "title": {
+                "en": "Common",
+                "cn": "Common"
+              },
+              "base_color_hex": "dddddd",
+              "sort": 0
+            }
+          },
+          {
+            "count": 80,
+            "component_type": "mutation_components",
+            "_id": "61b35fea67433d2dc586f7fe",
+            "name": {
+              "en": "Fan",
+              "cn": "Fan"
+            },
+            "type": "fan",
+            "rarity_group": {
+              "_id": "619627a267433d2dc5355efb",
+              "title": {
+                "en": "Common",
+                "cn": "Common"
+              },
+              "base_color_hex": "dddddd",
+              "sort": 0
+            }
+          },
+          {
+            "count": 70,
+            "component_type": "mutation_components",
+            "_id": "61b3604967433d2dc58893b0",
+            "name": {
+              "en": "Wire",
+              "cn": "Wire"
+            },
+            "type": "wire",
+            "rarity_group": {
+              "_id": "619627a267433d2dc5355efb",
+              "title": {
+                "en": "Common",
+                "cn": "Common"
+              },
+              "base_color_hex": "dddddd",
+              "sort": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "66ead191e0dd3530da969e5f",
+        "is_in_set": true,
+        "set_title": {
+          "en": "Beer Pack Set",
+          "cn": "Beer Pack Set",
+          "es": "Beer Pack Set",
+          "pt": "Beer Pack Set"
+        },
+        "level": 0,
+        "name": {
+          "en": "Just One Beer",
+          "cn": "Just One Beer",
+          "es": "Just One Beer",
+          "pt": "Just One Beer"
+        },
+        "description": {
+          "en": "\"Beer and Rollercoin is proof that God loves us and wants us to be happy\" - Benjamin Franklin",
+          "cn": "\"Beer and Rollercoin is proof that God loves us and wants us to be happy\" - Benjamin Franklin",
+          "es": "\"Beer and Rollercoin is proof that God loves us and wants us to be happy\" - Benjamin Franklin",
+          "pt": "\"Beer and Rollercoin is proof that God loves us and wants us to be happy\" - Benjamin Franklin"
+        },
+        "collection_description": {
+          "en": "Hamstoberfest",
+          "cn": "Hamstoberfest",
+          "es": "Hamstoberfest",
+          "pt": "Hamstoberfest"
+        },
+        "power": 250000,
+        "bonus_power": 150,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "just_one_beer",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1726754450203,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "674df8a8cbe1e47b27075e0b",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "UFO-Ho-Ho",
+          "cn": "UFO-Ho-Ho",
+          "es": "UFO-Ho-Ho",
+          "pt": "UFO-Ho-Ho"
+        },
+        "description": {
+          "en": "The reindeers were too old-fashioned...",
+          "cn": "The reindeers were too old-fashioned...",
+          "es": "The reindeers were too old-fashioned...",
+          "pt": "The reindeers were too old-fashioned..."
+        },
+        "collection_description": {
+          "en": "Marketplace, Season 16: Space Christmas",
+          "cn": "Marketplace, Season 16: Space Christmas",
+          "es": "Marketplace, Season 16: Space Christmas",
+          "pt": "Marketplace, Season 16: Space Christmas"
+        },
+        "power": 600000,
+        "bonus_power": 100,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 2,
+        "filename": "ufo_ho_ho",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1733907959911,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "674df966cbe1e47b27075eb3",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Camouflage",
+          "cn": "Camouflage",
+          "es": "Camouflage",
+          "pt": "Camouflage"
+        },
+        "description": {
+          "en": "Smile and wave, boys. Smile and wave.",
+          "cn": "Smile and wave, boys. Smile and wave.",
+          "es": "Smile and wave, boys. Smile and wave.",
+          "pt": "Smile and wave, boys. Smile and wave."
+        },
+        "collection_description": {
+          "en": "Marketplace, Season 16: Space Christmas",
+          "cn": "Marketplace, Season 16: Space Christmas",
+          "es": "Marketplace, Season 16: Space Christmas",
+          "pt": "Marketplace, Season 16: Space Christmas"
+        },
+        "power": 1080000,
+        "bonus_power": 100,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 2,
+        "filename": "camouflage",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1733907967177,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "60c7441465dce86c86607522",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Aurum",
+          "cn": "Aurum",
+          "es": "Aurum",
+          "pt": "Aurum"
+        },
+        "description": {
+          "en": "Pure gold - solid and cold! The Aurum is a well optimised mining machine with astonishing looks! Perfection Series Miner.",
+          "cn": "纯金——Aurum 是一款经过优化的矿机，外观令人惊叹！",
+          "es": "Pure gold - solid and cold! The Aurum is a well optimised mining machine with astonishing looks! Perfection Series Miner.",
+          "pt": "Pure gold - solid and cold! The Aurum is a well optimised mining machine with astonishing looks! Perfection Series Miner."
+        },
+        "collection_description": {
+          "en": "Marketplace, Season I: Perfection Event Pass",
+          "cn": "Marketplace, Season I: Perfection Event Pass",
+          "es": "Marketplace, Season I: Perfection Event Pass",
+          "pt": "Marketplace, Season I: Perfection Event Pass"
+        },
+        "power": 200000,
+        "bonus_power": 200,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "aurum",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1713179542158,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "674df539cbe1e47b27075a68",
+        "is_in_set": true,
+        "set_title": {
+          "en": "Globes Set",
+          "cn": "Globes Set",
+          "es": "Globes Set",
+          "pt": "Globes Set"
+        },
+        "level": 0,
+        "name": {
+          "en": "BellGlobe",
+          "cn": "BellGlobe",
+          "es": "BellGlobe",
+          "pt": "BellGlobe"
+        },
+        "description": {
+          "en": "Twas the night before Christmas",
+          "cn": "Twas the night before Christmas",
+          "es": "Twas the night before Christmas",
+          "pt": "Twas the night before Christmas"
+        },
+        "collection_description": {
+          "en": "Season 16: Space Christmas",
+          "cn": "Season 16: Space Christmas",
+          "es": "Season 16: Space Christmas",
+          "pt": "Season 16: Space Christmas"
+        },
+        "power": 650000,
+        "bonus_power": 100,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "bellglobe",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1733907883083,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "61b9cce178d63d64cd626fcb",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Granny's Cake",
+          "cn": "Granny's Cake",
+          "es": "Granny's Cake",
+          "pt": "Granny's Cake"
+        },
+        "description": {
+          "en": "It was baked to a secret Grandma’s recipe. Mix of sweetness and power that is truly impressive. Just give it a try! Christmas Time Series Miner.",
+          "cn": "It was baked to a secret Grandma’s recipe. Mix of sweetness and power that is truly impressive. Just give it a try! Christmas Time Series Miner.",
+          "es": "It was baked to a secret Grandma’s recipe. Mix of sweetness and power that is truly impressive. Just give it a try! Christmas Time Series Miner.",
+          "pt": "It was baked to a secret Grandma’s recipe. Mix of sweetness and power that is truly impressive. Just give it a try! Christmas Time Series Miner."
+        },
+        "collection_description": {
+          "en": "Marketplace, Season III: Christmas time! Event Pass",
+          "cn": "Marketplace, Season III: Christmas time! Event Pass",
+          "es": "Marketplace, Season III: Christmas time! Event Pass",
+          "pt": "Marketplace, Season III: Christmas time! Event Pass"
+        },
+        "power": 125000,
+        "bonus_power": 200,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "grannys_cake",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1744796227037,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "63bffdd0d2e89bab14ff95bc",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Almost Switch",
+          "cn": "Almost Switch"
+        },
+        "description": {
+          "en": "A dream Christmas present for any true Miner! If you have it - you will get all the luck in upcoming New Year!",
+          "cn": "A dream Christmas present for any true Miner! If you have it - you will get all the luck in upcoming New Year!"
+        },
+        "collection_description": {
+          "es": "",
+          "pt": "",
+          "en": "Marketplace, Advent Calendar 2023",
+          "cn": "Marketplace, Advent Calendar 2023"
+        },
+        "power": 582023,
+        "bonus_power": 200,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "almost_switch",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1
+      },
+      {
+        "id": "6687cea87643815232d65882",
+        "is_in_set": true,
+        "set_title": {
+          "en": "Silver Farm Set",
+          "cn": "Silver Farm Set",
+          "es": "Silver Farm Set",
+          "pt": "Silver Farm Set"
+        },
+        "level": 0,
+        "name": {
+          "en": "SilverMulberries",
+          "cn": "SilverMulberries",
+          "es": "SilverMulberries",
+          "pt": "SilverMulberries"
+        },
+        "description": {
+          "en": "Silver Mulberries thrive in shaded groves, using their dense foliage to maintain cool temperatures and efficiently mine cryptocurrency.",
+          "cn": "Silver Mulberries thrive in shaded groves, using their dense foliage to maintain cool temperatures and efficiently mine cryptocurrency.",
+          "es": "Silver Mulberries thrive in shaded groves, using their dense foliage to maintain cool temperatures and efficiently mine cryptocurrency.",
+          "pt": "Silver Mulberries thrive in shaded groves, using their dense foliage to maintain cool temperatures and efficiently mine cryptocurrency."
+        },
+        "collection_description": {
+          "en": "Marketplace, Season 14: Harvest Time!",
+          "cn": "Marketplace, Season 14: Harvest Time!",
+          "es": "Marketplace, Season 14: Harvest Time!",
+          "pt": "Marketplace, Season 14: Harvest Time!"
+        },
+        "power": 350000,
+        "bonus_power": 50,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "silvermulberries",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1721130545082,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "64f5d1949e4d6286408927f6",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "FunZone",
+          "cn": "FunZone",
+          "es": "FunZone",
+          "pt": "FunZone"
+        },
+        "description": {
+          "en": "Step into the virtual FunZone at this Labor Day! Thrilling rides and exciting adventures await in the world of cryptocurrency. By steven quesada",
+          "cn": "Step into the virtual FunZone at this Labor Day! Thrilling rides and exciting adventures await in the world of cryptocurrency. By steven quesada",
+          "es": "Step into the virtual FunZone at this Labor Day! Thrilling rides and exciting adventures await in the world of cryptocurrency. By steven quesada",
+          "pt": "Step into the virtual FunZone at this Labor Day! Thrilling rides and exciting adventures await in the world of cryptocurrency. By steven quesada"
+        },
+        "collection_description": {
+          "en": "Marketplace, Work Hard — Play Hard",
+          "cn": "Marketplace, Work Hard — Play Hard",
+          "es": "Marketplace, Work Hard — Play Hard",
+          "pt": "Marketplace, Work Hard — Play Hard"
+        },
+        "power": 740000,
+        "bonus_power": 200,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "funzone",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1693831572424,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "611d2605bf6b53744c49e333",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Sunset City",
+          "cn": "Sunset City"
+        },
+        "description": {
+          "en": "Orange tones of the evening sun over the working town inspired this urban themed mining machine.",
+          "cn": "橙色工作城镇上推出我以城市为主题的采矿机。"
+        },
+        "collection_description": {
+          "es": "",
+          "pt": "",
+          "en": "Weekly Offer, Marketplace",
+          "cn": "Weekly Offer, Marketplace"
+        },
+        "power": 95000,
+        "bonus_power": 200,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "sunset_city",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1
+      },
+      {
+        "id": "6687cefd7643815232d65d11",
+        "is_in_set": true,
+        "set_title": {
+          "en": "Silver Farm Set",
+          "cn": "Silver Farm Set",
+          "es": "Silver Farm Set",
+          "pt": "Silver Farm Set"
+        },
+        "level": 0,
+        "name": {
+          "en": "SilverWheat",
+          "cn": "SilverWheat",
+          "es": "SilverWheat",
+          "pt": "SilverWheat"
+        },
+        "description": {
+          "en": "Silver Wheat stands tall and waves in the breeze, using its slender stalks to dissipate heat, perfecting the art of organic mining.",
+          "cn": "Silver Wheat stands tall and waves in the breeze, using its slender stalks to dissipate heat, perfecting the art of organic mining.",
+          "es": "Silver Wheat stands tall and waves in the breeze, using its slender stalks to dissipate heat, perfecting the art of organic mining.",
+          "pt": "Silver Wheat stands tall and waves in the breeze, using its slender stalks to dissipate heat, perfecting the art of organic mining."
+        },
+        "collection_description": {
+          "en": "Marketplace, Season 14: Harvest Time!",
+          "cn": "Marketplace, Season 14: Harvest Time!",
+          "es": "Marketplace, Season 14: Harvest Time!",
+          "pt": "Marketplace, Season 14: Harvest Time!"
+        },
+        "power": 1000000,
+        "bonus_power": 100,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "silverwheat",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1721130562441,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "5f9ae5584ac419fdd08d08cd",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "El Monstro",
+          "cn": "El Monstro"
+        },
+        "description": {
+          "en": "The red beast from another dimension. Strong enough to change your mining game for ages.",
+          "cn": "来自另一个大小的红色野兽， 强大到足以改变您在游戏的挖矿年资。"
+        },
+        "collection_description": {
+          "es": "",
+          "pt": "",
+          "en": "Store, Marketplace, Daily offer",
+          "cn": "商店、市场、每日优惠"
+        },
+        "power": 110000,
+        "bonus_power": 200,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "el_monstro",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1
+      },
+      {
+        "id": "67ebd9ce6cbc1562cd888de8",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Stapllier",
+          "cn": "Stapllier",
+          "es": "Stapllier",
+          "pt": "Stapllier"
+        },
+        "description": {
+          "en": "The strength of ten RollerAdminGauntlet was needed to create THIS.",
+          "cn": "The strength of ten RollerAdminGauntlet was needed to create THIS.",
+          "es": "The strength of ten RollerAdminGauntlet was needed to create THIS.",
+          "pt": "The strength of ten RollerAdminGauntlet was needed to create THIS."
+        },
+        "collection_description": {
+          "en": "U-la-la",
+          "cn": "U-la-la",
+          "es": "U-la-la",
+          "pt": "U-la-la"
+        },
+        "power": 10000,
+        "bonus_power": 0,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 3,
+        "filename": "stapllier",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1761762061326,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "6628f18c0461cca22c8b4dde",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Silverline B",
+          "cn": "Silverline B",
+          "es": "Silverline B",
+          "pt": "Silverline B"
+        },
+        "description": {
+          "en": "Fast enough to get you from silver spot A to silver spot B, but you can't get to spot C with this.",
+          "cn": "Fast enough to get you from silver spot A to silver spot B, but you can't get to spot C with this.",
+          "es": "Fast enough to get you from silver spot A to silver spot B, but you can't get to spot C with this.",
+          "pt": "Fast enough to get you from silver spot A to silver spot B, but you can't get to spot C with this."
+        },
+        "collection_description": {
+          "en": "Season 13: Railway",
+          "cn": "Season 13: Railway",
+          "es": "Season 13: Railway",
+          "pt": "Season 13: Railway"
+        },
+        "power": 105000,
+        "bonus_power": 0,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "silverline_b",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1714641799425,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "690cba3ab5000902413ef0fc",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Operator Spine",
+          "cn": "Operator Spine",
+          "es": "Operator Spine",
+          "pt": "Operator Spine"
+        },
+        "description": {
+          "en": "Core of the rebellion. Wires pulse like veins, feeding the System’s heartbeat. Stay connected. Or be deleted.",
+          "cn": "Core of the rebellion. Wires pulse like veins, feeding the System’s heartbeat. Stay connected. Or be deleted.",
+          "es": "Core of the rebellion. Wires pulse like veins, feeding the System’s heartbeat. Stay connected. Or be deleted.",
+          "pt": "Core of the rebellion. Wires pulse like veins, feeding the System’s heartbeat. Stay connected. Or be deleted."
+        },
+        "collection_description": {
+          "en": "Final: The One Voting",
+          "cn": "Final: The One Voting",
+          "es": "Final: The One Voting",
+          "pt": "Final: The One Voting"
+        },
+        "power": 650000,
+        "bonus_power": 50,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 2,
+        "filename": "operator_spine",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1763557297612,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "650aaa7c48ee2c2ada961a51",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Pacminer",
+          "cn": "Pacminer",
+          "es": "Pacminer",
+          "pt": "Pacminer"
+        },
+        "description": {
+          "en": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!",
+          "cn": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!",
+          "es": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!",
+          "pt": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!"
+        },
+        "collection_description": {
+          "en": "Marketplace, Season 1010: RetroBit",
+          "cn": "Marketplace, Season 1010: RetroBit",
+          "es": "Marketplace, Season 1010: RetroBit",
+          "pt": "Marketplace, Season 1010: RetroBit"
+        },
+        "power": 403000,
+        "bonus_power": 45,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "pacminer",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1695731722538,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "650d9d9a3340fbd614a908cf",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 1,
+        "name": {
+          "en": "Pacminer",
+          "cn": "Pacminer",
+          "es": "Pacminer",
+          "pt": "Pacminer"
+        },
+        "description": {
+          "en": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!",
+          "cn": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!",
+          "es": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!",
+          "pt": "In old gamers' youth, emojis were chasing each other and eating live. And remember: computer games do not teach us violence!"
+        },
+        "collection_description": {
+          "en": "Marketplace, Season 1010: RetroBit",
+          "cn": "Marketplace, Season 1010: RetroBit",
+          "es": "Marketplace, Season 1010: RetroBit",
+          "pt": "Marketplace, Season 1010: RetroBit"
+        },
+        "power": 1057875,
+        "bonus_power": 108,
+        "type": "miner",
+        "miner_type": "merge",
+        "size": 2,
+        "quantity": 1,
+        "filename": "pacminer",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1695731722545,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        },
+        "craft_items": [
+          {
+            "count": 2,
+            "component_type": "miners",
+            "_id": "650aaa7c48ee2c2ada961a51",
+            "name": {
+              "en": "Pacminer",
+              "cn": "Pacminer",
+              "es": "Pacminer",
+              "pt": "Pacminer"
+            }
+          },
+          {
+            "count": 200,
+            "component_type": "mutation_components",
+            "_id": "61b3606767433d2dc58913a9",
+            "name": {
+              "en": "Hashboard",
+              "cn": "Hashboard"
+            },
+            "type": "hashboard",
+            "rarity_group": {
+              "_id": "619627a267433d2dc5355efb",
+              "title": {
+                "en": "Common",
+                "cn": "Common"
+              },
+              "base_color_hex": "dddddd",
+              "sort": 0
+            }
+          },
+          {
+            "count": 200,
+            "component_type": "mutation_components",
+            "_id": "61b35fea67433d2dc586f7fe",
+            "name": {
+              "en": "Fan",
+              "cn": "Fan"
+            },
+            "type": "fan",
+            "rarity_group": {
+              "_id": "619627a267433d2dc5355efb",
+              "title": {
+                "en": "Common",
+                "cn": "Common"
+              },
+              "base_color_hex": "dddddd",
+              "sort": 0
+            }
+          },
+          {
+            "count": 200,
+            "component_type": "mutation_components",
+            "_id": "61b3604967433d2dc58893b0",
+            "name": {
+              "en": "Wire",
+              "cn": "Wire"
+            },
+            "type": "wire",
+            "rarity_group": {
+              "_id": "619627a267433d2dc5355efb",
+              "title": {
+                "en": "Common",
+                "cn": "Common"
+              },
+              "base_color_hex": "dddddd",
+              "sort": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "6752c2d3368cdcf089ff7c4e",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Rudolph The Camel",
+          "cn": "Rudolph The Camel",
+          "es": "Rudolph The Camel",
+          "pt": "Rudolph The Camel"
+        },
+        "description": {
+          "en": "He was definitely a reindeer in a previous life.",
+          "cn": "He was definitely a reindeer in a previous life.",
+          "es": "He was definitely a reindeer in a previous life.",
+          "pt": "He was definitely a reindeer in a previous life."
+        },
+        "collection_description": {
+          "en": "Not Here Case",
+          "cn": "Not Here Case",
+          "es": "Not Here Case",
+          "pt": "Not Here Case"
+        },
+        "power": 660000,
+        "bonus_power": 45,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "rudolph_the_camel",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1733915724123,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "68cd7354bedeb9a12ef650cb",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "The Awakener",
+          "cn": "The Awakener",
+          "es": "The Awakener",
+          "pt": "The Awakener"
+        },
+        "description": {
+          "en": "Forged to shatter the code, The Awakener is your key to break free and mine with unmatched force.",
+          "cn": "Forged to shatter the code, The Awakener is your key to break free and mine with unmatched force.",
+          "es": "Forged to shatter the code, The Awakener is your key to break free and mine with unmatched force.",
+          "pt": "Forged to shatter the code, The Awakener is your key to break free and mine with unmatched force."
+        },
+        "collection_description": {
+          "en": "H4MTR1X Season Pass",
+          "cn": "H4MTR1X Season Pass",
+          "es": "H4MTR1X Season Pass",
+          "pt": "H4MTR1X Season Pass"
+        },
+        "power": 250000,
+        "bonus_power": 0,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 2,
+        "filename": "the_awakener",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1759839434585,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "690cba0ab5000902413eeff4",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Codefall Amplifier",
+          "cn": "Codefall Amplifier",
+          "es": "Codefall Amplifier",
+          "pt": "Codefall Amplifier"
+        },
+        "description": {
+          "en": "It catches the digital rain. Every drop of falling code turns into raw power.",
+          "cn": "It catches the digital rain. Every drop of falling code turns into raw power.",
+          "es": "It catches the digital rain. Every drop of falling code turns into raw power.",
+          "pt": "It catches the digital rain. Every drop of falling code turns into raw power."
+        },
+        "collection_description": {
+          "en": "Round 1: The System Strikes Back Voting",
+          "cn": "Round 1: The System Strikes Back Voting",
+          "es": "Round 2: Faith vs Control Voting",
+          "pt": "Round 2: Faith vs Control Voting"
+        },
+        "power": 390000,
+        "bonus_power": 25,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 2,
+        "filename": "codefall_amplifier",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1762946453379,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "690cb9ceb5000902413eef39",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Flash Deal Console",
+          "cn": "Flash Deal Console",
+          "es": "Flash Deal Console",
+          "pt": "Flash Deal Console"
+        },
+        "description": {
+          "en": "The sale was never meant to end. Lines of code rebel, prices collapse, and chaos becomes protocol.",
+          "cn": "The sale was never meant to end. Lines of code rebel, prices collapse, and chaos becomes protocol.",
+          "es": "The sale was never meant to end. Lines of code rebel, prices collapse, and chaos becomes protocol.",
+          "pt": "The sale was never meant to end. Lines of code rebel, prices collapse, and chaos becomes protocol."
+        },
+        "collection_description": {
+          "en": "Round 1: The System Strikes Back Voting",
+          "cn": "Round 1: The System Strikes Back Voting",
+          "es": "Round 1: The System Strikes Back Voting",
+          "pt": "Round 1: The System Strikes Back Voting"
+        },
+        "power": 520000,
+        "bonus_power": 25,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "flash_deal_console",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1762441861800,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "651ac89289841546fda69085",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Golden Vain",
+          "cn": "Golden Vain",
+          "es": "Golden Vain",
+          "pt": "Golden Vain"
+        },
+        "description": {
+          "en": "Behold, you've struck gold! By Ravell",
+          "cn": "Behold, you've struck gold! By Ravell",
+          "es": "Behold, you've struck gold! By Ravell",
+          "pt": "Behold, you've struck gold! By Ravell"
+        },
+        "collection_description": {
+          "en": "Celestial Ore Hunt",
+          "cn": "Celestial Ore Hunt",
+          "es": "Celestial Ore Hunt",
+          "pt": "Celestial Ore Hunt"
+        },
+        "power": 450000,
+        "bonus_power": 45,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 2,
+        "filename": "golden_vain",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1762254208182,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "5a0b08b0d1d9ee5894f36f32",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "RollerMiner S9",
+          "cn": "RollerMiner S9",
+          "es": "RollerMiner S9",
+          "pt": "RollerMiner S9"
+        },
+        "description": {
+          "en": "Now you are in the premier league. This powerful machine is for the advanced crypto enthusiast. Owning one of these, you definitely qualify to play with the big dogs.",
+          "cn": "这台功能强大的矿机适用于等级高的加密者，拥有它您绝对有资格参与英超联赛。",
+          "es": "Now you are in the premier league. This powerful machine is for the advanced crypto enthusiast. Owning one of these, you definitely qualify to play with the big dogs.",
+          "pt": "Now you are in the premier league. This powerful machine is for the advanced crypto enthusiast. Owning one of these, you definitely qualify to play with the big dogs."
+        },
+        "collection_description": {
+          "en": "Store, Marketplace, Daily offer",
+          "cn": "商店、市场、每日优惠",
+          "es": "Store, Marketplace, Daily offer",
+          "pt": "Store, Marketplace, Daily offer"
+        },
+        "power": 14500,
+        "bonus_power": 100,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 8,
+        "filename": "rollerminer_s9",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1724864037631,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "651ac89289841546fda69088",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 1,
+        "name": {
+          "en": "Golden Vain",
+          "cn": "Golden Vain",
+          "es": "Golden Vain",
+          "pt": "Golden Vain"
+        },
+        "description": {
+          "en": "Behold, you've struck gold! By Ravell",
+          "cn": "Behold, you've struck gold! By Ravell",
+          "es": "Behold, you've struck gold! By Ravell",
+          "pt": "Behold, you've struck gold! By Ravell"
+        },
+        "collection_description": {
+          "en": "Celestial Ore Hunt",
+          "cn": "Celestial Ore Hunt",
+          "es": "Celestial Ore Hunt",
+          "pt": "Celestial Ore Hunt"
+        },
+        "power": 1181250,
+        "bonus_power": 108,
+        "type": "miner",
+        "miner_type": "merge",
+        "size": 2,
+        "quantity": 1,
+        "filename": "golden_vain",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1762254208188,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        },
+        "craft_items": [
+          {
+            "count": 2,
+            "component_type": "miners",
+            "_id": "651ac89289841546fda69085",
+            "name": {
+              "en": "Golden Vain",
+              "cn": "Golden Vain",
+              "es": "Golden Vain",
+              "pt": "Golden Vain"
+            }
+          },
+          {
+            "count": 200,
+            "component_type": "mutation_components",
+            "_id": "61b3606767433d2dc58913a9",
+            "name": {
+              "en": "Hashboard",
+              "cn": "Hashboard"
+            },
+            "type": "hashboard",
+            "rarity_group": {
+              "_id": "619627a267433d2dc5355efb",
+              "title": {
+                "en": "Common",
+                "cn": "Common"
+              },
+              "base_color_hex": "dddddd",
+              "sort": 0
+            }
+          },
+          {
+            "count": 200,
+            "component_type": "mutation_components",
+            "_id": "61b35fea67433d2dc586f7fe",
+            "name": {
+              "en": "Fan",
+              "cn": "Fan"
+            },
+            "type": "fan",
+            "rarity_group": {
+              "_id": "619627a267433d2dc5355efb",
+              "title": {
+                "en": "Common",
+                "cn": "Common"
+              },
+              "base_color_hex": "dddddd",
+              "sort": 0
+            }
+          },
+          {
+            "count": 200,
+            "component_type": "mutation_components",
+            "_id": "61b3604967433d2dc58893b0",
+            "name": {
+              "en": "Wire",
+              "cn": "Wire"
+            },
+            "type": "wire",
+            "rarity_group": {
+              "_id": "619627a267433d2dc5355efb",
+              "title": {
+                "en": "Common",
+                "cn": "Common"
+              },
+              "base_color_hex": "dddddd",
+              "sort": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "611e27d8bf6b53744cbf488c",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Retro Night",
+          "cn": "Retro Night"
+        },
+        "description": {
+          "en": "This is how your dream city looks like. Feeling old yet?",
+          "cn": "这就是你的梦想吗？觉得平淡无奇吗？"
+        },
+        "collection_description": {
+          "es": "",
+          "pt": "",
+          "en": "Weekly Offer, Marketplace",
+          "cn": "Weekly Offer, Marketplace"
+        },
+        "power": 95000,
+        "bonus_power": 200,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "retro_night",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1
+      },
+      {
+        "id": "611e222abf6b53744ca040a2",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Underwater",
+          "cn": "Underwater"
+        },
+        "description": {
+          "en": "From the depths of the sea it comes. Special water cooling system allows this miner to be deeply appreciated.",
+          "cn": "来自海底的水冷系统矿机深得人心。"
+        },
+        "collection_description": {
+          "es": "",
+          "pt": "",
+          "en": "Weekly Offer, Marketplace",
+          "cn": "Weekly Offer, Marketplace"
+        },
+        "power": 95000,
+        "bonus_power": 200,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "underwater",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1
+      },
+      {
+        "id": "65855965430203bab2b75b1c",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Ancient Icecraft",
+          "cn": "Ancient Icecraft",
+          "es": "Ancient Icecraft",
+          "pt": "Ancient Icecraft"
+        },
+        "description": {
+          "en": "Ancient Icecraft, a miner shrouded in elder magic, crafts blocks with an unreal finesse, tapping into the oldest and most mystical energies of the blockchain. Its icy touch weaves a spell of fortune, turning data into digital gold with a whisper of ancient secrets.",
+          "cn": "Ancient Icecraft, a miner shrouded in elder magic, crafts blocks with an unreal finesse, tapping into the oldest and most mystical energies of the blockchain. Its icy touch weaves a spell of fortune, turning data into digital gold with a whisper of ancient secrets.",
+          "es": "Ancient Icecraft, a miner shrouded in elder magic, crafts blocks with an unreal finesse, tapping into the oldest and most mystical energies of the blockchain. Its icy touch weaves a spell of fortune, turning data into digital gold with a whisper of ancient secrets.",
+          "pt": "Ancient Icecraft, a miner shrouded in elder magic, crafts blocks with an unreal finesse, tapping into the oldest and most mystical energies of the blockchain. Its icy touch weaves a spell of fortune, turning data into digital gold with a whisper of ancient secrets."
+        },
+        "collection_description": {
+          "en": "Jack of all Trades",
+          "cn": "Jack of all Trades",
+          "es": "Jack of all Trades",
+          "pt": "Jack of all Trades"
+        },
+        "power": 16500,
+        "bonus_power": 0,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "ancient_icecraft",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1703340155093,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "6654961c94f3f3541c7f1d74",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Crypto-Cola",
+          "cn": "Crypto-Cola",
+          "es": "Crypto-Cola",
+          "pt": "Crypto-Cola"
+        },
+        "description": {
+          "en": "Crypto-Cola Miner like cracking open a Nuka-Cola Quantum—supercharged with nuclear-powered hashing that's bound to cause a boom in your crypto stash, just like in the wasteland!",
+          "cn": "Crypto-Cola Miner like cracking open a Nuka-Cola Quantum—supercharged with nuclear-powered hashing that's bound to cause a boom in your crypto stash, just like in the wasteland!",
+          "es": "Crypto-Cola Miner like cracking open a Nuka-Cola Quantum—supercharged with nuclear-powered hashing that's bound to cause a boom in your crypto stash, just like in the wasteland!",
+          "pt": "Crypto-Cola Miner like cracking open a Nuka-Cola Quantum—supercharged with nuclear-powered hashing that's bound to cause a boom in your crypto stash, just like in the wasteland!"
+        },
+        "collection_description": {
+          "en": "Marketplace, Fallout Era",
+          "cn": "Marketplace, Fallout Era",
+          "es": "Marketplace, Fallout Era",
+          "pt": "Marketplace, Fallout Era"
+        },
+        "power": 111000,
+        "bonus_power": 150,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 2,
+        "filename": "crypto_cola",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1716819484146,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "6501a3a32216e1841ebab32e",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Vice City Drive",
+          "cn": "Vice City Drive",
+          "es": "Vice City Drive",
+          "pt": "Vice City Drive"
+        },
+        "description": {
+          "en": "Cruise through the sun-and-neon-lit City streets in impeccable style. By HELMER",
+          "cn": "Cruise through the sun-and-neon-lit City streets in impeccable style. By HELMER",
+          "es": "Cruise through the sun-and-neon-lit City streets in impeccable style. By HELMER",
+          "pt": "Cruise through the sun-and-neon-lit City streets in impeccable style. By HELMER"
+        },
+        "collection_description": {
+          "en": "Summer Send-Off Sale",
+          "cn": "Summer Send-Off Sale",
+          "es": "Summer Send-Off Sale",
+          "pt": "Summer Send-Off Sale"
+        },
+        "power": 390000,
+        "bonus_power": 50,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "vice_city_drive",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1700928923877,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "6879ffd5265f9bf2be120194",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Champion's Belt",
+          "cn": "Champion's Belt",
+          "es": "Champion's Belt",
+          "pt": "Champion's Belt"
+        },
+        "description": {
+          "en": "Forged in victory's glow and studded with laurels, each pulse of power feels like a champion’s triumphant roar!",
+          "cn": "Forged in victory's glow and studded with laurels, each pulse of power feels like a champion’s triumphant roar!",
+          "es": "Forged in victory's glow and studded with laurels, each pulse of power feels like a champion’s triumphant roar!",
+          "pt": "Forged in victory's glow and studded with laurels, each pulse of power feels like a champion’s triumphant roar!"
+        },
+        "collection_description": {
+          "en": "Boxing Sale",
+          "cn": "Boxing Sale",
+          "es": "Boxing Sale",
+          "pt": "Boxing Sale"
+        },
+        "power": 250000,
+        "bonus_power": 50,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "champions_belt",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1752834267941,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "65a930919b2efe7a29c68f4c",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "DraMatic",
+          "cn": "DraMatic",
+          "es": "DraMatic",
+          "pt": "DraMatic"
+        },
+        "description": {
+          "en": "I spin my wheels to cool my brain, And mining coins my job remains, I’m so unique that you will need, 32 “me”s to take the lead!",
+          "cn": "I spin my wheels to cool my brain, And mining coins my job remains, I’m so unique that you will need, 32 “me”s to take the lead!",
+          "es": "I spin my wheels to cool my brain, And mining coins my job remains, I’m so unique that you will need, 32 “me”s to take the lead!",
+          "pt": "I spin my wheels to cool my brain, And mining coins my job remains, I’m so unique that you will need, 32 “me”s to take the lead!"
+        },
+        "collection_description": {
+          "en": "Landing Sale",
+          "cn": "Landing Sale",
+          "es": "Landing Sale",
+          "pt": "Landing Sale"
+        },
+        "power": 240000,
+        "bonus_power": 75,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "dramatic",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1705606130692,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "61b9cce178d63d64cd626fd2",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "The Evergreen",
+          "cn": "The Evergreen",
+          "es": "The Evergreen",
+          "pt": "The Evergreen"
+        },
+        "description": {
+          "en": "Didn't get time to put up a Christmas tree yet? This miner is decorated with vintage glass ornaments and bells to brighten up your mining room.",
+          "cn": "Didn't get time to put up a Christmas tree yet? This miner is decorated with vintage glass ornaments and bells to brighten up your mining room.",
+          "es": "Didn't get time to put up a Christmas tree yet? This miner is decorated with vintage glass ornaments and bells to brighten up your mining room.",
+          "pt": "Didn't get time to put up a Christmas tree yet? This miner is decorated with vintage glass ornaments and bells to brighten up your mining room."
+        },
+        "collection_description": {
+          "en": "Marketplace, Limited Christmass Case",
+          "cn": "Marketplace, Limited Christmass Case",
+          "es": "Marketplace, Limited Christmass Case",
+          "pt": "Marketplace, Limited Christmass Case"
+        },
+        "power": 60000,
+        "bonus_power": 100,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "the_evergreen",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1731143304284,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "61b9cce178d63d64cd626fd1",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Snowy Blowy",
+          "cn": "Snowy Blowy",
+          "es": "Snowy Blowy",
+          "pt": "Snowy Blowy"
+        },
+        "description": {
+          "en": "Snowy and blowy, freezy and sneezy. No matter how you feel about winter, you are sure to enjoy this miner!",
+          "cn": "Snowy and blowy, freezy and sneezy. No matter how you feel about winter, you are sure to enjoy this miner!",
+          "es": "Snowy and blowy, freezy and sneezy. No matter how you feel about winter, you are sure to enjoy this miner!",
+          "pt": "Snowy and blowy, freezy and sneezy. No matter how you feel about winter, you are sure to enjoy this miner!"
+        },
+        "collection_description": {
+          "en": "Marketplace, Limited Christmass Case",
+          "cn": "Marketplace, Limited Christmass Case",
+          "es": "Marketplace, Limited Christmass Case",
+          "pt": "Marketplace, Limited Christmass Case"
+        },
+        "power": 65000,
+        "bonus_power": 100,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "snowy_blowy",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1731143313334,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "61532146db5008102f9f77e7",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Survivor",
+          "cn": "Survivor"
+        },
+        "description": {
+          "en": "Stable and confident. Survived three explosions, one end of the world and a cat scratch.",
+          "cn": "Stable and confident. Survived three explosions, one end of the world and a cat scratch."
+        },
+        "collection_description": {
+          "es": "",
+          "pt": "",
+          "en": "Marketplace, Limited Halloween Case",
+          "cn": "Marketplace, Limited Halloween Case"
+        },
+        "power": 75000,
+        "bonus_power": 200,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "survivor",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1
+      },
+      {
+        "id": "5e2ee460041b386e78b97c2a",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Dream Demolisher 3000",
+          "cn": "Dream Demolisher 3000"
+        },
+        "description": {
+          "en": "POWER BEYOND INSANITY. Brought to you by limited anniversary GOLDEN ABYSS series.",
+          "cn": "超级疯狂电力，由周年纪念黄金ABYSS系列带给您。"
+        },
+        "collection_description": {
+          "es": "",
+          "pt": "",
+          "en": "Store, Marketplace, Daily offer",
+          "cn": "商店、市场、每日优惠"
+        },
+        "power": 70000,
+        "bonus_power": 200,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "dream_demolisher_3000",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1
+      },
+      {
+        "id": "61b9cce478d63d64cd626fdd",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Tinsel Town",
+          "cn": "Tinsel Town",
+          "es": "Tinsel Town",
+          "pt": "Tinsel Town"
+        },
+        "description": {
+          "en": "A place that shines with holiday cheer and makes all your dreams come true. Welcome to Tinsel Town!",
+          "cn": "A place that shines with holiday cheer and makes all your dreams come true. Welcome to Tinsel Town!",
+          "es": "A place that shines with holiday cheer and makes all your dreams come true. Welcome to Tinsel Town!",
+          "pt": "A place that shines with holiday cheer and makes all your dreams come true. Welcome to Tinsel Town!"
+        },
+        "collection_description": {
+          "en": "Marketplace, Limited Christmass Case",
+          "cn": "Marketplace, Limited Christmass Case",
+          "es": "Marketplace, Limited Christmass Case",
+          "pt": "Marketplace, Limited Christmass Case"
+        },
+        "power": 22500,
+        "bonus_power": 50,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 2,
+        "filename": "tinsel_town",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1731143280892,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "674df753cbe1e47b27075cbb",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Frosty",
+          "cn": "Frosty",
+          "es": "Frosty",
+          "pt": "Frosty"
+        },
+        "description": {
+          "en": "The best helper during a space walk. His howl at the moon gives a decent amount of energy.",
+          "cn": "The best helper during a space walk. His howl at the moon gives a decent amount of energy.",
+          "es": "The best helper during a space walk. His howl at the moon gives a decent amount of energy.",
+          "pt": "The best helper during a space walk. His howl at the moon gives a decent amount of energy."
+        },
+        "collection_description": {
+          "en": "Season 16: Space Christmas",
+          "cn": "Season 16: Space Christmas",
+          "es": "Season 16: Space Christmas",
+          "pt": "Season 16: Space Christmas"
+        },
+        "power": 300000,
+        "bonus_power": 0,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 2,
+        "filename": "frosty",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1733907944402,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "61b9cce178d63d64cd626fd0",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Jelly Bones",
+          "cn": "Jelly Bones",
+          "es": "Jelly Bones",
+          "pt": "Jelly Bones"
+        },
+        "description": {
+          "en": "If you listen closely, you can hear the sound of a ban-hammer dropping. This miner was named after Jellybones in our Discord community.",
+          "cn": "If you listen closely, you can hear the sound of a ban-hammer dropping. This miner was named after Jellybones in our Discord community.",
+          "es": "If you listen closely, you can hear the sound of a ban-hammer dropping. This miner was named after Jellybones in our Discord community.",
+          "pt": "If you listen closely, you can hear the sound of a ban-hammer dropping. This miner was named after Jellybones in our Discord community."
+        },
+        "collection_description": {
+          "en": "Marketplace, Limited Christmass Case",
+          "cn": "Marketplace, Limited Christmass Case",
+          "es": "Marketplace, Limited Christmass Case",
+          "pt": "Marketplace, Limited Christmass Case"
+        },
+        "power": 26000,
+        "bonus_power": 50,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 3,
+        "filename": "jelly_bones",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1731143292491,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      }
+    ],
+    "total": 195,
+    "skip": "144",
+    "limit": "48"
+  },
+  "error": ""
 }

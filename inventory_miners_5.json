@@ -1,0 +1,133 @@
+{
+  "success": true,
+  "data": {
+    "items": [
+      {
+        "id": "657305285d9e34da773e3347",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Cryostone Relic",
+          "cn": "Cryostone Relic",
+          "es": "Cryostone Relic",
+          "pt": "Cryostone Relic"
+        },
+        "description": {
+          "en": "Dig with Cryostone Relic, where echoes of ancients and ice's magic entwine, forging a rhythmic symphony in each crypto line. By PetterCh",
+          "cn": "Dig with Cryostone Relic, where echoes of ancients and ice's magic entwine, forging a rhythmic symphony in each crypto line. By PetterCh",
+          "es": "Dig with Cryostone Relic, where echoes of ancients and ice's magic entwine, forging a rhythmic symphony in each crypto line. By PetterCh",
+          "pt": "Dig with Cryostone Relic, where echoes of ancients and ice's magic entwine, forging a rhythmic symphony in each crypto line. By PetterCh"
+        },
+        "collection_description": {
+          "en": "Frozen in Ice Case",
+          "cn": "Frozen in Ice Case",
+          "es": "Frozen in Ice Case",
+          "pt": "Frozen in Ice Case"
+        },
+        "power": 35000,
+        "bonus_power": 0,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "cryostone_relic",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1702552142116,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "674df7ebcbe1e47b27075d62",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "X-Globe",
+          "cn": "X-Globe",
+          "es": "X-Globe",
+          "pt": "X-Globe"
+        },
+        "description": {
+          "en": "The power of the entire universe in my hands! Great rack space.",
+          "cn": "The power of the entire universe in my hands! Great rack space.",
+          "es": "The power of the entire universe in my hands! Great rack space.",
+          "pt": "The power of the entire universe in my hands! Great rack space."
+        },
+        "collection_description": {
+          "en": "Season 16: Space Christmas",
+          "cn": "Season 16: Space Christmas",
+          "es": "Season 16: Space Christmas",
+          "pt": "Season 16: Space Christmas"
+        },
+        "power": 450000,
+        "bonus_power": 0,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 2,
+        "filename": "x_globe",
+        "is_can_be_sold_on_mp": false,
+        "img_ver": 1733907952177,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      },
+      {
+        "id": "631b5619a775e04d9a28546b",
+        "is_in_set": false,
+        "set_title": {
+          "en": "",
+          "cn": "",
+          "es": "",
+          "pt": ""
+        },
+        "level": 0,
+        "name": {
+          "en": "Mergedge",
+          "cn": "Mergedge"
+        },
+        "description": {
+          "en": "Miner imposed by the developers. Grab the Merge Starter Pack and make it powerful!",
+          "cn": "Miner imposed by the developers. Grab the Merge Starter Pack and make it powerful!"
+        },
+        "collection_description": {
+          "es": "",
+          "pt": "",
+          "en": "Merge Starter Pack, Marketplace",
+          "cn": "Merge Starter Pack, Marketplace"
+        },
+        "power": 3825,
+        "bonus_power": 0,
+        "type": "miner",
+        "miner_type": "basic",
+        "size": 2,
+        "quantity": 1,
+        "filename": "mergedge",
+        "is_can_be_sold_on_mp": true,
+        "img_ver": 1,
+        "created_by_title": {
+          "link": "",
+          "text": ""
+        }
+      }
+    ],
+    "total": 195,
+    "skip": "192",
+    "limit": "48"
+  },
+  "error": ""
+}

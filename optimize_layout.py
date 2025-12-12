@@ -17,6 +17,7 @@ from collections import defaultdict
 import glob
 import os
 import time
+from datetime import datetime
 
 DEFAULT_ROOM_FILE = "room_config.json"
 DEFAULT_MINERS_FILE = "inventory_miners_1.json"
@@ -636,6 +637,31 @@ def main():
         racks = assign_miners_to_racks(selection, groups, best['r3'], best['r4'], rack_names=best.get('rack_name_list'))
         print('\n--- Détail des racks et miners (trié par raw desc) ---')
         print(format_rack_output(racks))
+
+        # Exporter le layout optimal dans un fichier JSON (à côté du script)
+        try:
+            out_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'room_layout_optimal.json')
+            output = {
+                'generated_at': datetime.now().isoformat(sep=' '),
+                'capacity': capacity,
+                'best_candidate': {
+                    'r3': int(best.get('r3', 0)),
+                    'r4': int(best.get('r4', 0)),
+                    'total_racks': int(best.get('total_racks', 0)),
+                    'final_power': float(best.get('final_power', 0.0)),
+                    'raw_power': float(best.get('raw_power', 0.0)),
+                    'miner_bonus_percent': int(best.get('miner_bonus_percent', 0)),
+                    'used_units': int(best.get('used_units', 0)),
+                    'avg_rack_percent': float(best.get('avg_rack_percent', 0.0))
+                },
+                'selection': best.get('selection', {}),
+                'racks': racks
+            }
+            with open(out_path, 'w', encoding='utf-8') as of:
+                json.dump(output, of, indent=2, ensure_ascii=False)
+            print(f"\nLayout optimal sauvegardé dans: {out_path}")
+        except Exception as e:
+            print(f"\nImpossible d'écrire le fichier de sortie: {e}")
 
         # print execution time
         elapsed = time.time() - start_time
