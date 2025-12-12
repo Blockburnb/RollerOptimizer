@@ -142,37 +142,79 @@ def collect_rack_percents(room_config_path=None):
     percents = {3: [], 4: []}
     names = {3: [], 4: []}
     def _add_percent(entry, size_hint=None):
-        # find numeric percent-like keys
+        # quick guard: only consider entries that look like racks to avoid
+        # accidentally treating miners (which may contain numeric fields) as racks.
+        # Criteria (in order): explicit type=='rack', explicit 'size' or 'height' fields,
+        # or name ending with '6' or '8' (legacy fallback requested).
         name_val = None
         for nk in ('name', 'title', 'display_name', 'label'):
             if nk in entry and isinstance(entry[nk], str):
                 name_val = entry[nk]
                 break
-        # fallback to some identifier
         if name_val is None:
             name_val = entry.get('id') or entry.get('type') or None
+
+        is_rack_candidate = False
+        t = entry.get('type')
+        if isinstance(t, str) and 'rack' in t.lower():
+            is_rack_candidate = True
+        if not is_rack_candidate and 'size' in entry:
+            is_rack_candidate = True
+        if not is_rack_candidate and 'height' in entry:
+            is_rack_candidate = True
+        # last-char fallback (only as a last resort for detection)
+        if not is_rack_candidate and isinstance(name_val, str) and name_val.strip():
+            lname = name_val.strip().lower()
+            # only consider textual hints that clearly indicate a rack
+            if 'rack' in lname or lname.endswith(' 6') or lname.endswith(' 8'):
+                try:
+                    last_char = lname[-1]
+                    if last_char in ('6', '8'):
+                        is_rack_candidate = True
+                except Exception:
+                    pass
+
+        if not is_rack_candidate:
+            # not a rack -> skip silently
+            return
+
+        # find numeric percent-like keys
         for k, v in entry.items():
             if not isinstance(v, (int, float)):
                 continue
             kl = k.lower()
-            if 'percent' in kl or 'bonus' in kl or 'percent' in kl:
+            if 'percent' in kl or 'bonus' in kl:
                 try:
                     val = int(v)
                 except Exception:
                     continue
-                # determine height
+                # determine height: prefer explicit 'height' then 'size', else derive from name last-char
+                h = None
                 if 'height' in entry and isinstance(entry.get('height'), int):
-                    h = entry.get('height')
+                    h = int(entry.get('height'))
                 elif 'size' in entry and isinstance(entry.get('size'), int):
-                    h = entry.get('size') // 2
-                elif size_hint:
+                    try:
+                        h = int(entry.get('size')) // 2
+                    except Exception:
+                        h = None
+                if h is None and isinstance(name_val, str) and name_val.strip():
+                    try:
+                        last_char = name_val.strip()[-1]
+                        if last_char in ('6', '8'):
+                            h = int(last_char) // 2
+                    except Exception:
+                        h = None
+                # optional explicit size_hint
+                if h is None and size_hint in (3, 4):
                     h = size_hint
-                else:
-                    # unknown -> assume height 3
-                    h = 3
-                if h in (3,4):
+                if h is None:
+                    try:
+                        print(f"⚠️  Ignoring ambiguous rack entry (no explicit height/size): {name_val}")
+                    except Exception:
+                        pass
+                    return
+                if h in (3, 4):
                     percents[h].append(int(val))
-                    # store provided name or a placeholder (we'll label later if missing)
                     names[h].append(name_val or (f"{h}-étages"))
                 return
 

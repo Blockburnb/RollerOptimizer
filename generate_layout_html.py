@@ -1,29 +1,46 @@
 #!/usr/bin/env python3
 """
-Génère une page HTML interactive qui affiche le layout optimal en conservant l'animation des GIFs.
-Usage:
-  python generate_layout_html.py [--layout room_layout_optimal.json] [--icons icons] [--out room_layout_visual.html]
-
-Le script cherche des GIFs dans `icons/` en fonction du nom du miner (slugifié). Si aucun GIF n'est trouvé pour un miner, il utilise `har_icon.gif` si présent.
-La page HTML place les racks côte-à-côte et les miners par étage (left-to-right). Les GIF restent animés car la page référence les fichiers GIF.
+Génère une page HTML ergonomique (Dashboard) pour le layout RollerCoin.
+Affiche les miners, racks, stats, et répartit le tout par Room.
 """
 import argparse
 import json
 import os
 import re
+import math
+import base64
 from html import escape
 
-# try to import Pillow to read GIF dimensions; fail gracefully
-try:
-    from PIL import Image
-except Exception:
-    Image = None
+# Configuration visuelle
+UNIT_PX = 60  # Largeur d'une unité (1 cellule) en pixels
+FLOOR_HEIGHT_PX = 55 # Hauteur d'un étage
+RACK_MARGIN = 10
 
-UNIT_PX = 48
-FLOOR_PX = 48
-RACK_SPACING = 24
-MARGIN = 12
+def format_power(power_raw):
+    """Formate la puissance en Th/s, Ph/s, Eh/s, Zh/s."""
+    try:
+        p = float(power_raw)
+    except:
+        return "0 Gh/s"
+    
+    units = ["Gh/s", "Th/s", "Ph/s", "Eh/s", "Zh/s"]
+    unit_idx = 0
+    while p >= 1000 and unit_idx < len(units) - 1:
+        p /= 1000.0
+        unit_idx += 1
+    return f"{p:.2f} {units[unit_idx]}"
 
+def format_bonus(bonus_raw):
+    """Formate le bonus (ex: 4500 -> 45%)."""
+    try:
+        val = float(bonus_raw) / 100.0
+    except:
+        return "0%"
+    
+    # Si c'est un entier (ex: 10.0), on affiche 10%, sinon 10.5%
+    if val.is_integer():
+        return f"{int(val)}%"
+    return f"{val:.2f}%".replace('.', ',')
 
 def slugify(s: str) -> str:
     if not s:
@@ -33,322 +50,572 @@ def slugify(s: str) -> str:
     s = s.strip('_')
     return s
 
-
 def pick_icon_path(icons_dir, miner):
-    # Try filename field, then name slug, then simple variants
+    """Cherche l'icône du mineur (GIF)"""
+    # Priorité 1: filename explicite
     filename_token = miner.get('filename') if isinstance(miner.get('filename'), str) else None
     candidates = []
     if filename_token:
         candidates.append(filename_token)
+    
+    # Priorité 2: Nom du mineur
     name = miner.get('name')
     if isinstance(name, dict):
-        # name may be localized dict — pick english or first value
         name_val = name.get('en') or next(iter(name.values()), '')
     else:
         name_val = name or ''
+    
     candidates.append(name_val)
     candidates.append(slugify(name_val))
+    
+    # Nettoyage des candidats
     candidates = [slugify(c) for c in candidates if c]
+    
     for c in candidates:
         p = os.path.join(icons_dir, f"{c}.gif")
         if os.path.exists(p):
             return os.path.relpath(p).replace('\\', '/')
-    # fallback
+            
+    # Fallback générique
     fallback = os.path.join(os.path.dirname(__file__), 'har_icon.gif')
     if os.path.exists(fallback):
         return os.path.relpath(fallback).replace('\\', '/')
     return None
 
-
-def _get_icon_size(icon_path):
-    """Return (width, height) for a GIF file or None if unavailable."""
-    if not icon_path:
-        return None
-    # accept either relative path (as used in HTML) or absolute
-    abs_path = os.path.abspath(icon_path)
-    if not os.path.exists(abs_path):
-        return None
-    if Image is None:
-        return None
+def resolve_rack_percent(room_config, rack):
+    """Retourne le pourcentage du rack en centi-percent (int) si possible, sinon 0.
+    Recherche dans le dict `rack` lui-même puis dans `room_config` (data -> racks / rack_info).
+    """
+    # Priorité: champ dans le rack lui-même
+    if isinstance(rack, dict):
+        for k in ('percent', 'bonus', 'rack_percent'):
+            if k in rack and isinstance(rack.get(k), (int, float)):
+                try:
+                    return int(rack.get(k))
+                except Exception:
+                    pass
+    # Ensuite recherche dans room_config si fourni
+    if not room_config:
+        return 0
     try:
-        with Image.open(abs_path) as im:
-            return im.width, im.height
+        data = room_config.get('data', room_config) if isinstance(room_config, dict) else {}
+        # chercher dans listes plausibles
+        for key in ('racks', 'rack_templates', 'rack_info', 'racks_list', 'items'):
+            if key in data and isinstance(data[key], list):
+                for entry in data[key]:
+                    if not isinstance(entry, dict):
+                        continue
+                    # match by id or by name
+                    if rack.get('_id') and entry.get('_id') == rack.get('_id'):
+                        for k in ('percent', 'bonus', 'rack_percent'):
+                            if k in entry and isinstance(entry.get(k), (int, float)):
+                                return int(entry.get(k))
+                    # name matching (entry name can be dict or string)
+                    rname = rack.get('name')
+                    if rname:
+                        # normalize both to string
+                        try:
+                            en = entry.get('name')
+                            if isinstance(en, dict):
+                                en_val = en.get('en') or next(iter(en.values()), '')
+                            else:
+                                en_val = str(en or '')
+                            # compare lowercased
+                            if isinstance(rname, dict):
+                                rname_val = rname.get('en') or next(iter(rname.values()), '')
+                            else:
+                                rname_val = str(rname)
+                            if en_val and rname_val and en_val.lower() == rname_val.lower():
+                                for k in ('percent', 'bonus', 'rack_percent'):
+                                    if k in entry and isinstance(entry.get(k), (int, float)):
+                                        return int(entry.get(k))
+                        except Exception:
+                            pass
+        # deep scan fallback: some configs nest racks under rooms
+        def scan(o):
+            if isinstance(o, dict):
+                for k,v in o.items():
+                    if isinstance(v, (dict, list)):
+                        res = scan(v)
+                        if res is not None:
+                            return res
+                # check this dict itself for percent/name
+                for k in ('percent','bonus','rack_percent'):
+                    if k in o and isinstance(o.get(k), (int,float)):
+                        # optional name match
+                        en = o.get('name')
+                        if en:
+                            try:
+                                if isinstance(en, dict):
+                                    en_val = en.get('en') or next(iter(en.values()), '')
+                                else:
+                                    en_val = str(en or '')
+                                rname = rack.get('name')
+                                if rname:
+                                    if isinstance(rname, dict):
+                                        rname_val = rname.get('en') or next(iter(rname.values()), '')
+                                    else:
+                                        rname_val = str(rname)
+                                    if en_val and rname_val and en_val.lower() == rname_val.lower():
+                                        return int(o.get(k))
+                            except Exception:
+                                pass
+                return None
+            elif isinstance(o, list):
+                for i in o:
+                    res = scan(i)
+                    if res is not None:
+                        return res
+            return None
+        res = scan(data)
+        if isinstance(res, int):
+            return res
     except Exception:
-        return None
+        pass
+    return 0
 
+def extract_gifs_from_har(har_path, icons_dir):
+    """Extrait tous les .gif contenus dans un fichier HAR et les écrit dans icons_dir.
+    Fonction robuste: cherche les réponses avec mimeType image/gif ou URL finissant par .gif.
+    Supporte le contenu encodé en base64 (response.content.encoding == 'base64').
+    """
+    if not os.path.exists(har_path):
+        print(f"ℹ️  HAR introuvable: {har_path} — aucune extraction effectuée.")
+        return
 
-def generate_html(layout, icons_dir, out_path):
-    racks = layout.get('racks', [])
-    title = f"Room layout generated: {layout.get('generated_at','') }"
-
-    # Try to precompute icon intrinsic sizes by scanning the icons directory (Pillow optional)
-    icon_sizes = {}
     try:
-        from PIL import Image
-        for fn in os.listdir(icons_dir):
-            if not fn.lower().endswith('.gif'):
+        with open(har_path, 'r', encoding='utf-8') as fh:
+            har = json.load(fh)
+    except Exception as e:
+        print(f"⚠️  Impossible de lire le HAR: {e}")
+        return
+
+    entries = har.get('log', {}).get('entries', [])
+    os.makedirs(icons_dir, exist_ok=True)
+    found = 0
+    skipped = 0
+
+    for i, entry in enumerate(entries):
+        try:
+            req = entry.get('request', {})
+            resp = entry.get('response', {})
+            url = req.get('url', '')
+            cont = resp.get('content', {})
+            mime = cont.get('mimeType', '') or ''
+
+            is_gif = mime.startswith('image/gif') or url.lower().split('?')[0].endswith('.gif')
+            if not is_gif:
                 continue
-            p = os.path.join(icons_dir, fn)
-            try:
-                with Image.open(p) as im:
-                    w, h = im.size
-                rel = os.path.relpath(p).replace('\\', '/')
-                icon_sizes[rel] = (w, h)
-                icon_sizes[fn] = (w, h)
-                icon_sizes[os.path.splitext(fn)[0]] = (w, h)
-            except Exception:
-                # skip unreadable files
-                pass
-    except Exception:
-        # Pillow not available or error occured: we'll fall back to CSS-only sizing
-        icon_sizes = {}
 
-    # Start building HTML
+            filename = os.path.basename(url.split('?')[0]) or f'icon_{i}.gif'
+            filename = filename if filename.lower().endswith('.gif') else filename + '.gif'
+            out_path = os.path.join(icons_dir, filename)
+
+            # Si le fichier existe déjà, on skip pour éviter d'écraser
+            if os.path.exists(out_path):
+                skipped += 1
+                continue
+
+            text = cont.get('text')
+            encoding = cont.get('encoding')
+            if text is None:
+                # Pas de contenu in-har, on ne peut pas récupérer l'image
+                skipped += 1
+                continue
+
+            if encoding == 'base64':
+                try:
+                    data = base64.b64decode(text)
+                except Exception:
+                    # Parfois le HAR contient des données mal formées
+                    data = text.encode('utf-8', errors='ignore')
+            else:
+                # Texte brut -> écrire en bytes en supposant UTF-8 ou iso-8859-1
+                try:
+                    data = text.encode('utf-8')
+                except Exception:
+                    data = text.encode('iso-8859-1', errors='ignore')
+
+            with open(out_path, 'wb') as of:
+                of.write(data)
+            found += 1
+        except Exception:
+            skipped += 1
+            continue
+
+    print(f"✅ Extraction GIF HAR: {found} fichiers écrits, {skipped} ignorés (déjà présents ou erreur).")
+
+def generate_html(layout, room_config, icons_dir, out_path):
+    racks_layout = layout.get('racks', [])
+    
+    # Récupération des infos globales
+    best = layout.get('best_candidate', {})
+    total_power = format_power(best.get('final_power', 0))
+    total_bonus = format_bonus(best.get('miner_bonus_percent', 0))
+    generated_date = layout.get('generated_at', 'Inconnue')
+
+    # Calculate raw power and estimated rack bonuses for the whole layout
+    total_raw_units = 0.0
+    total_rack_bonus_power = 0.0
+    # store per-rack computed percent for display
+    for rk in racks_layout:
+        miners = rk.get('miners', []) or []
+        raw = 0.0
+        for m in miners:
+            try:
+                raw += float(m.get('power', 0) or 0)
+            except Exception:
+                pass
+        # resolve percent (centi-percent) and compute bonus power
+        r_percent = resolve_rack_percent(room_config, rk) or 0
+        rk['_computed_raw'] = raw
+        rk['_computed_percent'] = int(r_percent)
+        try:
+            total_raw_units += raw
+            total_rack_bonus_power += raw * (r_percent / 10000.0)
+        except Exception:
+            pass
+
+    # Format totals for display
+    total_raw_fmt = format_power(total_raw_units)
+    total_rack_bonus_fmt = format_power(total_rack_bonus_power)
+
+    # Tentative de reconstruction des Rooms basée sur room_config
+    rooms_structure = []
+    
+    if room_config and 'rooms' in room_config.get('data', {}):
+        # Utiliser la config réelle
+        rc_data = room_config['data']['rooms']
+        for room in rc_data:
+            r_info = room.get('room_info', {})
+            r_id = room.get('_id', 'Unknown')
+            rooms_structure.append({
+                "name": f"Room {len(rooms_structure) + 1}",
+                "racks": [] 
+            })
+    else:
+        rooms_structure.append({"name": "Main Room", "racks": []})
+
+    # HTML Header & CSS
     parts = []
     parts.append('<!doctype html>')
-    parts.append('<html><head><meta charset="utf-8"><title>' + escape(title) + '</title>')
+    parts.append('<html lang="fr"><head><meta charset="utf-8">')
+    parts.append(f'<title>RollerOptimizer Dashboard - {generated_date}</title>')
     parts.append('<meta name="viewport" content="width=device-width,initial-scale=1">')
+    parts.append('<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">')
     parts.append('<style>')
-    parts.append('body{font-family:Segoe UI,Arial,sans-serif;background:#fff;color:#111;padding:12px}')
-    parts.append('.room{white-space:nowrap}')
-    parts.append('.rack{display:inline-block;vertical-align:top;margin-right:%dpx;border:1px solid #888;padding:8px;background:#f7f7f7}' % RACK_SPACING)
-    # make rack a positioned container so absolutely positioned .miner elements are relative to it
-    parts.append('.rack{position:relative;}')
-    parts.append('.rack .rack-title{font-weight:700;margin-bottom:6px;text-align:center}')
-    parts.append('.floor{position:relative;border:1px solid rgba(0,0,0,0.06);margin-bottom:6px;height:%dpx;width:100%%;background:linear-gradient(#fff,#eee)}' % FLOOR_PX)
-    # miner container: no green border here; make sure the miner box cannot overflow the floor
-    parts.append('.miner{position:absolute;top:4px;left:4px;overflow:hidden;box-sizing:border-box;border-radius:4px;background:transparent;display:flex;align-items:center;gap:6px;padding:4px;white-space:nowrap;max-height:%dpx}' % (FLOOR_PX - 4))
-    # icon wrapper: green border only around the GIF
-    parts.append('.miner .icon{border:2px solid rgba(20,120,20,0.9);padding:2px;border-radius:4px;background:#fff;display:inline-flex;align-items:center;justify-content:center;}')
-    # constrain gif height to floor height but let width be intrinsic; use a reasonable max so labels have room
-    parts.append('.miner .icon img{height:auto;max-height:%dpx;width:auto;display:block;}' % (FLOOR_PX - 12))
-    # allow labels to wrap when space is tight; they will stack under the icon for small miners
-    parts.append('.miner .label{font-size:11px;white-space:normal;flex:0 0 auto;color:#111;line-height:1.1;overflow-wrap:break-word;}')
-    parts.append('.legend{margin-top:12px;font-size:13px;color:#333}')
+    parts.append('''
+        :root {
+            --bg-color: #1a1a2e;
+            --card-bg: #16213e;
+            --accent-color: #0f3460;
+            --text-color: #e94560;
+            --text-light: #f1f1f1;
+            --rack-border: #444;
+            --rack-bg: #2a2a2a;
+            --floor-border: #555;
+            --bonus-color: #ffd700;
+            --power-color: #00d4ff;
+        }
+        body { font-family: 'Roboto', sans-serif; background: var(--bg-color); color: var(--text-light); margin: 0; padding: 20px; }
+        
+        /* Header Stats */
+        .stats-bar {
+            display: flex; gap: 20px; background: var(--card-bg); padding: 15px; border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3); margin-bottom: 20px; flex-wrap: wrap; align-items: center;
+        }
+        .stat-item { display: flex; flex-direction: column; }
+        .stat-label { font-size: 0.8em; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .stat-value { font-size: 1.5em; font-weight: bold; color: var(--text-light); }
+        .highlight { color: var(--text-color); }
+
+        /* Layout Grid */
+        .room-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
+        }
+
+        /* Rack Design */
+        .rack {
+            background: var(--rack-bg);
+            border: 2px solid var(--rack-border);
+            border-radius: 6px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            position: relative;
+            transition: transform 0.2s;
+            /* Allow tooltips to overflow the rack and ensure stacking order */
+            overflow: visible;
+            z-index: 1;
+        }
+        .rack:hover { transform: translateY(-5px); border-color: var(--text-color); z-index: 1000; }
+        
+        .rack-header {
+            text-align: center; font-size: 0.85em; margin-bottom: 4px; color: #aaa;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 140px;
+        }
+
+        .floor {
+            height: 55px; /* FLOOR_HEIGHT_PX */
+            width: 124px; /* 2 units * UNIT_PX + margins */
+            border-bottom: 2px solid var(--floor-border);
+            position: relative;
+            background: rgba(255,255,255,0.02);
+        }
+        .floor:last-child { border-bottom: none; }
+
+        /* Miner Design */
+        .miner {
+            position: absolute;
+            bottom: 2px;
+            height: 50px;
+            border-radius: 4px;
+            overflow: visible; /* Allow hover tooltip to show */
+            cursor: pointer;
+            transition: filter 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 0; /* Ensure miner itself doesn't outrank the tooltip */
+        }
+        .miner:hover { filter: brightness(1.2); }
+        
+        .miner img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Badges on Miner */
+        .badge {
+            position: absolute;
+            font-size: 9px;
+            font-weight: bold;
+            padding: 1px 3px;
+            border-radius: 3px;
+            /* keep badges under the tooltip */
+            z-index: 1;
+            pointer-events: none; /* don't block tooltip hover */
+            text-shadow: 1px 1px 0 #000;
+            transition: opacity 0.18s ease, transform 0.18s ease;
+        }
+        .badge-lvl { top: -2px; left: -2px; background: #4caf50; color: white; }
+        .badge-bonus { top: -2px; right: -2px; background: var(--bonus-color); color: black; }
+
+        /* When hovering a miner, fade/move badges so they don't cover the tooltip */
+        .miner:hover .badge {
+            opacity: 0.12;
+            transform: translateY(-6px) scale(0.95);
+        }
+
+        /* Tooltip (Custom Hover Card) */
+        .miner .tooltip {
+            visibility: hidden;
+            width: 180px;
+            background-color: rgba(0, 0, 0, 0.95);
+            color: #fff;
+            text-align: left;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            /* Very high z-index to be above all other elements */
+            z-index: 2147483647 !important; /* Max safe z-index to ensure top layering */
+            bottom: 110%; /* Place above */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: 1px solid var(--text-color);
+            box-shadow: 0 0 10px var(--text-color);
+            pointer-events: auto; /* allow hover interaction */
+            will-change: transform, opacity; /* hint to browser for stacking */
+        }
+        
+        .miner:hover .tooltip { visibility: visible; opacity: 1; }
+
+        /* Legend */
+        .legend { margin-top: 30px; padding: 15px; background: var(--card-bg); border-radius: 8px; }
+        .legend h3 { margin-top: 0; }
+        .legend ul { list-style: none; padding: 0; }
+        .legend li { padding: 5px 0; border-bottom: 1px solid #333; }
+
+    ''')
     parts.append('</style></head><body>')
 
-    parts.append(f'<h2>{escape(title)}</h2>')
-    parts.append('<div class="room">')
+    # Top Stats Bar (ajout Raw power et Rack bonus)
+    parts.append(f'''
+    <div class="stats-bar">
+        <div class="stat-item">
+            <span class="stat-label">Date Génération</span>
+            <span class="stat-value" style="font-size:1em">{generated_date.split('.')[0]}</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Puissance Totale</span>
+            <span class="stat-value highlight">{total_power}</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Puissance brute (miners)</span>
+            <span class="stat-value highlight">{total_raw_fmt}</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Bonus racks (est.)</span>
+            <span class="stat-value" style="color:var(--bonus-color)">{total_rack_bonus_fmt}</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Bonus Total (miners)</span>
+            <span class="stat-value" style="color:var(--bonus-color)">{total_bonus}</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Racks utilisés</span>
+            <span class="stat-value">{len(racks_layout)}</span>
+        </div>
+    </div>
+    ''')
 
-    for ri, r in enumerate(racks, start=1):
-        # collect overflow miners globally
-        if 'overflow_miners' not in locals():
-            overflow_miners = []
-        height = int(r.get('height', 3))
-        units = height * 2
-        rack_width_px = units * UNIT_PX
-        parts.append(f'<div class="rack" style="width:{rack_width_px}px">')
-        parts.append(f'<div class="rack-title">Rack #{ri} ' + escape(str(r.get('name',''))) + f' (h={height})</div>')
-        # floors: draw from top to bottom so visually top floor is first
-        # we'll maintain floor_slots count and left offset
-        floor_units = [2] * height
-        floor_offsets = [0] * height
-        miners = r.get('miners', []) or []
-        # sort as in python script
-        try:
-            miners_sorted = sorted(miners, key=lambda x: float(x.get('power',0)), reverse=True)
-        except Exception:
-            miners_sorted = miners
-        # We will render floors stacked top->bottom
-        for fi in range(height-1, -1, -1):
-            parts.append(f'<div class="floor" style="width:{rack_width_px}px">')
-            parts.append('</div>')
-        # Now place miners as absolutely positioned elements relative to the rack container
-        # We must compute top position for each floor: since floors were added top->bottom, compute y
-        floor_tops = []
-        # compute cumulative top for each floor index (0..height-1 top->bottom)
-        rack_inner_top = 36  # approx title height + margin
-        for fh in range(height):
-            top = rack_inner_top + fh * (FLOOR_PX + 6)  # floor height + margin
-            floor_tops.append(top)
-        # For layout simplicity, we'll place miners by finding first floor with space and render absolute divs using inline styles
-        placed_miners = []
-        for m in miners_sorted:
-            mw = int(m.get('width',1))
+    parts.append('<h2>Configuration Optimale</h2>')
+    parts.append('<div class="room-container">')
+
+    overflow_miners = []
+
+    # Boucle sur les racks
+    for i, rack in enumerate(racks_layout):
+        rack_name = rack.get('name', f'Rack #{i+1}')
+        height = int(rack.get('height', 4))
+        
+        parts.append(f'<div class="rack">')
+        parts.append(f'<div class="rack-header" title="{escape(rack_name)}">{escape(rack_name)}</div>')
+        
+        floors_capacity = [2] * height # 2 slots par étage
+        floors_html = [""] * height # Contenu HTML par étage
+        
+        miners = rack.get('miners', [])
+        
+        current_floor = height - 1
+        
+        for m in miners:
+            m_width = int(m.get('width', 1))
+            m_name = m.get('name', 'Unknown')
+            if isinstance(m_name, dict): m_name = m_name.get('en', 'Unknown')
+            
             placed = False
-            for fi in range(height):
-                if floor_units[fi] >= mw:
-                    left_px = floor_offsets[fi] * UNIT_PX + 4
-                    top_px = floor_tops[fi] + 4
-                    w_px = mw * UNIT_PX - 8
-                    icon = pick_icon_path(icons_dir, m)
+            for f_idx in range(height):
+                if floors_capacity[f_idx] >= m_width:
+                    left_pos = (2 - floors_capacity[f_idx]) * UNIT_PX + 2
+                    
+                    icon_path = pick_icon_path(icons_dir, m)
+                    
+                    p_fmt = format_power(m.get('power', 0))
+                    b_fmt = format_bonus(m.get('bonus_percent', 0))
+                    lvl = m.get('level', 0)
+                    
+                    width_px = (m_width * UNIT_PX) - 4
+                    img_tag = f'<img src="{icon_path}" alt="icon">' if icon_path else '<span style="font-size:10px">No Img</span>'
+                    
+                    tooltip = f'''
+                    <div class="tooltip">
+                        <h4>{escape(m_name)}</h4>
+                        <div>Niveau: {lvl}</div>
+                        <div>Puissance: <span class="val-power">{p_fmt}</span></div>
+                        <div>Bonus: <span class="val-bonus">{b_fmt}</span></div>
+                    </div>
+                    '''
+                    
+                    badges = f'<span class="badge badge-lvl">L{lvl}</span>'
+                    if float(m.get('bonus_percent',0)) > 0:
+                        badges += f'<span class="badge badge-bonus">{b_fmt}</span>'
 
-                    # compute display size for the icon if available (uses precomputed icon_sizes)
-                    display_w = None
-                    display_h = None
-                    img_style = ''
-                    if icon:
-                        # look up by relpath, basename or slug
-                        size = icon_sizes.get(icon) or icon_sizes.get(os.path.basename(icon)) or icon_sizes.get(os.path.splitext(os.path.basename(icon))[0])
-                        if size:
-                            ow, oh = size
-                            max_h = max(8, FLOOR_PX - 12)
-                            try:
-                                scale = min(1.0, float(max_h) / float(oh)) if oh > 0 else 1.0
-                            except Exception:
-                                scale = 1.0
-                            display_h = max(1, int(oh * scale))
-                            display_w = max(1, int(ow * scale))
-                            img_style = f'style="height:{display_h}px;width:{display_w}px"'
-                        else:
-                            # fallback: constrain by CSS max-height
-                            img_style = f'style="max-height:{FLOOR_PX - 12}px"'
-
-                    # wrap the image in a .icon div so the green border surrounds only the GIF
-                    img_html_raw = f'<img src="{escape(icon)}" alt="{escape(str(m.get("name","")))}" {img_style}/>' if icon else ''
-                    img_html = f'<div class="icon">{img_html_raw}</div>' if icon else ''
-
-                    # determine miner container min-width so the GIF fits; keep at least the allocated grid width
-                    allocated_px = w_px
-                    if display_w:
-                        min_width = max(allocated_px, display_w + 16)
-                        min_height = display_h + 8
-                    else:
-                        min_width = allocated_px
-                        min_height = FLOOR_PX - 8
-
-                    # If this miner occupies only 1 unit (so there may be two miners on the floor),
-                    # allow the label to wrap to a second line while keeping the icon on the left.
-                    stack_label = (mw == 1)
-                    inline_extra = ''
-                    # we keep the normal left-icon/right-label flex layout; when stacking is needed
-                    # compute a max-width for the label so it will wrap instead of overflowing.
-                    label_style_attr = ''
-                    if stack_label:
-                        # approximate icon rendered width (use display_w if known, else a reasonable fallback)
-                        icon_w = display_w if display_w else (FLOOR_PX - 12)
-                        # include icon wrapper padding/border/gap estimate
-                        icon_total = int(icon_w) + 8
-                        # Allow the label to be substantially wider so it doesn't wrap into tiny fragments.
-                        # Use a reference width equal to what a full-width miner would permit so
-                        # single-unit miners on crowded floors get the same available label space.
-                        reference_desired = UNIT_PX * 2 * 2
-                        label_max = max(48, int(reference_desired - icon_total))
-                        label_style_attr = f'style="max-width:{label_max}px;"'
-                        # increase min-height slightly so two wrapped lines can fit within the floor
-                        # only use display_h if available, otherwise fall back to a reasonable value
-                        if display_h:
-                            min_height = max(min_height, display_h + 12)
-                        else:
-                            min_height = max(min_height, FLOOR_PX - 8)
-
-                    # resolve localized name if necessary
-                    name_field = m.get('name')
-                    if isinstance(name_field, dict):
-                        name_text = name_field.get('en') or next(iter(name_field.values()), '')
-                    else:
-                        name_text = name_field or ''
-                    label = escape(str(name_text))
-                    level = int(m.get('level', 0)) if m.get('level') is not None else 0
-                    power = int(float(m.get('power', 0))) if m.get('power') is not None else 0
-                    # format power with spaces every 3 digits (e.g. 1234567 -> '1 234 567')
-                    try:
-                        formatted_power = f"{power:,}".replace(',', ' ')
-                    except Exception:
-                        formatted_power = str(power)
-                    # bonus in source appears to be in hundredths of a percent (e.g. 4500 -> 45.00%)
-                    raw_bonus = m.get('bonus_percent', 0)
-                    try:
-                        bonus_val = float(raw_bonus)
-                    except Exception:
-                        bonus_val = 0.0
-                    bonus_pct = bonus_val / 100.0
-                    # format with comma as decimal separator, drop unnecessary zeros (45.00 -> 45%)
-                    if abs(bonus_pct - round(bonus_pct)) < 1e-9:
-                        bonus_str = f"{int(round(bonus_pct))}%"
-                    else:
-                        s = f"{bonus_pct:.2f}".rstrip('0').rstrip('.')
-                        bonus_str = s.replace('.', ',') + '%'
-
-                    # render miner: prepare label HTML (compact: no '— power' / '— bonus' words)
-                    label_text = f"{label} lv{level} {formatted_power} {bonus_str}"
-                    if label_style_attr:
-                        label_html = f'<div class="label" {label_style_attr}>{label_text}</div>'
-                    else:
-                        label_html = f'<div class="label">{label_text}</div>'
-
-                    parts.append(f'<div class="miner" style="left:{left_px}px;top:{top_px}px;min-width:{min_width}px;min-height:{min_height}px;{inline_extra}">{img_html}{label_html}</div>')
-                    floor_units[fi] -= mw
-                    floor_offsets[fi] += mw
+                    div_miner = f'''
+                    <div class="miner" style="width:{width_px}px; left:{left_pos}px;">
+                        {img_tag}
+                        {badges}
+                        {tooltip}
+                    </div>
+                    '''
+                    
+                    floors_html[f_idx] += div_miner
+                    floors_capacity[f_idx] -= m_width
                     placed = True
                     break
+            
             if not placed:
-                # if cannot place, append to legend later
-                placed_miners.append(m)
                 overflow_miners.append(m)
 
-        parts.append('</div>')
+        for f_html in floors_html:
+            parts.append(f'<div class="floor">{f_html}</div>')
+            
+        parts.append('</div>') # End Rack
 
-    parts.append('</div>')
-    # legend overflow
-    parts.append('<div class="legend">')
-    parts.append("<strong>Légende:</strong> miners non placés (s'il y en a) apparaissent ici.")
-    # list overflow miners if any
-    if 'overflow_miners' in locals() and overflow_miners:
-        parts.append('<ul>')
+    parts.append('</div>') # End Room Container
+
+    if overflow_miners:
+        parts.append('<div class="legend">')
+        parts.append('<h3>⚠️ Mineurs non placés (Overflow)</h3><ul>')
         for om in overflow_miners:
-            name = om.get('name') if not isinstance(om.get('name'), dict) else (om.get('name').get('en') or next(iter(om.get('name').values()), ''))
-            # format overflow miner power
-            try:
-                om_power = int(float(om.get('power', 0)))
-            except Exception:
-                om_power = 0
-            try:
-                om_power_fmt = f"{om_power:,}".replace(',', ' ')
-            except Exception:
-                om_power_fmt = str(om_power)
-            # format overflow bonus to human percent like above
-            raw_b = om.get('bonus_percent', 0)
-            try:
-                bval = float(raw_b)
-            except Exception:
-                bval = 0.0
-            b_pct = bval / 100.0
-            if abs(b_pct - round(b_pct)) < 1e-9:
-                b_str = f"{int(round(b_pct))}%"
-            else:
-                s = f"{b_pct:.2f}".rstrip('0').rstrip('.')
-                b_str = s.replace('.', ',') + '%'
-            parts.append('<li>' + escape(str(name)) + ' (width=' + str(int(om.get('width',1))) + ', power=' + om_power_fmt + ', bonus=' + b_str + ')</li>')
-        parts.append('</ul>')
-    parts.append('</div>')
+            n = om.get('name', 'Unknown')
+            if isinstance(n, dict): n = n.get('en')
+            p = format_power(om.get('power', 0))
+            parts.append(f'<li>{escape(str(n))} - {p}</li>')
+        parts.append('</ul></div>')
 
     parts.append('</body></html>')
 
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(parts))
-    # try to open the generated HTML in the default app/browser
+    
+    print(f"✅ Dashboard généré avec succès : {out_path}")
+    
     try:
-        # Windows: open with default program
         if hasattr(os, 'startfile'):
             os.startfile(out_path)
         else:
             import webbrowser
             webbrowser.open('file://' + os.path.abspath(out_path))
-    except Exception:
-        try:
-            import webbrowser
-            webbrowser.open('file://' + os.path.abspath(out_path))
-        except Exception:
-            pass
-
-    return out_path
-
+    except:
+        pass
 
 def main():
-    p = argparse.ArgumentParser()
-    p.add_argument('--layout', default=os.path.join(os.path.dirname(__file__), 'room_layout_optimal.json'))
-    p.add_argument('--icons', default=os.path.join(os.path.dirname(__file__), 'icons'))
-    p.add_argument('--out', default=os.path.join(os.path.dirname(__file__), 'room_layout_visual.html'))
+    p = argparse.ArgumentParser(description="Générateur Dashboard RollerCoin")
+    p.add_argument('--layout', default='room_layout_optimal.json', help="Fichier JSON du layout optimal")
+    p.add_argument('--config', default='room_config.json', help="Fichier JSON de config des rooms (optionnel)")
+    p.add_argument('--icons', default='icons', help="Dossier des images")
+    p.add_argument('--out', default='room_layout_visual.html', help="Fichier HTML de sortie")
+    p.add_argument('--har', default='rollercoin.com.har', help="Fichier .har pour extraire les icônes (optionnel)")
     args = p.parse_args()
 
-    if not os.path.exists(args.layout):
-        print('Fichier layout introuvable:', args.layout)
-        return
-    layout = json.load(open(args.layout, 'r', encoding='utf-8'))
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    layout_path = os.path.join(base_dir, args.layout)
+    config_path = os.path.join(base_dir, args.config)
+    icons_path = os.path.join(base_dir, args.icons)
+    out_path = os.path.join(base_dir, args.out)
+    har_path = os.path.join(base_dir, args.har)
 
-    out = generate_html(layout, args.icons, args.out)
-    print('Page HTML générée:', out)
+    try:
+        os.makedirs(icons_path, exist_ok=True)
+        if os.path.exists(har_path):
+            extract_gifs_from_har(har_path, icons_path)
+    except Exception:
+        pass
+
+    if not os.path.exists(layout_path):
+        print(f"❌ Erreur: Fichier layout introuvable: {layout_path}")
+        return
+
+    layout_data = json.load(open(layout_path, 'r', encoding='utf-8'))
+    
+    config_data = None
+    if os.path.exists(config_path):
+        try:
+            config_data = json.load(open(config_path, 'r', encoding='utf-8'))
+        except:
+            print("⚠️ Attention: Impossible de lire room_config.json, continuation sans les infos de room.")
+
+    generate_html(layout_data, config_data, icons_path, out_path)
 
 if __name__ == '__main__':
     main()

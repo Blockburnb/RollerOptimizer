@@ -1,15 +1,15 @@
 {
-  "generated_at": "2025-12-12 10:03:34.467494",
+  "generated_at": "2025-12-12 14:58:19.492663",
   "capacity": 66,
   "best_candidate": {
-    "r3": 22,
-    "r4": 44,
+    "r3": 0,
+    "r4": 66,
     "total_racks": 66,
-    "final_power": 57578751798.876,
-    "raw_power": 3788125620.0,
+    "final_power": 57615763778.28001,
+    "raw_power": 3792007620.0,
     "miner_bonus_percent": 141080,
-    "used_units": 484,
-    "avg_rack_percent": 918.0
+    "used_units": 528,
+    "avg_rack_percent": 860.0
   },
   "selection": {
     "0": 1,
@@ -19,7 +19,7 @@
     "4": 1,
     "5": 1,
     "6": 1,
-    "7": 1,
+    "7": 3,
     "8": 1,
     "9": 1,
     "10": 1,
@@ -87,7 +87,7 @@
     "72": 1,
     "73": 1,
     "74": 1,
-    "75": 1,
+    "75": 19,
     "76": 1,
     "77": 1,
     "78": 1,
@@ -105,7 +105,7 @@
     "90": 1,
     "91": 1,
     "92": 1,
-    "93": 1,
+    "93": 2,
     "94": 1,
     "95": 1,
     "96": 1,
@@ -211,7 +211,7 @@
     "196": 1,
     "197": 1,
     "198": 1,
-    "199": 1,
+    "199": 2,
     "200": 1,
     "201": 1,
     "202": 1,
@@ -224,9 +224,10 @@
   },
   "racks": [
     {
-      "height": 3,
-      "name": "Fire Idol",
+      "height": 4,
+      "name": "Carved North Rack 8",
       "floors": [
+        0,
         0,
         0,
         0
@@ -259,20 +260,7 @@
           "power": 179160000.0,
           "width": 2,
           "bonus_percent": 4500
-        }
-      ],
-      "raw": 1499460000.0,
-      "miners_count": 4
-    },
-    {
-      "height": 3,
-      "name": "DDOS Breaker",
-      "floors": [
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "DDOS Breaker",
           "level": 1,
@@ -281,6 +269,27 @@
           "bonus_percent": 2500
         },
         {
+          "name": "Protocol Entrance",
+          "level": 4,
+          "power": 96000000.0,
+          "width": 1,
+          "bonus_percent": 2000
+        }
+      ],
+      "raw": 1695460000.0,
+      "miners_count": 6
+    },
+    {
+      "height": 4,
+      "name": "Carved North Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
           "name": "Pocket Wormhole",
           "level": 2,
           "power": 100000000.0,
@@ -288,32 +297,47 @@
           "bonus_percent": 3300
         },
         {
-          "name": "Protocol Entrance",
-          "level": 4,
-          "power": 96000000.0,
-          "width": 1,
-          "bonus_percent": 2000
-        },
-        {
           "name": "Fire Idol",
           "level": 1,
           "power": 68250000.0,
           "width": 2,
           "bonus_percent": 2500
+        },
+        {
+          "name": "Spicy Sips",
+          "level": 1,
+          "power": 65000000.0,
+          "width": 2,
+          "bonus_percent": 1200
+        },
+        {
+          "name": "Bye Bye Bye",
+          "level": 1,
+          "power": 60380000.0,
+          "width": 2,
+          "bonus_percent": 2500
         }
       ],
-      "raw": 364250000.0,
+      "raw": 293630000.0,
       "miners_count": 4
     },
     {
-      "height": 3,
-      "name": "DDOS Breaker",
+      "height": 4,
+      "name": "Server Rack 8",
       "floors": [
+        0,
         0,
         0,
         0
       ],
       "miners": [
+        {
+          "name": "Chrono Express",
+          "level": 4,
+          "power": 60000000.0,
+          "width": 2,
+          "bonus_percent": 2000
+        },
         {
           "name": "Duality Core",
           "level": 4,
@@ -343,47 +367,14 @@
           "bonus_percent": 2400
         }
       ],
-      "raw": 190840000.0,
-      "miners_count": 4
+      "raw": 250840000.0,
+      "miners_count": 5
     },
     {
-      "height": 3,
-      "name": "Fire Idol",
+      "height": 4,
+      "name": "Server Rack 8",
       "floors": [
         0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "Spicy Sips",
-          "level": 1,
-          "power": 65000000.0,
-          "width": 2,
-          "bonus_percent": 1200
-        },
-        {
-          "name": "Bye Bye Bye",
-          "level": 1,
-          "power": 60380000.0,
-          "width": 2,
-          "bonus_percent": 2500
-        },
-        {
-          "name": "Chrono Express",
-          "level": 4,
-          "power": 60000000.0,
-          "width": 2,
-          "bonus_percent": 2000
-        }
-      ],
-      "raw": 185380000.0,
-      "miners_count": 3
-    },
-    {
-      "height": 3,
-      "name": "Pocket Wormhole",
-      "floors": [
         0,
         0,
         0
@@ -416,27 +407,28 @@
           "power": 36200000.0,
           "width": 1,
           "bonus_percent": 900
-        }
-      ],
-      "raw": 154092780.0,
-      "miners_count": 4
-    },
-    {
-      "height": 3,
-      "name": "Bye Bye Bye",
-      "floors": [
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "AIrum",
           "level": 0,
           "power": 36000000.0,
           "width": 2,
           "bonus_percent": 1500
-        },
+        }
+      ],
+      "raw": 190092780.0,
+      "miners_count": 5
+    },
+    {
+      "height": 4,
+      "name": "Server Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "DDOS Breaker",
           "level": 0,
@@ -457,20 +449,7 @@
           "power": 31654770.0,
           "width": 2,
           "bonus_percent": 1095
-        }
-      ],
-      "raw": 135654770.0,
-      "miners_count": 4
-    },
-    {
-      "height": 3,
-      "name": "Fire Idol",
-      "floors": [
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "BlasterBell",
           "level": 2,
@@ -484,22 +463,58 @@
           "power": 26000000.0,
           "width": 2,
           "bonus_percent": 1700
-        },
+        }
+      ],
+      "raw": 154614770.0,
+      "miners_count": 5
+    },
+    {
+      "height": 4,
+      "name": "Carved North Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "Fire Idol",
           "level": 0,
           "power": 26000000.0,
           "width": 2,
           "bonus_percent": 1700
+        },
+        {
+          "name": "Spicy Sips",
+          "level": 0,
+          "power": 25000000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "Spicy Sips",
+          "level": 0,
+          "power": 25000000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "Chrono Express",
+          "level": 3,
+          "power": 22700000.0,
+          "width": 2,
+          "bonus_percent": 1200
         }
       ],
-      "raw": 80960000.0,
-      "miners_count": 3
+      "raw": 98700000.0,
+      "miners_count": 4
     },
     {
-      "height": 3,
-      "name": "Team Green",
+      "height": 4,
+      "name": "Carved North Rack 8",
       "floors": [
+        0,
         0,
         0,
         0
@@ -527,6 +542,13 @@
           "bonus_percent": 400
         },
         {
+          "name": "Da Ba Dee",
+          "level": 1,
+          "power": 18380000.0,
+          "width": 2,
+          "bonus_percent": 450
+        },
+        {
           "name": "Roller AltToken",
           "level": 2,
           "power": 15627990.0,
@@ -534,72 +556,46 @@
           "bonus_percent": 744
         }
       ],
-      "raw": 77217990.0,
-      "miners_count": 4
+      "raw": 95597990.0,
+      "miners_count": 5
     },
     {
-      "height": 3,
-      "name": "DDOS Breaker",
+      "height": 4,
+      "name": "Server Rack 8",
       "floors": [
+        0,
         0,
         0,
         0
       ],
       "miners": [
-        {
-          "name": "Spicy Sips",
-          "level": 0,
-          "power": 25000000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
-          "name": "Spicy Sips",
-          "level": 0,
-          "power": 25000000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
-          "name": "Chrono Express",
-          "level": 3,
-          "power": 22700000.0,
-          "width": 2,
-          "bonus_percent": 1200
-        }
-      ],
-      "raw": 72700000.0,
-      "miners_count": 3
-    },
-    {
-      "height": 3,
-      "name": "Carved North Rack 8",
-      "floors": [
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "Totem Mask",
-          "level": 3,
-          "power": 16400000.0,
-          "width": 2,
-          "bonus_percent": 1200
-        },
-        {
-          "name": "Totem Mask",
-          "level": 3,
-          "power": 16400000.0,
-          "width": 2,
-          "bonus_percent": 1200
-        },
         {
           "name": "Crown Ballot",
           "level": 2,
           "power": 15000000.0,
           "width": 1,
           "bonus_percent": 600
+        },
+        {
+          "name": "Deja Vu",
+          "level": 0,
+          "power": 15000000.0,
+          "width": 2,
+          "bonus_percent": 1600
+        },
+        {
+          "name": "Deja Vu",
+          "level": 0,
+          "power": 15000000.0,
+          "width": 2,
+          "bonus_percent": 1600
+        },
+        {
+          "name": "Deja Vu",
+          "level": 0,
+          "power": 15000000.0,
+          "width": 2,
+          "bonus_percent": 1600
         },
         {
           "name": "Protocol Entrance",
@@ -609,25 +605,19 @@
           "bonus_percent": 500
         }
       ],
-      "raw": 61590000.0,
-      "miners_count": 4
+      "raw": 73790000.0,
+      "miners_count": 5
     },
     {
-      "height": 3,
-      "name": "Team Green",
+      "height": 4,
+      "name": "Server Rack 8",
       "floors": [
+        0,
         0,
         0,
         0
       ],
       "miners": [
-        {
-          "name": "Da Ba Dee",
-          "level": 1,
-          "power": 18380000.0,
-          "width": 2,
-          "bonus_percent": 450
-        },
         {
           "name": "Steel Titan",
           "level": 3,
@@ -641,112 +631,30 @@
           "power": 18090000.0,
           "width": 2,
           "bonus_percent": 1000
+        },
+        {
+          "name": "Totem Mask",
+          "level": 3,
+          "power": 16400000.0,
+          "width": 2,
+          "bonus_percent": 1200
+        },
+        {
+          "name": "Totem Mask",
+          "level": 3,
+          "power": 16400000.0,
+          "width": 2,
+          "bonus_percent": 1200
         }
       ],
-      "raw": 54670000.0,
-      "miners_count": 3
+      "raw": 69090000.0,
+      "miners_count": 4
     },
     {
       "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "RollerThanks",
-          "level": 0,
-          "power": 6780000.0,
-          "width": 2,
-          "bonus_percent": 499
-        },
-        {
-          "name": "Full Loot House",
-          "level": 0,
-          "power": 6500000.0,
-          "width": 1,
-          "bonus_percent": 700
-        },
-        {
-          "name": "Full Loot House",
-          "level": 0,
-          "power": 6500000.0,
-          "width": 1,
-          "bonus_percent": 700
-        },
-        {
-          "name": "Full Loot House",
-          "level": 0,
-          "power": 6500000.0,
-          "width": 1,
-          "bonus_percent": 700
-        },
-        {
-          "name": "Full Loot House",
-          "level": 0,
-          "power": 6500000.0,
-          "width": 1,
-          "bonus_percent": 700
-        },
-        {
-          "name": "Full Loot House",
-          "level": 0,
-          "power": 6500000.0,
-          "width": 1,
-          "bonus_percent": 700
-        },
-        {
-          "name": "Full Loot House",
-          "level": 0,
-          "power": 6500000.0,
-          "width": 1,
-          "bonus_percent": 700
-        }
-      ],
-      "raw": 45780000.0,
-      "miners_count": 7
-    },
-    {
-      "height": 3,
-      "name": "Carved North Rack 8",
-      "floors": [
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "Deja Vu",
-          "level": 0,
-          "power": 15000000.0,
-          "width": 2,
-          "bonus_percent": 1600
-        },
-        {
-          "name": "Deja Vu",
-          "level": 0,
-          "power": 15000000.0,
-          "width": 2,
-          "bonus_percent": 1600
-        },
-        {
-          "name": "Deja Vu",
-          "level": 0,
-          "power": 15000000.0,
-          "width": 2,
-          "bonus_percent": 1600
-        }
-      ],
-      "raw": 45000000.0,
-      "miners_count": 3
-    },
-    {
-      "height": 3,
       "name": "Server Rack 8",
       "floors": [
+        0,
         0,
         0,
         0
@@ -772,27 +680,28 @@
           "power": 14000000.0,
           "width": 2,
           "bonus_percent": 400
-        }
-      ],
-      "raw": 43470365.0,
-      "miners_count": 3
-    },
-    {
-      "height": 3,
-      "name": "Server Rack 8",
-      "floors": [
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "Totally Unboxed",
           "level": 2,
           "power": 13970000.0,
           "width": 2,
           "bonus_percent": 1100
-        },
+        }
+      ],
+      "raw": 57440365.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Stargazer Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "Totally Unboxed",
           "level": 2,
@@ -806,20 +715,7 @@
           "power": 13130000.0,
           "width": 2,
           "bonus_percent": 1100
-        }
-      ],
-      "raw": 41070000.0,
-      "miners_count": 3
-    },
-    {
-      "height": 3,
-      "name": "Server Rack 8",
-      "floors": [
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "GiftSmasher",
           "level": 2,
@@ -833,27 +729,28 @@
           "power": 12420000.0,
           "width": 2,
           "bonus_percent": 600
-        },
+        }
+      ],
+      "raw": 51940000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Stargazer Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "Bio-Plasma",
           "level": 2,
           "power": 12420000.0,
           "width": 2,
           "bonus_percent": 600
-        }
-      ],
-      "raw": 37260000.0,
-      "miners_count": 3
-    },
-    {
-      "height": 3,
-      "name": "Carved North Rack 8",
-      "floors": [
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "Sagittarius",
           "level": 1,
@@ -876,54 +773,77 @@
           "bonus_percent": 500
         }
       ],
-      "raw": 33900000.0,
-      "miners_count": 3
+      "raw": 46320000.0,
+      "miners_count": 4
     },
     {
-      "height": 3,
-      "name": "Duality Core",
+      "height": 4,
+      "name": "Stargazer Rack 8",
       "floors": [
+        0,
         0,
         0,
         0
       ],
       "miners": [
         {
-          "name": "Maslina",
+          "name": "Full Loot House",
           "level": 0,
-          "power": 8000000.0,
-          "width": 2,
-          "bonus_percent": 300
-        },
-        {
-          "name": "Celestial Eye",
-          "level": 0,
-          "power": 8000000.0,
-          "width": 2,
-          "bonus_percent": 200
-        },
-        {
-          "name": "Flight of Freedom",
-          "level": 0,
-          "power": 8000000.0,
+          "power": 6500000.0,
           "width": 1,
           "bonus_percent": 700
         },
         {
-          "name": "Duality Core",
-          "level": 2,
-          "power": 7930000.0,
+          "name": "Full Loot House",
+          "level": 0,
+          "power": 6500000.0,
           "width": 1,
-          "bonus_percent": 600
+          "bonus_percent": 700
+        },
+        {
+          "name": "Full Loot House",
+          "level": 0,
+          "power": 6500000.0,
+          "width": 1,
+          "bonus_percent": 700
+        },
+        {
+          "name": "Full Loot House",
+          "level": 0,
+          "power": 6500000.0,
+          "width": 1,
+          "bonus_percent": 700
+        },
+        {
+          "name": "Full Loot House",
+          "level": 0,
+          "power": 6500000.0,
+          "width": 1,
+          "bonus_percent": 700
+        },
+        {
+          "name": "Full Loot House",
+          "level": 0,
+          "power": 6500000.0,
+          "width": 1,
+          "bonus_percent": 700
+        },
+        {
+          "name": "Tesseract trip",
+          "level": 2,
+          "power": 6000000.0,
+          "width": 2,
+          "bonus_percent": 2000
         }
       ],
-      "raw": 31930000.0,
-      "miners_count": 4
+      "raw": 45000000.0,
+      "miners_count": 7
     },
     {
-      "height": 3,
-      "name": "Carved North Rack 8",
+      "height": 4,
+      "name": "Stargazer Rack 8",
       "floors": [
+        0,
         0,
         0,
         0
@@ -949,14 +869,21 @@
           "power": 10350000.0,
           "width": 2,
           "bonus_percent": 450
+        },
+        {
+          "name": "The Big Boss",
+          "level": 0,
+          "power": 9200000.0,
+          "width": 2,
+          "bonus_percent": 350
         }
       ],
-      "raw": 31796240.0,
-      "miners_count": 3
+      "raw": 40996240.0,
+      "miners_count": 4
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Stargazer Rack 8",
       "floors": [
         0,
         0,
@@ -965,54 +892,26 @@
       ],
       "miners": [
         {
-          "name": "Full Loot House",
+          "name": "Celestial Eye",
           "level": 0,
-          "power": 6500000.0,
+          "power": 8000000.0,
+          "width": 2,
+          "bonus_percent": 200
+        },
+        {
+          "name": "Flight of Freedom",
+          "level": 0,
+          "power": 8000000.0,
           "width": 1,
           "bonus_percent": 700
         },
         {
-          "name": "Full Loot House",
-          "level": 0,
-          "power": 6500000.0,
+          "name": "Duality Core",
+          "level": 2,
+          "power": 7930000.0,
           "width": 1,
-          "bonus_percent": 700
+          "bonus_percent": 600
         },
-        {
-          "name": "Tesseract trip",
-          "level": 2,
-          "power": 6000000.0,
-          "width": 2,
-          "bonus_percent": 2000
-        },
-        {
-          "name": "Devil's Carnival",
-          "level": 2,
-          "power": 5994870.0,
-          "width": 2,
-          "bonus_percent": 436
-        },
-        {
-          "name": "Devil's Carnival",
-          "level": 2,
-          "power": 5994870.0,
-          "width": 2,
-          "bonus_percent": 436
-        }
-      ],
-      "raw": 30989740.0,
-      "miners_count": 5
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
         {
           "name": "Virgo",
           "level": 1,
@@ -1026,77 +925,14 @@
           "power": 7500000.0,
           "width": 2,
           "bonus_percent": 700
-        },
-        {
-          "name": "MineAmp",
-          "level": 0,
-          "power": 7500000.0,
-          "width": 2,
-          "bonus_percent": 700
-        },
-        {
-          "name": "MineAmp",
-          "level": 0,
-          "power": 7500000.0,
-          "width": 2,
-          "bonus_percent": 700
         }
       ],
-      "raw": 30380000.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "Roller AltToken",
-          "level": 1,
-          "power": 5953500.0,
-          "width": 1,
-          "bonus_percent": 450
-        },
-        {
-          "name": "Ancient Vases",
-          "level": 0,
-          "power": 5850000.0,
-          "width": 2,
-          "bonus_percent": 400
-        },
-        {
-          "name": "VoidSaw",
-          "level": 0,
-          "power": 5700000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
-          "name": "Frosty",
-          "level": 3,
-          "power": 5500000.0,
-          "width": 2,
-          "bonus_percent": 300
-        },
-        {
-          "name": "Crown Ballot",
-          "level": 1,
-          "power": 5500000.0,
-          "width": 1,
-          "bonus_percent": 200
-        }
-      ],
-      "raw": 28503500.0,
+      "raw": 39310000.0,
       "miners_count": 5
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Stargazer Rack 8",
       "floors": [
         0,
         0,
@@ -1105,19 +941,47 @@
       ],
       "miners": [
         {
-          "name": "Camouflage",
+          "name": "Katherine",
           "level": 2,
-          "power": 7460000.0,
+          "power": 8900000.0,
           "width": 2,
-          "bonus_percent": 450
+          "bonus_percent": 1200
         },
         {
-          "name": "Da Ba Dee",
-          "level": 0,
-          "power": 7000000.0,
+          "name": "Katherine",
+          "level": 2,
+          "power": 8900000.0,
           "width": 2,
-          "bonus_percent": 200
+          "bonus_percent": 1200
         },
+        {
+          "name": "JustChill",
+          "level": 0,
+          "power": 8650000.0,
+          "width": 2,
+          "bonus_percent": 950
+        },
+        {
+          "name": "JustChill",
+          "level": 0,
+          "power": 8650000.0,
+          "width": 2,
+          "bonus_percent": 950
+        }
+      ],
+      "raw": 35100000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Stargazer Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "Laurel Wreath",
           "level": 3,
@@ -1131,88 +995,49 @@
           "power": 6910000.0,
           "width": 2,
           "bonus_percent": 450
+        },
+        {
+          "name": "RollerThanks",
+          "level": 0,
+          "power": 6780000.0,
+          "width": 2,
+          "bonus_percent": 499
+        },
+        {
+          "name": "Full Loot House",
+          "level": 0,
+          "power": 6500000.0,
+          "width": 1,
+          "bonus_percent": 700
+        },
+        {
+          "name": "Full Loot House",
+          "level": 0,
+          "power": 6500000.0,
+          "width": 1,
+          "bonus_percent": 700
         }
       ],
-      "raw": 28315750.0,
-      "miners_count": 4
+      "raw": 33635750.0,
+      "miners_count": 5
     },
     {
-      "height": 3,
-      "name": "Server Rack 8",
+      "height": 4,
+      "name": "Stargazer Rack 8",
       "floors": [
+        0,
         0,
         0,
         0
       ],
       "miners": [
-        {
-          "name": "The Big Boss",
-          "level": 0,
-          "power": 9200000.0,
-          "width": 2,
-          "bonus_percent": 350
-        },
-        {
-          "name": "Katherine",
-          "level": 2,
-          "power": 8900000.0,
-          "width": 2,
-          "bonus_percent": 1200
-        },
-        {
-          "name": "Katherine",
-          "level": 2,
-          "power": 8900000.0,
-          "width": 2,
-          "bonus_percent": 1200
-        }
-      ],
-      "raw": 27000000.0,
-      "miners_count": 3
-    },
-    {
-      "height": 3,
-      "name": "Server Rack 8",
-      "floors": [
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "JustChill",
-          "level": 0,
-          "power": 8650000.0,
-          "width": 2,
-          "bonus_percent": 950
-        },
-        {
-          "name": "JustChill",
-          "level": 0,
-          "power": 8650000.0,
-          "width": 2,
-          "bonus_percent": 950
-        },
         {
           "name": "Chrono Express",
           "level": 2,
           "power": 8640000.0,
           "width": 2,
           "bonus_percent": 600
-        }
-      ],
-      "raw": 25940000.0,
-      "miners_count": 3
-    },
-    {
-      "height": 3,
-      "name": "Server Rack 8",
-      "floors": [
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "Cococrab Shore",
           "level": 3,
@@ -1235,62 +1060,14 @@
           "bonus_percent": 744
         }
       ],
-      "raw": 24843525.0,
-      "miners_count": 3
+      "raw": 33483525.0,
+      "miners_count": 4
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Stargazer Rack 8",
       "floors": [
         0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "Retro Glitch",
-          "level": 1,
-          "power": 5500000.0,
-          "width": 2,
-          "bonus_percent": 300
-        },
-        {
-          "name": "Protocol Entrance",
-          "level": 1,
-          "power": 5250000.0,
-          "width": 1,
-          "bonus_percent": 200
-        },
-        {
-          "name": "Zombiner",
-          "level": 0,
-          "power": 5200000.0,
-          "width": 2,
-          "bonus_percent": 400
-        },
-        {
-          "name": "Sugar-Melon",
-          "level": 2,
-          "power": 5167995.0,
-          "width": 2,
-          "bonus_percent": 441
-        },
-        {
-          "name": "Gingerbread",
-          "level": 4,
-          "power": 3561390.0,
-          "width": 1,
-          "bonus_percent": 182
-        }
-      ],
-      "raw": 24679385.0,
-      "miners_count": 5
-    },
-    {
-      "height": 3,
-      "name": "Chrono Express",
-      "floors": [
         0,
         0,
         0
@@ -1316,14 +1093,21 @@
           "power": 8137500.0,
           "width": 2,
           "bonus_percent": 240
+        },
+        {
+          "name": "Maslina",
+          "level": 0,
+          "power": 8000000.0,
+          "width": 2,
+          "bonus_percent": 300
         }
       ],
-      "raw": 24475000.0,
-      "miners_count": 3
+      "raw": 32475000.0,
+      "miners_count": 4
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Stargazer Rack 8",
       "floors": [
         0,
         0,
@@ -1331,6 +1115,160 @@
         0
       ],
       "miners": [
+        {
+          "name": "MineAmp",
+          "level": 0,
+          "power": 7500000.0,
+          "width": 2,
+          "bonus_percent": 700
+        },
+        {
+          "name": "MineAmp",
+          "level": 0,
+          "power": 7500000.0,
+          "width": 2,
+          "bonus_percent": 700
+        },
+        {
+          "name": "Camouflage",
+          "level": 2,
+          "power": 7460000.0,
+          "width": 2,
+          "bonus_percent": 450
+        },
+        {
+          "name": "Da Ba Dee",
+          "level": 0,
+          "power": 7000000.0,
+          "width": 2,
+          "bonus_percent": 200
+        }
+      ],
+      "raw": 29460000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Stellar Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "Devil's Carnival",
+          "level": 2,
+          "power": 5994870.0,
+          "width": 2,
+          "bonus_percent": 436
+        },
+        {
+          "name": "Devil's Carnival",
+          "level": 2,
+          "power": 5994870.0,
+          "width": 2,
+          "bonus_percent": 436
+        },
+        {
+          "name": "Roller AltToken",
+          "level": 1,
+          "power": 5953500.0,
+          "width": 1,
+          "bonus_percent": 450
+        },
+        {
+          "name": "Ancient Vases",
+          "level": 0,
+          "power": 5850000.0,
+          "width": 2,
+          "bonus_percent": 400
+        },
+        {
+          "name": "Crown Ballot",
+          "level": 1,
+          "power": 5500000.0,
+          "width": 1,
+          "bonus_percent": 200
+        }
+      ],
+      "raw": 29293240.0,
+      "miners_count": 5
+    },
+    {
+      "height": 4,
+      "name": "Stellar Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "VoidSaw",
+          "level": 0,
+          "power": 5700000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "Frosty",
+          "level": 3,
+          "power": 5500000.0,
+          "width": 2,
+          "bonus_percent": 300
+        },
+        {
+          "name": "Retro Glitch",
+          "level": 1,
+          "power": 5500000.0,
+          "width": 2,
+          "bonus_percent": 300
+        },
+        {
+          "name": "Protocol Entrance",
+          "level": 1,
+          "power": 5250000.0,
+          "width": 1,
+          "bonus_percent": 200
+        },
+        {
+          "name": "Gingerbread",
+          "level": 4,
+          "power": 3561390.0,
+          "width": 1,
+          "bonus_percent": 182
+        }
+      ],
+      "raw": 25511390.0,
+      "miners_count": 5
+    },
+    {
+      "height": 4,
+      "name": "Stellar Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "Zombiner",
+          "level": 0,
+          "power": 5200000.0,
+          "width": 2,
+          "bonus_percent": 400
+        },
+        {
+          "name": "Sugar-Melon",
+          "level": 2,
+          "power": 5167995.0,
+          "width": 2,
+          "bonus_percent": 441
+        },
         {
           "name": "Uncle's Perra",
           "level": 0,
@@ -1344,7 +1282,21 @@
           "power": 5000000.0,
           "width": 2,
           "bonus_percent": 1700
-        },
+        }
+      ],
+      "raw": 20367995.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Stellar Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "ExaBara",
           "level": 2,
@@ -1358,21 +1310,7 @@
           "power": 4754610.0,
           "width": 2,
           "bonus_percent": 491
-        }
-      ],
-      "raw": 19754610.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "GiftSmasher",
           "level": 1,
@@ -1386,7 +1324,21 @@
           "power": 4667250.0,
           "width": 2,
           "bonus_percent": 491
-        },
+        }
+      ],
+      "raw": 19151860.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Globes Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "Green Wagon",
           "level": 1,
@@ -1400,14 +1352,28 @@
           "power": 4500000.0,
           "width": 2,
           "bonus_percent": 500
+        },
+        {
+          "name": "Sagittarius",
+          "level": 0,
+          "power": 4500000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "Sagittarius",
+          "level": 0,
+          "power": 4500000.0,
+          "width": 2,
+          "bonus_percent": 500
         }
       ],
-      "raw": 18491000.0,
+      "raw": 18093750.0,
       "miners_count": 4
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Asgardian Rack 8",
       "floors": [
         0,
         0,
@@ -1415,20 +1381,6 @@
         0
       ],
       "miners": [
-        {
-          "name": "Sagittarius",
-          "level": 0,
-          "power": 4500000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
-          "name": "Sagittarius",
-          "level": 0,
-          "power": 4500000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
         {
           "name": "Aries",
           "level": 2,
@@ -1442,84 +1394,7 @@
           "power": 4490000.0,
           "width": 2,
           "bonus_percent": 500
-        }
-      ],
-      "raw": 17980000.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "Polar Lumina",
-          "level": 0,
-          "power": 2500000.0,
-          "width": 2,
-          "bonus_percent": 500
         },
-        {
-          "name": "Boot Loot",
-          "level": 0,
-          "power": 2500000.0,
-          "width": 1,
-          "bonus_percent": 300
-        },
-        {
-          "name": "Boot Loot",
-          "level": 0,
-          "power": 2500000.0,
-          "width": 1,
-          "bonus_percent": 300
-        },
-        {
-          "name": "Boot Loot",
-          "level": 0,
-          "power": 2500000.0,
-          "width": 1,
-          "bonus_percent": 300
-        },
-        {
-          "name": "Boot Loot",
-          "level": 0,
-          "power": 2500000.0,
-          "width": 1,
-          "bonus_percent": 300
-        },
-        {
-          "name": "Boot Loot",
-          "level": 0,
-          "power": 2500000.0,
-          "width": 1,
-          "bonus_percent": 300
-        },
-        {
-          "name": "Boot Loot",
-          "level": 0,
-          "power": 2500000.0,
-          "width": 1,
-          "bonus_percent": 300
-        }
-      ],
-      "raw": 17500000.0,
-      "miners_count": 7
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
         {
           "name": "LuxuryLife",
           "level": 2,
@@ -1533,7 +1408,84 @@
           "power": 4341120.0,
           "width": 2,
           "bonus_percent": 462
+        }
+      ],
+      "raw": 17731120.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Fury Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "Boot Loot",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 1,
+          "bonus_percent": 300
         },
+        {
+          "name": "Boot Loot",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 1,
+          "bonus_percent": 300
+        },
+        {
+          "name": "Boot Loot",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 1,
+          "bonus_percent": 300
+        },
+        {
+          "name": "Boot Loot",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 1,
+          "bonus_percent": 300
+        },
+        {
+          "name": "Boot Loot",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 1,
+          "bonus_percent": 300
+        },
+        {
+          "name": "HackStation",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 2,
+          "bonus_percent": 300
+        },
+        {
+          "name": "Roller AltToken",
+          "level": 0,
+          "power": 2268000.0,
+          "width": 1,
+          "bonus_percent": 200
+        }
+      ],
+      "raw": 17268000.0,
+      "miners_count": 7
+    },
+    {
+      "height": 4,
+      "name": "Globes Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "Crypto-Gator",
           "level": 1,
@@ -1547,14 +1499,28 @@
           "power": 4244625.0,
           "width": 2,
           "bonus_percent": 744
+        },
+        {
+          "name": "BlasterBell",
+          "level": 0,
+          "power": 4200000.0,
+          "width": 2,
+          "bonus_percent": 200
+        },
+        {
+          "name": "BlasterBell",
+          "level": 0,
+          "power": 4200000.0,
+          "width": 2,
+          "bonus_percent": 200
         }
       ],
-      "raw": 17255745.0,
+      "raw": 16904625.0,
       "miners_count": 4
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Asgardian Rack 8",
       "floors": [
         0,
         0,
@@ -1562,20 +1528,6 @@
         0
       ],
       "miners": [
-        {
-          "name": "BlasterBell",
-          "level": 0,
-          "power": 4200000.0,
-          "width": 2,
-          "bonus_percent": 200
-        },
-        {
-          "name": "BlasterBell",
-          "level": 0,
-          "power": 4200000.0,
-          "width": 2,
-          "bonus_percent": 200
-        },
         {
           "name": "UFO-Ho-Ho",
           "level": 2,
@@ -1589,21 +1541,7 @@
           "power": 3940000.0,
           "width": 2,
           "bonus_percent": 900
-        }
-      ],
-      "raw": 16490000.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "Sweet Memory Miner",
           "level": 2,
@@ -1617,28 +1555,14 @@
           "power": 3807300.0,
           "width": 2,
           "bonus_percent": 491
-        },
-        {
-          "name": "Quantum Queller",
-          "level": 2,
-          "power": 3630000.0,
-          "width": 2,
-          "bonus_percent": 220
-        },
-        {
-          "name": "Mr. Clip",
-          "level": 0,
-          "power": 3500000.0,
-          "width": 2,
-          "bonus_percent": 500
         }
       ],
-      "raw": 14796050.0,
+      "raw": 15756050.0,
       "miners_count": 4
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Festive Rack 8",
       "floors": [
         0,
         0,
@@ -1646,6 +1570,20 @@
         0
       ],
       "miners": [
+        {
+          "name": "Stonks",
+          "level": 1,
+          "power": 3150000.0,
+          "width": 2,
+          "bonus_percent": 240
+        },
+        {
+          "name": "Capricorn",
+          "level": 2,
+          "power": 3130000.0,
+          "width": 2,
+          "bonus_percent": 200
+        },
         {
           "name": "Photon Phaser",
           "level": 2,
@@ -1661,20 +1599,6 @@
           "bonus_percent": 250
         },
         {
-          "name": "Flux Capacitor Gate",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 420
-        },
-        {
-          "name": "Virgo",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 300
-        },
-        {
           "name": "Boot Loot",
           "level": 0,
           "power": 2500000.0,
@@ -1682,12 +1606,54 @@
           "bonus_percent": 300
         }
       ],
-      "raw": 14570000.0,
+      "raw": 14850000.0,
       "miners_count": 5
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Green Silk 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "Quantum Queller",
+          "level": 2,
+          "power": 3630000.0,
+          "width": 2,
+          "bonus_percent": 220
+        },
+        {
+          "name": "Mr. Clip",
+          "level": 0,
+          "power": 3500000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "Mr. Clip",
+          "level": 0,
+          "power": 3500000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "Mr. Clip",
+          "level": 0,
+          "power": 3500000.0,
+          "width": 2,
+          "bonus_percent": 500
+        }
+      ],
+      "raw": 14130000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Green Silk 8",
       "floors": [
         0,
         0,
@@ -1729,7 +1695,7 @@
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Silver Rack 8",
       "floors": [
         0,
         0,
@@ -1737,20 +1703,6 @@
         0
       ],
       "miners": [
-        {
-          "name": "Mr. Clip",
-          "level": 0,
-          "power": 3500000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
-          "name": "Mr. Clip",
-          "level": 0,
-          "power": 3500000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
         {
           "name": "Ancient",
           "level": 2,
@@ -1764,21 +1716,7 @@
           "power": 3300000.0,
           "width": 2,
           "bonus_percent": 300
-        }
-      ],
-      "raw": 13745365.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "Chrono Express",
           "level": 1,
@@ -1792,28 +1730,14 @@
           "power": 3164175.0,
           "width": 2,
           "bonus_percent": 491
-        },
-        {
-          "name": "Stonks",
-          "level": 1,
-          "power": 3150000.0,
-          "width": 2,
-          "bonus_percent": 240
-        },
-        {
-          "name": "Capricorn",
-          "level": 2,
-          "power": 3130000.0,
-          "width": 2,
-          "bonus_percent": 200
         }
       ],
-      "raw": 12734175.0,
+      "raw": 13199540.0,
       "miners_count": 4
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Red Silk 8",
       "floors": [
         0,
         0,
@@ -1821,237 +1745,6 @@
         0
       ],
       "miners": [
-        {
-          "name": "Boot Loot",
-          "level": 0,
-          "power": 2500000.0,
-          "width": 1,
-          "bonus_percent": 300
-        },
-        {
-          "name": "HackStation",
-          "level": 0,
-          "power": 2500000.0,
-          "width": 2,
-          "bonus_percent": 300
-        },
-        {
-          "name": "HackStation",
-          "level": 0,
-          "power": 2500000.0,
-          "width": 2,
-          "bonus_percent": 300
-        },
-        {
-          "name": "HackStation",
-          "level": 0,
-          "power": 2500000.0,
-          "width": 2,
-          "bonus_percent": 300
-        },
-        {
-          "name": "Roller AltToken",
-          "level": 0,
-          "power": 2268000.0,
-          "width": 1,
-          "bonus_percent": 200
-        }
-      ],
-      "raw": 12268000.0,
-      "miners_count": 5
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "Virgo",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 300
-        },
-        {
-          "name": "Virgo",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 300
-        },
-        {
-          "name": "Abyss Stone",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 200
-        },
-        {
-          "name": "El Detonador",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 500
-        }
-      ],
-      "raw": 12000000.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "El Detonador",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
-          "name": "El Detonador",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
-          "name": "El Detonador",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
-          "name": "El Detonador",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 500
-        }
-      ],
-      "raw": 12000000.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "El Detonador",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
-          "name": "El Detonador",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
-          "name": "El Detonador",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
-          "name": "BlackWall AI",
-          "level": 0,
-          "power": 3000000.0,
-          "width": 2,
-          "bonus_percent": 800
-        }
-      ],
-      "raw": 12000000.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "Crypto Kong",
-          "level": 2,
-          "power": 2894115.0,
-          "width": 2,
-          "bonus_percent": 1455
-        },
-        {
-          "name": "Crypto Kong",
-          "level": 2,
-          "power": 2894115.0,
-          "width": 2,
-          "bonus_percent": 1455
-        },
-        {
-          "name": "Classic Fury",
-          "level": 2,
-          "power": 2880360.0,
-          "width": 2,
-          "bonus_percent": 448
-        },
-        {
-          "name": "Camouflage",
-          "level": 1,
-          "power": 2840000.0,
-          "width": 2,
-          "bonus_percent": 250
-        }
-      ],
-      "raw": 11508590.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "Gemini",
-          "level": 0,
-          "power": 2750000.0,
-          "width": 2,
-          "bonus_percent": 200
-        },
-        {
-          "name": "Blockchain Beaker",
-          "level": 1,
-          "power": 2730000.0,
-          "width": 2,
-          "bonus_percent": 240
-        },
         {
           "name": "WishGlobe",
           "level": 0,
@@ -2065,63 +1758,35 @@
           "power": 2500000.0,
           "width": 2,
           "bonus_percent": 500
+        },
+        {
+          "name": "Polar Lumina",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "Boot Loot",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 1,
+          "bonus_percent": 300
+        },
+        {
+          "name": "Boot Loot",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 1,
+          "bonus_percent": 300
         }
       ],
-      "raw": 10680000.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "Turbo Hex",
-          "level": 0,
-          "power": 2240000.0,
-          "width": 2,
-          "bonus_percent": 200
-        },
-        {
-          "name": "Frostbite",
-          "level": 2,
-          "power": 2160000.0,
-          "width": 1,
-          "bonus_percent": 250
-        },
-        {
-          "name": "ToyGlobe",
-          "level": 0,
-          "power": 2100000.0,
-          "width": 2,
-          "bonus_percent": 200
-        },
-        {
-          "name": "LightBeat",
-          "level": 0,
-          "power": 2100000.0,
-          "width": 2,
-          "bonus_percent": 556
-        },
-        {
-          "name": "Crown Ballot",
-          "level": 0,
-          "power": 2000000.0,
-          "width": 1,
-          "bonus_percent": 50
-        }
-      ],
-      "raw": 10600000.0,
+      "raw": 12700000.0,
       "miners_count": 5
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Silver Rack 8",
       "floors": [
         0,
         0,
@@ -2130,40 +1795,40 @@
       ],
       "miners": [
         {
-          "name": "HackStation",
+          "name": "Flux Capacitor Gate",
           "level": 0,
-          "power": 2500000.0,
+          "power": 3000000.0,
+          "width": 2,
+          "bonus_percent": 420
+        },
+        {
+          "name": "Virgo",
+          "level": 0,
+          "power": 3000000.0,
           "width": 2,
           "bonus_percent": 300
         },
         {
-          "name": "HackStation",
+          "name": "Virgo",
           "level": 0,
-          "power": 2500000.0,
+          "power": 3000000.0,
           "width": 2,
           "bonus_percent": 300
         },
         {
-          "name": "HackStation",
+          "name": "Virgo",
           "level": 0,
-          "power": 2500000.0,
+          "power": 3000000.0,
           "width": 2,
           "bonus_percent": 300
-        },
-        {
-          "name": "Banhammer Master",
-          "level": 3,
-          "power": 2500000.0,
-          "width": 2,
-          "bonus_percent": 700
         }
       ],
-      "raw": 10000000.0,
+      "raw": 12000000.0,
       "miners_count": 4
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Festive Rack 8",
       "floors": [
         0,
         0,
@@ -2172,19 +1837,131 @@
       ],
       "miners": [
         {
-          "name": "Banjo Blaster",
+          "name": "Abyss Stone",
           "level": 0,
-          "power": 2000000.0,
+          "power": 3000000.0,
           "width": 2,
           "bonus_percent": 200
         },
         {
-          "name": "Banjo Blaster",
+          "name": "El Detonador",
           "level": 0,
-          "power": 2000000.0,
+          "power": 3000000.0,
           "width": 2,
-          "bonus_percent": 200
+          "bonus_percent": 500
         },
+        {
+          "name": "El Detonador",
+          "level": 0,
+          "power": 3000000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "El Detonador",
+          "level": 0,
+          "power": 3000000.0,
+          "width": 2,
+          "bonus_percent": 500
+        }
+      ],
+      "raw": 12000000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Neon Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "El Detonador",
+          "level": 0,
+          "power": 3000000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "El Detonador",
+          "level": 0,
+          "power": 3000000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "El Detonador",
+          "level": 0,
+          "power": 3000000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "El Detonador",
+          "level": 0,
+          "power": 3000000.0,
+          "width": 2,
+          "bonus_percent": 500
+        }
+      ],
+      "raw": 12000000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Neon Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "El Detonador",
+          "level": 0,
+          "power": 3000000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "BlackWall AI",
+          "level": 0,
+          "power": 3000000.0,
+          "width": 2,
+          "bonus_percent": 800
+        },
+        {
+          "name": "Crypto Kong",
+          "level": 2,
+          "power": 2894115.0,
+          "width": 2,
+          "bonus_percent": 1455
+        },
+        {
+          "name": "Crypto Kong",
+          "level": 2,
+          "power": 2894115.0,
+          "width": 2,
+          "bonus_percent": 1455
+        }
+      ],
+      "raw": 11788230.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Fury Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "Banjo Blaster",
           "level": 0,
@@ -2200,69 +1977,6 @@
           "bonus_percent": 100
         },
         {
-          "name": "Smaller Paradise Pier",
-          "level": 4,
-          "power": 1995000.0,
-          "width": 1,
-          "bonus_percent": 284
-        }
-      ],
-      "raw": 9995000.0,
-      "miners_count": 5
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "Totem Mask",
-          "level": 1,
-          "power": 2370000.0,
-          "width": 2,
-          "bonus_percent": 200
-        },
-        {
-          "name": "Absolutely Flat",
-          "level": 0,
-          "power": 2300000.0,
-          "width": 2,
-          "bonus_percent": 450
-        },
-        {
-          "name": "Absolutely Flat",
-          "level": 0,
-          "power": 2300000.0,
-          "width": 2,
-          "bonus_percent": 450
-        },
-        {
-          "name": "Boogieman",
-          "level": 1,
-          "power": 2283750.0,
-          "width": 2,
-          "bonus_percent": 240
-        }
-      ],
-      "raw": 9253750.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
           "name": "Wake-Up Call",
           "level": 0,
           "power": 2000000.0,
@@ -2277,18 +1991,11 @@
           "bonus_percent": 284
         },
         {
-          "name": "AmericanDream",
-          "level": 1,
-          "power": 1848000.0,
-          "width": 2,
-          "bonus_percent": 585
-        },
-        {
-          "name": "Ferdinand's Horse",
-          "level": 2,
-          "power": 1826055.0,
-          "width": 2,
-          "bonus_percent": 286
+          "name": "Smaller Paradise Pier",
+          "level": 4,
+          "power": 1995000.0,
+          "width": 1,
+          "bonus_percent": 284
         },
         {
           "name": "The Corrupt Star",
@@ -2298,12 +2005,12 @@
           "bonus_percent": 100
         }
       ],
-      "raw": 9169055.0,
-      "miners_count": 5
+      "raw": 11490000.0,
+      "miners_count": 6
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Red Silk 8",
       "floors": [
         0,
         0,
@@ -2312,19 +2019,180 @@
       ],
       "miners": [
         {
-          "name": "Winter Herald",
+          "name": "Classic Fury",
+          "level": 2,
+          "power": 2880360.0,
+          "width": 2,
+          "bonus_percent": 448
+        },
+        {
+          "name": "Camouflage",
+          "level": 1,
+          "power": 2840000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Gemini",
           "level": 0,
-          "power": 1500000.0,
+          "power": 2750000.0,
+          "width": 2,
+          "bonus_percent": 200
+        },
+        {
+          "name": "Blockchain Beaker",
+          "level": 1,
+          "power": 2730000.0,
+          "width": 2,
+          "bonus_percent": 240
+        }
+      ],
+      "raw": 11200360.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Fury Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "Absolutely Flat",
+          "level": 0,
+          "power": 2300000.0,
+          "width": 2,
+          "bonus_percent": 450
+        },
+        {
+          "name": "Boogieman",
+          "level": 1,
+          "power": 2283750.0,
+          "width": 2,
+          "bonus_percent": 240
+        },
+        {
+          "name": "Turbo Hex",
+          "level": 0,
+          "power": 2240000.0,
+          "width": 2,
+          "bonus_percent": 200
+        },
+        {
+          "name": "Frostbite",
+          "level": 2,
+          "power": 2160000.0,
+          "width": 1,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Crown Ballot",
+          "level": 0,
+          "power": 2000000.0,
+          "width": 1,
+          "bonus_percent": 50
+        }
+      ],
+      "raw": 10983750.0,
+      "miners_count": 5
+    },
+    {
+      "height": 4,
+      "name": "Fury Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "HackStation",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 2,
+          "bonus_percent": 300
+        },
+        {
+          "name": "HackStation",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 2,
+          "bonus_percent": 300
+        },
+        {
+          "name": "HackStation",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 2,
+          "bonus_percent": 300
+        },
+        {
+          "name": "HackStation",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 2,
+          "bonus_percent": 300
+        }
+      ],
+      "raw": 10000000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Fury Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "HackStation",
+          "level": 0,
+          "power": 2500000.0,
+          "width": 2,
+          "bonus_percent": 300
+        },
+        {
+          "name": "Banhammer Master",
+          "level": 3,
+          "power": 2500000.0,
           "width": 2,
           "bonus_percent": 700
         },
         {
-          "name": "ExaBara",
+          "name": "Totem Mask",
           "level": 1,
-          "power": 1500000.0,
+          "power": 2370000.0,
           "width": 2,
-          "bonus_percent": 1200
+          "bonus_percent": 200
         },
+        {
+          "name": "Absolutely Flat",
+          "level": 0,
+          "power": 2300000.0,
+          "width": 2,
+          "bonus_percent": 450
+        }
+      ],
+      "raw": 9670000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Jet-Black Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "The Corrupt Star",
           "level": 0,
@@ -2340,19 +2208,40 @@
           "bonus_percent": 330
         },
         {
+          "name": "Good Old Miner",
+          "level": 2,
+          "power": 1400000.0,
+          "width": 2,
+          "bonus_percent": 800
+        },
+        {
           "name": "Dasher's Sled",
           "level": 3,
           "power": 1356705.0,
           "width": 1,
           "bonus_percent": 174
+        },
+        {
+          "name": "Hamyo JJ-P101",
+          "level": 0,
+          "power": 1350000.0,
+          "width": 1,
+          "bonus_percent": 100
+        },
+        {
+          "name": "Not Wanted",
+          "level": 0,
+          "power": 1200000.0,
+          "width": 1,
+          "bonus_percent": 100
         }
       ],
-      "raw": 7349490.0,
-      "miners_count": 5
+      "raw": 8299490.0,
+      "miners_count": 6
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Fury Rack 8",
       "floors": [
         0,
         0,
@@ -2360,6 +2249,62 @@
         0
       ],
       "miners": [
+        {
+          "name": "ToyGlobe",
+          "level": 0,
+          "power": 2100000.0,
+          "width": 2,
+          "bonus_percent": 200
+        },
+        {
+          "name": "LightBeat",
+          "level": 0,
+          "power": 2100000.0,
+          "width": 2,
+          "bonus_percent": 556
+        },
+        {
+          "name": "Banjo Blaster",
+          "level": 0,
+          "power": 2000000.0,
+          "width": 2,
+          "bonus_percent": 200
+        },
+        {
+          "name": "Banjo Blaster",
+          "level": 0,
+          "power": 2000000.0,
+          "width": 2,
+          "bonus_percent": 200
+        }
+      ],
+      "raw": 8200000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Fury Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "AmericanDream",
+          "level": 1,
+          "power": 1848000.0,
+          "width": 2,
+          "bonus_percent": 585
+        },
+        {
+          "name": "Ferdinand's Horse",
+          "level": 2,
+          "power": 1826055.0,
+          "width": 2,
+          "bonus_percent": 286
+        },
         {
           "name": "Crypto Combo",
           "level": 1,
@@ -2373,28 +2318,14 @@
           "power": 1732500.0,
           "width": 2,
           "bonus_percent": 720
-        },
-        {
-          "name": "LuxuryLife",
-          "level": 1,
-          "power": 1680000.0,
-          "width": 2,
-          "bonus_percent": 585
-        },
-        {
-          "name": "DraMatic",
-          "level": 2,
-          "power": 1653750.0,
-          "width": 2,
-          "bonus_percent": 270
         }
       ],
-      "raw": 6844215.0,
+      "raw": 7184520.0,
       "miners_count": 4
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Wonder Rack 8",
       "floors": [
         0,
         0,
@@ -2402,76 +2333,6 @@
         0
       ],
       "miners": [
-        {
-          "name": "Not Wanted",
-          "level": 0,
-          "power": 1200000.0,
-          "width": 1,
-          "bonus_percent": 100
-        },
-        {
-          "name": "Duality Core",
-          "level": 0,
-          "power": 1150000.0,
-          "width": 1,
-          "bonus_percent": 100
-        },
-        {
-          "name": "Duality Core",
-          "level": 0,
-          "power": 1150000.0,
-          "width": 1,
-          "bonus_percent": 100
-        },
-        {
-          "name": "Crypto Kong",
-          "level": 1,
-          "power": 1102500.0,
-          "width": 2,
-          "bonus_percent": 1114
-        },
-        {
-          "name": "The Christmas Eve",
-          "level": 1,
-          "power": 1050000.0,
-          "width": 2,
-          "bonus_percent": 525
-        },
-        {
-          "name": "Retro Blitz",
-          "level": 2,
-          "power": 1033620.0,
-          "width": 1,
-          "bonus_percent": 290
-        }
-      ],
-      "raw": 6686120.0,
-      "miners_count": 6
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "Good Old Miner",
-          "level": 2,
-          "power": 1400000.0,
-          "width": 2,
-          "bonus_percent": 800
-        },
-        {
-          "name": "Hamyo JJ-P101",
-          "level": 0,
-          "power": 1350000.0,
-          "width": 1,
-          "bonus_percent": 100
-        },
         {
           "name": "Gravity",
           "level": 1,
@@ -2492,14 +2353,35 @@
           "power": 1200000.0,
           "width": 1,
           "bonus_percent": 100
+        },
+        {
+          "name": "Duality Core",
+          "level": 0,
+          "power": 1150000.0,
+          "width": 1,
+          "bonus_percent": 100
+        },
+        {
+          "name": "Duality Core",
+          "level": 0,
+          "power": 1150000.0,
+          "width": 1,
+          "bonus_percent": 100
+        },
+        {
+          "name": "Retro Blitz",
+          "level": 2,
+          "power": 1033620.0,
+          "width": 1,
+          "bonus_percent": 290
         }
       ],
-      "raw": 6464900.0,
-      "miners_count": 5
+      "raw": 7048520.0,
+      "miners_count": 6
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Fury Rack 8",
       "floors": [
         0,
         0,
@@ -2507,6 +2389,20 @@
         0
       ],
       "miners": [
+        {
+          "name": "LuxuryLife",
+          "level": 1,
+          "power": 1680000.0,
+          "width": 2,
+          "bonus_percent": 585
+        },
+        {
+          "name": "DraMatic",
+          "level": 2,
+          "power": 1653750.0,
+          "width": 2,
+          "bonus_percent": 270
+        },
         {
           "name": "Spartan BOSS",
           "level": 1,
@@ -2520,28 +2416,14 @@
           "power": 1580000.0,
           "width": 2,
           "bonus_percent": 250
-        },
-        {
-          "name": "GravelRig",
-          "level": 2,
-          "power": 1570000.0,
-          "width": 2,
-          "bonus_percent": 380
-        },
-        {
-          "name": "GravelRig",
-          "level": 2,
-          "power": 1570000.0,
-          "width": 2,
-          "bonus_percent": 380
         }
       ],
-      "raw": 6347500.0,
+      "raw": 6541250.0,
       "miners_count": 4
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Jet-Black Rack 8",
       "floors": [
         0,
         0,
@@ -2549,6 +2431,62 @@
         0
       ],
       "miners": [
+        {
+          "name": "GravelRig",
+          "level": 2,
+          "power": 1570000.0,
+          "width": 2,
+          "bonus_percent": 380
+        },
+        {
+          "name": "GravelRig",
+          "level": 2,
+          "power": 1570000.0,
+          "width": 2,
+          "bonus_percent": 380
+        },
+        {
+          "name": "Winter Herald",
+          "level": 0,
+          "power": 1500000.0,
+          "width": 2,
+          "bonus_percent": 700
+        },
+        {
+          "name": "ExaBara",
+          "level": 1,
+          "power": 1500000.0,
+          "width": 2,
+          "bonus_percent": 1200
+        }
+      ],
+      "raw": 6140000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Wonder Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "Crypto Kong",
+          "level": 1,
+          "power": 1102500.0,
+          "width": 2,
+          "bonus_percent": 1114
+        },
+        {
+          "name": "The Christmas Eve",
+          "level": 1,
+          "power": 1050000.0,
+          "width": 2,
+          "bonus_percent": 525
+        },
         {
           "name": "HAMTTP",
           "level": 2,
@@ -2564,20 +2502,6 @@
           "bonus_percent": 260
         },
         {
-          "name": "TeraBara",
-          "level": 1,
-          "power": 1000000.0,
-          "width": 2,
-          "bonus_percent": 800
-        },
-        {
-          "name": "Stapllier",
-          "level": 2,
-          "power": 1000000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
           "name": "Eclipse",
           "level": 0,
           "power": 900000.0,
@@ -2585,12 +2509,12 @@
           "bonus_percent": 75
         }
       ],
-      "raw": 4976165.0,
+      "raw": 5128665.0,
       "miners_count": 5
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Wonder Rack 8",
       "floors": [
         0,
         0,
@@ -2598,6 +2522,20 @@
         0
       ],
       "miners": [
+        {
+          "name": "Crypto-NeKo",
+          "level": 0,
+          "power": 902000.0,
+          "width": 2,
+          "bonus_percent": 400
+        },
+        {
+          "name": "Crypto-Koi",
+          "level": 1,
+          "power": 845250.0,
+          "width": 2,
+          "bonus_percent": 237
+        },
         {
           "name": "Cryptococonut",
           "level": 0,
@@ -2613,6 +2551,69 @@
           "bonus_percent": 355
         },
         {
+          "name": "Skull Rancher",
+          "level": 0,
+          "power": 750000.0,
+          "width": 1,
+          "bonus_percent": 0
+        }
+      ],
+      "raw": 4074545.0,
+      "miners_count": 5
+    },
+    {
+      "height": 4,
+      "name": "Wonder Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "TeraBara",
+          "level": 1,
+          "power": 1000000.0,
+          "width": 2,
+          "bonus_percent": 800
+        },
+        {
+          "name": "Stapllier",
+          "level": 2,
+          "power": 1000000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "ShaleRig",
+          "level": 1,
+          "power": 1000000.0,
+          "width": 2,
+          "bonus_percent": 500
+        },
+        {
+          "name": "Paradox",
+          "level": 1,
+          "power": 918750.0,
+          "width": 2,
+          "bonus_percent": 315
+        }
+      ],
+      "raw": 3918750.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Regular Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
           "name": "Crypt-o-Walker",
           "level": 0,
           "power": 775000.0,
@@ -2627,69 +2628,6 @@
           "bonus_percent": 320
         },
         {
-          "name": "Skull Rancher",
-          "level": 0,
-          "power": 750000.0,
-          "width": 1,
-          "bonus_percent": 0
-        }
-      ],
-      "raw": 3872295.0,
-      "miners_count": 5
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
-          "name": "ShaleRig",
-          "level": 1,
-          "power": 1000000.0,
-          "width": 2,
-          "bonus_percent": 500
-        },
-        {
-          "name": "Paradox",
-          "level": 1,
-          "power": 918750.0,
-          "width": 2,
-          "bonus_percent": 315
-        },
-        {
-          "name": "Crypto-NeKo",
-          "level": 0,
-          "power": 902000.0,
-          "width": 2,
-          "bonus_percent": 400
-        },
-        {
-          "name": "Crypto-Koi",
-          "level": 1,
-          "power": 845250.0,
-          "width": 2,
-          "bonus_percent": 237
-        }
-      ],
-      "raw": 3666000.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
-        {
           "name": "Just Enough",
           "level": 0,
           "power": 760000.0,
@@ -2702,7 +2640,21 @@
           "power": 704000.0,
           "width": 2,
           "bonus_percent": 400
-        },
+        }
+      ],
+      "raw": 3009000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Regular Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "Synaptic Pulse",
           "level": 1,
@@ -2716,14 +2668,28 @@
           "power": 666000.0,
           "width": 2,
           "bonus_percent": 300
+        },
+        {
+          "name": "Witching Hour",
+          "level": 0,
+          "power": 666000.0,
+          "width": 2,
+          "bonus_percent": 300
+        },
+        {
+          "name": "Witching Hour",
+          "level": 0,
+          "power": 666000.0,
+          "width": 2,
+          "bonus_percent": 300
         }
       ],
-      "raw": 2828250.0,
+      "raw": 2696250.0,
       "miners_count": 4
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Regular Rack 8",
       "floors": [
         0,
         0,
@@ -2765,7 +2731,7 @@
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Regular Rack 8",
       "floors": [
         0,
         0,
@@ -2807,7 +2773,7 @@
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Regular Rack 8",
       "floors": [
         0,
         0,
@@ -2849,7 +2815,7 @@
     },
     {
       "height": 4,
-      "name": "4-étages",
+      "name": "Regular Rack 8",
       "floors": [
         0,
         0,
@@ -2865,12 +2831,40 @@
           "bonus_percent": 250
         },
         {
+          "name": "HAMTTP",
+          "level": 1,
+          "power": 400000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
           "name": "Paradox",
           "level": 0,
           "power": 350000.0,
           "width": 2,
           "bonus_percent": 300
         },
+        {
+          "name": "Paradox",
+          "level": 0,
+          "power": 350000.0,
+          "width": 2,
+          "bonus_percent": 300
+        }
+      ],
+      "raw": 1500000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Regular Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "Granny's Cake",
           "level": 1,
@@ -2884,21 +2878,7 @@
           "power": 326000.0,
           "width": 2,
           "bonus_percent": 600
-        }
-      ],
-      "raw": 1404125.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "Ancient Icecraft",
           "level": 3,
@@ -2912,7 +2892,21 @@
           "power": 291375.0,
           "width": 2,
           "bonus_percent": 250
-        },
+        }
+      ],
+      "raw": 1244645.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Regular Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "First Class",
           "level": 0,
@@ -2926,21 +2920,7 @@
           "power": 250000.0,
           "width": 2,
           "bonus_percent": 400
-        }
-      ],
-      "raw": 1110520.0,
-      "miners_count": 4
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "GPUbit",
           "level": 4,
@@ -2961,7 +2941,21 @@
           "power": 185000.0,
           "width": 2,
           "bonus_percent": 500
-        },
+        }
+      ],
+      "raw": 1129830.0,
+      "miners_count": 5
+    },
+    {
+      "height": 4,
+      "name": "Regular Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
         {
           "name": "Dream Demolisher 3000",
           "level": 1,
@@ -2975,21 +2969,7 @@
           "power": 155000.0,
           "width": 2,
           "bonus_percent": 250
-        }
-      ],
-      "raw": 948580.0,
-      "miners_count": 5
-    },
-    {
-      "height": 4,
-      "name": "4-étages",
-      "floors": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "miners": [
+        },
         {
           "name": "Retro Blitz",
           "level": 0,
@@ -3012,6 +2992,27 @@
           "bonus_percent": 100
         },
         {
+          "name": "Chupacabra",
+          "level": 2,
+          "power": 96495.0,
+          "width": 1,
+          "bonus_percent": 110
+        }
+      ],
+      "raw": 835245.0,
+      "miners_count": 6
+    },
+    {
+      "height": 4,
+      "name": "Regular Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
           "name": "Stapllier",
           "level": 1,
           "power": 100000.0,
@@ -3019,11 +3020,18 @@
           "bonus_percent": 250
         },
         {
-          "name": "Chupacabra",
-          "level": 2,
-          "power": 96495.0,
-          "width": 1,
-          "bonus_percent": 110
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
         },
         {
           "name": "Dasher's Sled",
@@ -3040,8 +3048,176 @@
           "bonus_percent": 150
         }
       ],
-      "raw": 746495.0,
-      "miners_count": 7
+      "raw": 450000.0,
+      "miners_count": 5
+    },
+    {
+      "height": 4,
+      "name": "Regular Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        }
+      ],
+      "raw": 400000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Regular Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        }
+      ],
+      "raw": 400000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Regular Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        }
+      ],
+      "raw": 400000.0,
+      "miners_count": 4
+    },
+    {
+      "height": 4,
+      "name": "Regular Rack 8",
+      "floors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "miners": [
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        },
+        {
+          "name": "Stapllier",
+          "level": 1,
+          "power": 100000.0,
+          "width": 2,
+          "bonus_percent": 250
+        }
+      ],
+      "raw": 400000.0,
+      "miners_count": 4
     }
   ]
 }
